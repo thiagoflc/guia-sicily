@@ -859,11 +859,11 @@
 
         /* ---------- link para o Google Maps ---------- */
         gmapsUrl(p) {
-          if (!p || !p.coord) return 'https://www.google.com/maps';
-          const [lat, lng] = p.coord;
-          const q = encodeURIComponent(`${p.nome}, Ragusa, Sicilia`);
-          // abre o ponto exato (coordenadas) já rotulado com o nome do local
-          return `https://www.google.com/maps/search/?api=1&query=${lat},${lng}&query_place=${q}`;
+          if (!p || !p.nome) return 'https://www.google.com/maps';
+          // link pelo NOME do ponto + cidade → o Google Maps resolve para o POI registrado
+          // (coordenadas não são usadas no link: podem cair fora do ponto real)
+          const q = encodeURIComponent(`${p.nome}, Ragusa`);
+          return `https://www.google.com/maps/search/?api=1&query=${q}`;
         }
       };
     }
