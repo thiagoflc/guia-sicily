@@ -863,6 +863,8 @@
           // link pelo NOME do ponto + cidade → o Google Maps resolve para o POI registrado
           // (coordenadas não são usadas no link: podem cair fora do ponto real)
           const q = encodeURIComponent(`${p.nome}, Ragusa`);
+          // precisão cirúrgica: com placeId do Google, abre o POI exato (não o palpite por nome)
+          if (p.placeId) return `https://www.google.com/maps/search/?api=1&query=${q}&query_place_id=${encodeURIComponent(p.placeId)}`;
           return `https://www.google.com/maps/search/?api=1&query=${q}`;
         }
       };
