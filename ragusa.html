@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover" />
-  <title>Ragusa · Itinerário Quiet Luxury</title>
-  <meta name="description" content="Guia interativo de alto padrão para uma manhã por Ragusa e Ragusa Ibla, Sicília — do barroco dos Iblei ao Duomo de Gagliardi." />
+  <title>Ragusa · Dossiê de Operação Tática</title>
+  <meta name="description" content="Guia interativo de alto padrão para uma operação de exploração geológica e arquitetônica de um dia por Ragusa Ibla e Ragusa Superiore — Sicília." />
 
   <!-- ===== Web-app no iPhone (homescreen, barra de status integrada) ===== -->
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -23,7 +23,7 @@
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
   <script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 
-  <!-- ===== Tailwind (precompilado e inline — sem runtime no browser) ===== -->
+  <!-- ===== Tailwind (pré-compilado, inline — sem runtime CDN) ===== -->
   <style>*,:after,:before{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgba(59,130,246,.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgba(59,130,246,.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/*! tailwindcss v3.4.19 | MIT License | https://tailwindcss.com*/*,:after,:before{box-sizing:border-box;border:0 solid #e5e7eb}:after,:before{--tw-content:""}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;-o-tab-size:4;tab-size:4;font-family:Inter,system-ui,sans-serif;font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0}fieldset,legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::-moz-placeholder,textarea::-moz-placeholder{opacity:1;color:#9ca3af}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.pointer-events-none{pointer-events:none}.fixed{position:fixed}.absolute{position:absolute}.relative{position:relative}.inset-0{inset:0}.inset-x-0{left:0;right:0}.bottom-0{bottom:0}.bottom-32{bottom:8rem}.bottom-4{bottom:1rem}.left-1\/2{left:50%}.left-3{left:.75rem}.left-5{left:1.25rem}.left-\[30px\]{left:30px}.left-\[34px\]{left:34px}.right-3\.5{right:.875rem}.right-4{right:1rem}.right-5{right:1.25rem}.top-0{top:0}.top-2\.5{top:.625rem}.top-3{top:.75rem}.top-3\.5{top:.875rem}.z-0{z-index:0}.z-10{z-index:10}.z-20{z-index:20}.z-30{z-index:30}.z-40{z-index:40}.z-50{z-index:50}.-my-1{margin-top:-.25rem;margin-bottom:-.25rem}.-mt-3{margin-top:-.75rem}.mb-2{margin-bottom:.5rem}.mb-3{margin-bottom:.75rem}.mb-4{margin-bottom:1rem}.mb-5{margin-bottom:1.25rem}.ml-2{margin-left:.5rem}.ml-\[15px\]{margin-left:15px}.mt-0\.5{margin-top:.125rem}.mt-1{margin-top:.25rem}.mt-1\.5{margin-top:.375rem}.mt-12{margin-top:3rem}.mt-2{margin-top:.5rem}.mt-3{margin-top:.75rem}.mt-4{margin-top:1rem}.mt-6{margin-top:1.5rem}.mt-9{margin-top:2.25rem}.block{display:block}.flex{display:flex}.grid{display:grid}.hidden{display:none}.h-1{height:.25rem}.h-1\.5{height:.375rem}.h-11{height:2.75rem}.h-12{height:3rem}.h-2{height:.5rem}.h-3{height:.75rem}.h-3\.5{height:.875rem}.h-4{height:1rem}.h-40{height:10rem}.h-5{height:1.25rem}.h-52{height:13rem}.h-full{height:100%}.max-h-\[92dvh\]{max-height:92dvh}.min-h-\[44px\]{min-height:44px}.min-h-\[52px\]{min-height:52px}.w-1\.5{width:.375rem}.w-10{width:2.5rem}.w-11{width:2.75rem}.w-12{width:3rem}.w-2{width:.5rem}.w-3{width:.75rem}.w-3\.5{width:.875rem}.w-4{width:1rem}.w-5{width:1.25rem}.w-\[52px\]{width:52px}.w-full{width:100%}.w-px{width:1px}.max-w-prose{max-width:65ch}.flex-1{flex:1 1 0%}.shrink-0{flex-shrink:0}.-translate-x-1\/2{--tw-translate-x:-50%}.-translate-x-1\/2,.translate-y-0{transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.translate-y-0{--tw-translate-y:0px}.translate-y-2{--tw-translate-y:0.5rem}.translate-y-2,.translate-y-full{transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.translate-y-full{--tw-translate-y:100%}.rotate-45{--tw-rotate:45deg}.rotate-45,.scale-150{transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.scale-150{--tw-scale-x:1.5;--tw-scale-y:1.5}.transform{transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.cursor-pointer{cursor:pointer}.resize{resize:both}.list-none{list-style-type:none}.grid-cols-3{grid-template-columns:repeat(3,minmax(0,1fr))}.flex-col{flex-direction:column}.items-end{align-items:flex-end}.items-center{align-items:center}.items-baseline{align-items:baseline}.items-stretch{align-items:stretch}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-1{gap:.25rem}.gap-2{gap:.5rem}.gap-3{gap:.75rem}.space-y-1\.5>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(.375rem*(1 - var(--tw-space-y-reverse)));margin-bottom:calc(.375rem*var(--tw-space-y-reverse))}.space-y-2\.5>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(.625rem*(1 - var(--tw-space-y-reverse)));margin-bottom:calc(.625rem*var(--tw-space-y-reverse))}.space-y-6>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1.5rem*(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1.5rem*var(--tw-space-y-reverse))}.overflow-hidden{overflow:hidden}.overflow-y-auto{overflow-y:auto}.overflow-x-hidden{overflow-x:hidden}.scroll-smooth{scroll-behavior:smooth}.rounded-2xl{border-radius:1rem}.rounded-full{border-radius:9999px}.rounded-sm{border-radius:.125rem}.rounded-xl{border-radius:.75rem}.rounded-t-3xl{border-top-left-radius:1.5rem;border-top-right-radius:1.5rem}.rounded-t-\[28px\]{border-top-left-radius:28px;border-top-right-radius:28px}.border{border-width:1px}.border-l-2{border-left-width:2px}.border-t{border-top-width:1px}.border-bordeaux\/40{border-color:rgba(110,31,43,.4)}.border-bordeaux\/60{border-color:rgba(110,31,43,.6)}.border-emerald\/40{border-color:rgba(31,111,92,.4)}.border-emerald\/50{border-color:rgba(31,111,92,.5)}.border-emerald\/60{border-color:rgba(31,111,92,.6)}.border-emerald\/70{border-color:rgba(31,111,92,.7)}.border-gold\/40{border-color:hsla(39,47%,60%,.4)}.border-line{--tw-border-opacity:1;border-color:rgb(35 44 54/var(--tw-border-opacity,1))}.border-line\/50{border-color:rgba(35,44,54,.5)}.border-line\/60{border-color:rgba(35,44,54,.6)}.bg-bordeauxlt{--tw-bg-opacity:1;background-color:rgb(207 107 121/var(--tw-bg-opacity,1))}.bg-charcoal{--tw-bg-opacity:1;background-color:rgb(12 15 18/var(--tw-bg-opacity,1))}.bg-charcoal\/70{background-color:rgba(12,15,18,.7)}.bg-emeraldlt{--tw-bg-opacity:1;background-color:rgb(58 156 132/var(--tw-bg-opacity,1))}.bg-faint{--tw-bg-opacity:1;background-color:rgb(139 151 163/var(--tw-bg-opacity,1))}.bg-gold{--tw-bg-opacity:1;background-color:rgb(201 168 106/var(--tw-bg-opacity,1))}.bg-ice\/50{background-color:rgba(238,242,244,.5)}.bg-ink\/60{background-color:rgba(17,22,27,.6)}.bg-line{--tw-bg-opacity:1;background-color:rgb(35 44 54/var(--tw-bg-opacity,1))}.bg-slatecard{--tw-bg-opacity:1;background-color:rgb(22 28 35/var(--tw-bg-opacity,1))}.bg-gradient-to-b{background-image:linear-gradient(to bottom,var(--tw-gradient-stops))}.bg-gradient-to-t{background-image:linear-gradient(to top,var(--tw-gradient-stops))}.from-\[\#161c23\]{--tw-gradient-from:#161c23 var(--tw-gradient-from-position);--tw-gradient-to:rgba(22,28,35,0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from),var(--tw-gradient-to)}.from-charcoal{--tw-gradient-from:#0c0f12 var(--tw-gradient-from-position);--tw-gradient-to:rgba(12,15,18,0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from),var(--tw-gradient-to)}.from-slatecard{--tw-gradient-from:#161c23 var(--tw-gradient-from-position);--tw-gradient-to:rgba(22,28,35,0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from),var(--tw-gradient-to)}.from-transparent{--tw-gradient-from:transparent var(--tw-gradient-from-position);--tw-gradient-to:transparent var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from),var(--tw-gradient-to)}.via-charcoal\/75{--tw-gradient-to:rgba(12,15,18,0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from),rgba(12,15,18,.75) var(--tw-gradient-via-position),var(--tw-gradient-to)}.via-slatecard\/10{--tw-gradient-to:rgba(22,28,35,0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from),rgba(22,28,35,.1) var(--tw-gradient-via-position),var(--tw-gradient-to)}.via-transparent{--tw-gradient-to:transparent var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from),transparent var(--tw-gradient-via-position),var(--tw-gradient-to)}.to-charcoal{--tw-gradient-to:#0c0f12 var(--tw-gradient-to-position)}.to-charcoal\/30{--tw-gradient-to:rgba(12,15,18,.3) var(--tw-gradient-to-position)}.to-transparent{--tw-gradient-to:transparent var(--tw-gradient-to-position)}.object-cover{-o-object-fit:cover;object-fit:cover}.p-3{padding:.75rem}.p-4{padding:1rem}.px-2\.5{padding-left:.625rem;padding-right:.625rem}.px-5{padding-left:1.25rem;padding-right:1.25rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.py-1{padding-top:.25rem;padding-bottom:.25rem}.py-2\.5{padding-top:.625rem;padding-bottom:.625rem}.py-3\.5{padding-top:.875rem;padding-bottom:.875rem}.pb-1{padding-bottom:.25rem}.pb-14{padding-bottom:3.5rem}.pb-2{padding-bottom:.5rem}.pb-\[calc\(1\.5rem\+env\(safe-area-inset-bottom\)\)\]{padding-bottom:calc(1.5rem + env(safe-area-inset-bottom))}.pb-\[calc\(11rem\+env\(safe-area-inset-bottom\)\)\]{padding-bottom:calc(11rem + env(safe-area-inset-bottom))}.pl-4{padding-left:1rem}.pl-\[52px\]{padding-left:52px}.pr-2{padding-right:.5rem}.pt-3{padding-top:.75rem}.pt-4{padding-top:1rem}.pt-5{padding-top:1.25rem}.pt-6{padding-top:1.5rem}.pt-\[calc\(env\(safe-area-inset-top\)\+1rem\)\]{padding-top:calc(env(safe-area-inset-top) + 1rem)}.text-center{text-align:center}.font-sans{font-family:Inter,system-ui,sans-serif}.font-serif{font-family:Playfair Display,Georgia,serif}.text-2xl{font-size:1.5rem;line-height:2rem}.text-\[0\.5625rem\]{font-size:.5625rem}.text-\[0\.625rem\]{font-size:.625rem}.text-\[0\.65625rem\]{font-size:.65625rem}.text-\[0\.6875rem\]{font-size:.6875rem}.text-\[0\.75rem\]{font-size:.75rem}.text-\[0\.8125rem\]{font-size:.8125rem}.text-\[0\.84375rem\]{font-size:.84375rem}.text-\[0\.875rem\]{font-size:.875rem}.text-\[0\.9375rem\]{font-size:.9375rem}.text-\[1\.1875rem\]{font-size:1.1875rem}.text-\[1\.625rem\]{font-size:1.625rem}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:.875rem;line-height:1.25rem}.font-light{font-weight:300}.font-medium{font-weight:500}.uppercase{text-transform:uppercase}.italic{font-style:italic}.not-italic{font-style:normal}.tabular-nums{--tw-numeric-spacing:tabular-nums;font-variant-numeric:var(--tw-ordinal) var(--tw-slashed-zero) var(--tw-numeric-figure) var(--tw-numeric-spacing) var(--tw-numeric-fraction)}.leading-none{line-height:1}.leading-relaxed{line-height:1.625}.leading-snug{line-height:1.375}.leading-tight{line-height:1.25}.tracking-\[0\.25em\]{letter-spacing:.25em}.tracking-\[0\.2em\]{letter-spacing:.2em}.tracking-\[0\.35em\]{letter-spacing:.35em}.tracking-\[0\.3em\]{letter-spacing:.3em}.tracking-\[0\.45em\]{letter-spacing:.45em}.tracking-\[0\.4em\]{letter-spacing:.4em}.tracking-wide{letter-spacing:.025em}.tracking-widest{letter-spacing:.1em}.text-bordeauxlt{--tw-text-opacity:1;color:rgb(207 107 121/var(--tw-text-opacity,1))}.text-emeraldlt{--tw-text-opacity:1;color:rgb(58 156 132/var(--tw-text-opacity,1))}.text-faint{--tw-text-opacity:1;color:rgb(139 151 163/var(--tw-text-opacity,1))}.text-gold{--tw-text-opacity:1;color:rgb(201 168 106/var(--tw-text-opacity,1))}.text-ice{--tw-text-opacity:1;color:rgb(238 242 244/var(--tw-text-opacity,1))}.text-ice\/60{color:rgba(238,242,244,.6)}.text-ice\/75{color:rgba(238,242,244,.75)}.text-mute{--tw-text-opacity:1;color:rgb(154 166 177/var(--tw-text-opacity,1))}.antialiased{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.opacity-0{opacity:0}.opacity-100{opacity:1}.opacity-65{opacity:.65}.shadow-\[0_-20px_60px_rgba\(0\2c 0\2c 0\2c \.6\)\]{--tw-shadow:0 -20px 60px rgba(0,0,0,.6);--tw-shadow-colored:0 -20px 60px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)}.shadow-\[0_-20px_80px_rgba\(0\2c 0\2c 0\2c \.7\)\]{--tw-shadow:0 -20px 80px rgba(0,0,0,.7);--tw-shadow-colored:0 -20px 80px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)}.ring-2{--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow),var(--tw-ring-shadow),var(--tw-shadow,0 0 #0000)}.ring-emerald\/30{--tw-ring-color:rgba(31,111,92,.3)}.blur{--tw-blur:blur(8px)}.blur,.drop-shadow-\[0_1px_8px_rgba\(0\2c 0\2c 0\2c \.6\)\]{filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.drop-shadow-\[0_1px_8px_rgba\(0\2c 0\2c 0\2c \.6\)\]{--tw-drop-shadow:drop-shadow(0 1px 8px rgba(0,0,0,.6))}.sepia{--tw-sepia:sepia(100%)}.filter,.sepia{filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.backdrop-blur-sm{--tw-backdrop-blur:blur(4px)}.backdrop-blur-sm,.backdrop-filter{-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.transition{transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,-webkit-backdrop-filter;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,backdrop-filter;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,backdrop-filter,-webkit-backdrop-filter;transition-timing-function:cubic-bezier(.4,0,.2,1);transition-duration:.15s}.transition-all{transition-property:all;transition-timing-function:cubic-bezier(.4,0,.2,1);transition-duration:.15s}.transition-colors{transition-property:color,background-color,border-color,text-decoration-color,fill,stroke;transition-timing-function:cubic-bezier(.4,0,.2,1);transition-duration:.15s}.transition-opacity{transition-property:opacity;transition-timing-function:cubic-bezier(.4,0,.2,1);transition-duration:.15s}.transition-transform{transition-property:transform;transition-timing-function:cubic-bezier(.4,0,.2,1)}.duration-150,.transition-transform{transition-duration:.15s}.duration-200{transition-duration:.2s}.duration-300{transition-duration:.3s}.ease-in{transition-timing-function:cubic-bezier(.4,0,1,1)}.ease-out{transition-timing-function:cubic-bezier(0,0,.2,1)}.first\:mt-0:first-child{margin-top:0}.hover\:scale-105:hover{--tw-scale-x:1.05;--tw-scale-y:1.05;transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.hover\:bg-bordeaux\/10:hover{background-color:rgba(110,31,43,.1)}.hover\:bg-emerald\/10:hover{background-color:rgba(31,111,92,.1)}.hover\:bg-ice\/5:hover{background-color:rgba(238,242,244,.05)}.focus\:outline-none:focus{outline:2px solid transparent;outline-offset:2px}.focus-visible\:ring-2:focus-visible{--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow),var(--tw-ring-shadow),var(--tw-shadow,0 0 #0000)}.focus-visible\:ring-emeraldlt\/70:focus-visible{--tw-ring-color:rgba(58,156,132,.7)}.focus-visible\:ring-offset-2:focus-visible{--tw-ring-offset-width:2px}.focus-visible\:ring-offset-charcoal:focus-visible{--tw-ring-offset-color:#0c0f12}.active\:scale-90:active{--tw-scale-x:.9;--tw-scale-y:.9}.active\:scale-90:active,.active\:scale-95:active{transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.active\:scale-95:active{--tw-scale-x:.95;--tw-scale-y:.95}.active\:scale-\[0\.98\]:active{--tw-scale-x:0.98;--tw-scale-y:0.98;transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.active\:text-mute:active{--tw-text-opacity:1;color:rgb(154 166 177/var(--tw-text-opacity,1))}.active\:opacity-100:active{opacity:1}.group[open] .group-open\:rotate-90{--tw-rotate:90deg;transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.group:hover .group-hover\:border-line{--tw-border-opacity:1;border-color:rgb(35 44 54/var(--tw-border-opacity,1))}.group:hover .group-hover\:text-ice{--tw-text-opacity:1;color:rgb(238 242 244/var(--tw-text-opacity,1))}.group:hover .group-hover\:opacity-100{opacity:1}@media (min-width:640px){.sm\:hidden{display:none}.sm\:max-w-lg{max-width:32rem}.sm\:translate-y-6{--tw-translate-y:1.5rem;transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.sm\:items-center{align-items:center}.sm\:rounded-3xl{border-radius:1.5rem}.sm\:rounded-t-3xl{border-top-left-radius:1.5rem;border-top-right-radius:1.5rem}}</style>
 
   <!-- ===== Alpine.js ===== -->
@@ -81,7 +81,7 @@
     }
     /* gastronomia: acento bordô */
     .pin-food .pin-dot { width: 14px; height: 14px; background: var(--pin-food); }
-    /* base (ponto de partida): cobre escuro, losango */
+    /* base (Palazzo Alfeo): cobre escuro, losango */
     .pin-base .pin-dot { width: 15px; height: 15px; background: var(--pin-base); border-radius: 3px; transform: rotate(45deg); }
 
     /* pin ativo (sincronizado com a timeline) */
@@ -130,11 +130,6 @@
       *, *::before, *::after { animation-duration: .001ms !important; transition-duration: .001ms !important; scroll-behavior: auto !important; }
       .reveal { opacity: 1 !important; transform: none !important; }
     }
-    /* Animações do modal via CSS (disparam a cada exibição; reduced-motion zera acima) */
-    @keyframes modalFade { from { opacity: 0 } to { opacity: 1 } }
-    @keyframes modalUp { from { transform: translateY(40px); opacity: 0 } to { transform: none; opacity: 1 } }
-    .modal-backdrop { animation: modalFade .25s ease; }
-    .modal-panel { animation: modalUp .34s cubic-bezier(.2,.7,.2,1); }
     /* ===== Navbar do portal Sicília Orientale ===== */
     :root { --navh: calc(2.9rem + env(safe-area-inset-top)); }
     .sicily-nav { position:fixed; top:0; left:0; right:0; height:var(--navh); z-index:45;
@@ -157,7 +152,7 @@
   </style>
 </head>
 
-<body x-data="ortigiaGuide()" x-init="init()" class="font-sans text-ice antialiased overflow-x-hidden">
+<body x-data="ragusaGuide()" x-init="init()" class="font-sans text-ice antialiased overflow-x-hidden">
   <nav class="sicily-nav">
     <a href="index.html" class="nav-brand">Sicília <span>Orientale</span></a>
     <div class="nav-tabs">
@@ -175,14 +170,14 @@
   <header class="fixed top-0 inset-x-0 z-30 pointer-events-none">
     <div class="px-5 pt-[calc(env(safe-area-inset-top)+1rem)] pb-14
                 bg-gradient-to-b from-charcoal via-charcoal/75 to-transparent">
-      <p class="text-[0.625rem] tracking-[0.45em] text-ice/60 uppercase">Sicília · Monti Iblei</p>
+      <p class="text-[0.625rem] tracking-[0.45em] text-ice/60 uppercase">Sicília · Val di Noto</p>
       <h1 class="font-serif text-2xl text-ice mt-1 leading-none drop-shadow-[0_1px_8px_rgba(0,0,0,.6)]">Ragusa</h1>
-      <p class="text-[0.6875rem] text-ice/75 mt-1.5 tracking-wide">Uma manhã · 09h00 → 13h00 · 10 paragens</p>
+      <p class="text-[0.6875rem] text-ice/75 mt-1.5 tracking-wide">Operação tática · 09h00 → Pôr do sol · 9 pontos nodais</p>
     </div>
   </header>
 
   <!-- O mapa fica SEMPRE visível no topo; só o sheet rola por baixo -->
-  <div id="map" class="fixed top-0 inset-x-0 z-0" role="region" aria-label="Mapa de Ragusa"></div>
+  <div id="map" role="region" aria-label="Mapa de Ragusa" class="fixed top-0 inset-x-0 z-0"></div>
 
   <!-- véu inferior para fundir mapa ↔ folha -->
   <div class="veil fixed inset-x-0 z-10 pointer-events-none
@@ -204,16 +199,16 @@
       <div class="px-6 pt-4 pb-2">
         <div class="flex items-end justify-between">
           <div>
-            <p class="text-[0.625rem] tracking-[0.4em] text-emeraldlt uppercase">O Itinerário</p>
-            <h2 class="font-serif text-[1.625rem] leading-tight text-ice mt-1">A Jornada em Quatro Atos</h2>
+            <p class="text-[0.625rem] tracking-[0.4em] text-emeraldlt uppercase">Dossiê Executivo</p>
+            <h2 class="font-serif text-[1.625rem] leading-tight text-ice mt-1">A Jornada em Cinco Atos</h2>
           </div>
           <span class="font-serif italic text-faint text-sm pb-1" x-text="activeLabel"></span>
         </div>
         <p class="text-[0.8125rem] text-mute mt-3 leading-relaxed font-light max-w-prose">
-          Da <span class="text-ice">Ragusa Superiore</span> à descida até <span class="text-ice">Ragusa Ibla</span>,
-          a cidade dupla esculpida na pedra dos <span class="text-emeraldlt">Monti Iblei</span> — culminando no
-          <span class="text-emeraldlt">Duomo di San Giorgio</span> de Gagliardi e na <span class="text-bordeauxlt">doçura</span> dos Iblei.
-          Toque em cada ponto para abri-lo no mapa ou no Google Maps.
+          Partindo e regressando ao <span class="text-ice">Giardino sul Duomo</span>, esta operação lê a
+          paisagem como uma <span class="text-emeraldlt">falha tectônica</span> rompida pelo terramoto de
+          1693 — alternando pontos de <span class="text-emeraldlt">foco</span>, onde vale parar e interpretar
+          a estrutura, com paragens de <span class="text-mute">visão periférica</span>, capturadas em trânsito.
         </p>
       </div>
 
@@ -246,9 +241,9 @@
                 :aria-label="p.hora + ' — ' + p.nome"
                 class="reveal relative pl-[52px] mb-4 cursor-pointer group rounded-2xl focus:outline-none focus-visible:ring-2 focus-visible:ring-emeraldlt/70 focus-visible:ring-offset-2 focus-visible:ring-offset-charcoal"
                 data-reveal
-                @click="openModal(p)"
-                @keydown.enter.prevent="openModal(p)"
-                @keydown.space.prevent="openModal(p)">
+                @click="p.tipo==='foco' || p.tipo==='food' || p.tipo==='base' ? openModal(p) : focusPoint(p.id)"
+                @keydown.enter.prevent="p.tipo==='foco' || p.tipo==='food' || p.tipo==='base' ? openModal(p) : focusPoint(p.id)"
+                @keydown.space.prevent="p.tipo==='foco' || p.tipo==='food' || p.tipo==='base' ? openModal(p) : focusPoint(p.id)">
 
                 <!-- marcador no eixo -->
                 <span class="absolute left-[30px] top-2.5 -translate-x-1/2 z-10">
@@ -311,11 +306,11 @@
                       <div class="flex items-center justify-between mt-4">
                         <div class="flex items-center gap-3 text-[0.6875rem] text-faint">
                           <span x-show="p.custo" class="flex items-center gap-1">
-                            <svg class="w-3 h-3" aria-hidden="true" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" d="M12 6v12m-3-9h4a2 2 0 010 4H9m6 0h-1"/></svg>
+                            <svg aria-hidden="true" class="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" d="M12 6v12m-3-9h4a2 2 0 010 4H9m6 0h-1"/></svg>
                             <span x-text="p.custo"></span>
                           </span>
                           <span class="flex items-center gap-1">
-                            <svg class="w-3 h-3" aria-hidden="true" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path stroke-linecap="round" d="M12 7v5l3 2"/></svg>
+                            <svg aria-hidden="true" class="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path stroke-linecap="round" d="M12 7v5l3 2"/></svg>
                             <span x-text="p.duracao"></span>
                           </span>
                         </div>
@@ -326,7 +321,7 @@
                                 'text-gold': p.tipo==='base'
                               }">
                           Detalhes
-                          <svg class="w-3.5 h-3.5" aria-hidden="true" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+                          <svg aria-hidden="true" class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
                         </span>
                       </div>
                     </div>
@@ -340,35 +335,35 @@
         <!-- nota de fecho -->
         <div class="reveal pl-[52px] mt-12 pr-2" data-reveal>
           <p class="font-serif italic text-mute text-[0.9375rem] leading-relaxed">
-            “Ragusa é duas cidades numa só: a alta, racional; e Ibla, agarrada à rocha — e entre elas
-            340 degraus. No fundo do barranco, a <span class="text-gold not-italic">fachada de San Giorgio</span>
-            ergue-se como uma onda de pedra.”
+            “A missão está cumprida. A topografia, a história e a eficiência operaram em absoluta
+            sincronia, e o círculo fecha-se onde começou — no <span class="text-gold not-italic">Giardino sul Duomo</span>.”
           </p>
           <p class="text-[0.6875rem] text-faint mt-6 leading-relaxed font-light border-t border-line/50 pt-5">
-            Roteiro completo — <span class="text-mute">10 paragens</span> em quatro atos, das 09h00 às 13h00,
-            da Ragusa Superiore à descida a Ibla. Toque nos pontos de <span class="text-emeraldlt">foco</span> e na
-            <span class="text-bordeauxlt">pausa</span> para abrir os detalhes ou a rota no Google Maps;
-            role para que o mapa siga a jornada.
+            Operação completa — <span class="text-mute">9 pontos nodais</span> em cinco atos, da ilha de pedra
+            ao ouro do poente sobre o cânion. Toque nos pontos de <span class="text-emeraldlt">foco</span> e na
+            <span class="text-bordeauxlt">pausa tática</span> para abrir os detalhes; role para que o mapa siga a jornada.
           </p>
 
           <!-- Créditos das imagens (atribuição exigida pelas licenças) -->
           <details class="mt-6 border-t border-line/50 pt-5 group">
             <summary class="text-[0.6875rem] tracking-[0.25em] uppercase text-faint cursor-pointer list-none flex items-center gap-2 active:text-mute">
-              <svg class="w-3.5 h-3.5 transition-transform group-open:rotate-90" aria-hidden="true" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+              <svg aria-hidden="true" class="w-3.5 h-3.5 transition-transform group-open:rotate-90" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
               Créditos das imagens
             </summary>
             <p class="text-[0.6875rem] text-faint mt-4 leading-relaxed font-light">
               Todas as fotografias são reais e de licença livre, via <span class="text-mute">Wikimedia Commons</span>.
-              Os monumentos têm a imagem exata; na pausa (Gelati DiVini), que não possui foto de licença livre,
-              usa-se uma fotografia real de granita siciliana — jamais um placeholder.
+              Cada imagem aponta para o ficheiro de origem; as licenças variam (CC BY / CC BY-SA / domínio público) —
+              consulte a página do ficheiro indicado para a atribuição completa do autor.
             </p>
             <ul class="mt-4 space-y-1.5 text-[0.65625rem] text-faint font-light leading-snug">
-              <li>· <span class="text-mute">Cattedrale di San Giovanni Battista</span> — Peppepappa87, CC BY-SA 4.0</li>
-              <li>· <span class="text-mute">Santa Maria delle Scale</span> — Fischer1961, CC BY-SA 4.0</li>
-              <li>· <span class="text-mute">Duomo di San Giorgio</span> — Wikimedia Commons, CC BY-SA 3.0</li>
-              <li>· <span class="text-mute">Giardino Ibleo</span> — Andrea Comisi, CC BY-SA 4.0</li>
-              <li>· <span class="text-mute">Granita siciliana</span> (Gelati DiVini) — Auregann, CC BY-SA 4.0</li>
-              <li>· <span class="text-mute">Panorama de Ragusa Ibla</span> (home) — Antonio Scribano, CC BY 3.0</li>
+              <li>· <span class="text-mute">Panorama de Ragusa Ibla no esporão</span> (base) — <span class="italic">Ragusa Ibla, Sicily.jpg</span></li>
+              <li>· <span class="text-mute">Duomo di San Giorgio · fachada e cúpula</span> — <span class="italic">Duomo di San Giorgio a Ragusa Ibla.jpg</span></li>
+              <li>· <span class="text-mute">Portale di San Giorgio</span> (sobrevivente gótico) — <span class="italic">Portale di San Giorgio Ragusa Ibla.jpg</span></li>
+              <li>· <span class="text-mute">Giardino Ibleo</span> (borda do desfiladeiro) — <span class="italic">Giardino Ibleo - Ragusa Ibla.jpg</span></li>
+              <li>· <span class="text-mute">Scaccia ragusana</span> (pausa tática) — <span class="italic">Scaccia.jpg</span></li>
+              <li>· <span class="text-mute">Ibla vista do topo</span> (mirante / captura visual) — <span class="italic">Ragusa Ibla al crepuscolo.jpg</span></li>
+              <li>· <span class="text-mute">Palazzo Cosentini</span> (mascheroni) — <span class="italic">Ragusa CosentiniPalace 009 9739.jpg</span></li>
+              <li>· <span class="text-mute">Ragusa Ibla ao crepúsculo</span> (regresso) — <span class="italic">21 Ragusa bei Nacht.jpg</span></li>
             </ul>
           </details>
         </div>
@@ -383,33 +378,38 @@
           @click="scrollSheetTop()" aria-label="Voltar ao início"
           class="fixed right-4 z-40 h-12 w-12 rounded-full glass flex items-center justify-center text-emeraldlt active:scale-90 transition"
           style="bottom: calc(1rem + env(safe-area-inset-bottom));">
-    <svg class="w-5 h-5" aria-hidden="true" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7"/></svg>
+    <svg aria-hidden="true" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7"/></svg>
   </button>
 
   <!-- ============================================================= -->
   <!-- MODAL — Glassmorphism (sobe de baixo)                         -->
   <!-- ============================================================= -->
-  <div x-cloak x-show="modal.open" x-trap.noscroll="modal.open" role="dialog" aria-modal="true" :aria-label="modal.p.nome" class="fixed inset-0 z-50 flex items-end sm:items-center justify-center">
+  <div x-cloak x-show="modal.open" role="dialog" aria-modal="true" :aria-label="modal.p.nome" class="fixed inset-0 z-50 flex items-end sm:items-center justify-center">
     <!-- backdrop -->
-    <div x-show="modal.open" @click="closeModal()"
-         class="modal-backdrop absolute inset-0 bg-charcoal/70 backdrop-blur-sm"></div>
+    <div x-show="modal.open"
+         x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100"
+         x-transition:leave="transition ease-in duration-200" x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0"
+         @click="closeModal()"
+         class="absolute inset-0 bg-charcoal/70 backdrop-blur-sm"></div>
 
     <!-- painel -->
-    <div x-ref="panel" x-show="modal.open" tabindex="-1"
-         class="modal-panel glass relative w-full sm:max-w-lg sm:rounded-3xl rounded-t-3xl max-h-[92dvh] overflow-y-auto sheet
+    <div x-ref="panel" x-show="modal.open" x-trap.noscroll="modal.open" tabindex="-1"
+         x-transition:enter="transition ease-out duration-400" x-transition:enter-start="translate-y-full sm:translate-y-6 opacity-0" x-transition:enter-end="translate-y-0 opacity-100"
+         x-transition:leave="transition ease-in duration-250" x-transition:leave-start="translate-y-0 opacity-100" x-transition:leave-end="translate-y-full opacity-0"
+         class="glass relative w-full sm:max-w-lg sm:rounded-3xl rounded-t-3xl max-h-[92dvh] overflow-y-auto sheet
                 shadow-[0_-20px_80px_rgba(0,0,0,.7)]">
 
       <!-- imagem topo + zona de arrasto (deslize ↓ para fechar) -->
       <div @touchstart.passive="dragStart($event)" @touchmove.passive="dragMove($event)" @touchend="dragEnd()"
-           class="ph-img relative w-full overflow-hidden sm:rounded-t-3xl" :class="modal.p.img ? 'h-52' : 'h-24'">
+           class="ph-img relative h-52 w-full overflow-hidden sm:rounded-t-3xl">
         <!-- alça de arrasto -->
         <div class="absolute top-2.5 left-1/2 -translate-x-1/2 w-10 h-1 rounded-full bg-ice/50 z-20 sm:hidden"></div>
-        <img x-show="modal.p.img" :src="modal.p.img" :alt="modal.p.nome + ' — ' + modal.p.linha" class="h-full w-full object-cover"
+        <img :src="modal.p.img" :alt="modal.p.nome + ' — ' + modal.p.linha" class="h-full w-full object-cover"
              @load="$el.classList.add('loaded')" x-effect="modal.open && $el.classList.remove('loaded')" />
         <div class="absolute inset-0 bg-gradient-to-t from-[#161c23] via-transparent to-charcoal/30"></div>
         <button @click="closeModal()" aria-label="Fechar"
                 class="absolute top-3.5 right-3.5 h-11 w-11 rounded-full glass flex items-center justify-center text-ice active:scale-95 hover:scale-105 transition">
-          <svg class="w-4 h-4" aria-hidden="true" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" d="M6 6l12 12M18 6L6 18"/></svg>
+          <svg aria-hidden="true" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" d="M6 6l12 12M18 6L6 18"/></svg>
         </button>
         <div class="absolute bottom-4 left-5 right-5">
           <p class="text-[0.625rem] tracking-[0.35em] uppercase"
@@ -421,7 +421,7 @@
 
       <div class="px-5 pt-6 pb-[calc(1.5rem+env(safe-area-inset-bottom))] space-y-6">
         <!-- meta rápida -->
-        <div x-show="modal.p.horarioIdeal" class="grid grid-cols-3 gap-3">
+        <div class="grid grid-cols-3 gap-3">
           <div class="rounded-xl bg-ink/60 border border-line/50 p-3">
             <p class="text-[0.5625rem] tracking-widest uppercase text-faint">Horário ideal</p>
             <p class="text-[0.8125rem] text-ice mt-1 font-medium" x-text="modal.p.horarioIdeal"></p>
@@ -436,15 +436,6 @@
           </div>
         </div>
 
-        <!-- endereço (quando houver) -->
-        <div x-show="modal.p.endereco" class="flex items-start gap-2.5 rounded-xl bg-ink/60 border border-line/50 p-3">
-          <svg class="w-4 h-4 mt-0.5 shrink-0 text-gold" aria-hidden="true" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>
-          <div>
-            <p class="text-[0.5625rem] tracking-widest uppercase text-faint">Endereço</p>
-            <p class="text-[0.8125rem] text-ice mt-0.5 leading-snug" x-text="modal.p.endereco"></p>
-          </div>
-        </div>
-
         <!-- descrição -->
         <div>
           <p class="text-[0.625rem] tracking-[0.3em] uppercase text-emeraldlt mb-2">Descrição</p>
@@ -452,13 +443,13 @@
         </div>
 
         <!-- resumo histórico -->
-        <div x-show="modal.p.historia" class="border-l-2 border-emerald/50 pl-4">
+        <div class="border-l-2 border-emerald/50 pl-4">
           <p class="text-[0.625rem] tracking-[0.3em] uppercase text-faint mb-2">Resumo histórico</p>
           <p class="text-[0.875rem] text-mute leading-relaxed font-light" x-text="modal.p.historia"></p>
         </div>
 
         <!-- insights -->
-        <div x-show="modal.p.insights && modal.p.insights.length">
+        <div>
           <p class="text-[0.625rem] tracking-[0.3em] uppercase text-gold mb-3">Insights curiosos</p>
           <ul class="space-y-2.5">
             <template x-for="ins in modal.p.insights" :key="ins">
@@ -499,137 +490,175 @@
   <!-- ============================================================= -->
   <script>
     /* =========================================================================
-       BANCO DE DADOS — Roteiro de Ragusa (10 pontos, 4 atos · 09h00–13h00)
-       tipo: 'base' | 'foco' | 'food'
+       BANCO DE DADOS — Operação Ragusa (9 pontos nodais, 5 atos · 09h00–pôr do sol)
+       tipo: 'base' | 'foco' | 'peripheral' | 'food'
        Imagens reais (Wikimedia Commons); links de rota abrem no Google Maps.
        ========================================================================= */
     const DB = {
-      centro: [36.9259, 14.7385],
+      centro: [36.92630, 14.74250],
       atos: [
+        /* ===================== ATO I ===================== */
         {
           id: "ato-1",
-          faixa: "09h00 — 10h00",
-          titulo: "Ato I · Ragusa Superiore",
+          faixa: "09h00 — 10h45",
+          titulo: "Ato I · A Ilha de Pedra e a Escala do Poder",
           pontos: [
             {
-              id: "cattedrale-san-giovanni", tipo: "foco", nome: "Cattedrale di San Giovanni Battista", ato: "Ato I · Ragusa Superiore", hora: "09h00", coord: [36.92567, 14.72868],
-              linha: "A catedral barroca de Ragusa alta, de fachada monumental e campanário esguio.",
-              img: "https://commons.wikimedia.org/wiki/Special:FilePath/Ragusa%20-%20Cattedrale%20di%20San%20Giovanni%20Battista%20-.jpg?width=900",
-              custo: "Gratuito",
-              duracao: "25 min",
-              horarioIdeal: "Manhã",
-              descricao: "A Cattedrale di San Giovanni Battista domina a Ragusa Superiore, com ampla fachada barroca em pedra calcária sobre a Piazza San Giovanni.",
-              historia: "Reconstruída no início do séc. XVIII após o terramoto de 1693 — exemplo do barroco tardio do Val di Noto, Património Mundial da UNESCO.",
+              id: "giardino-duomo", tipo: "base", nome: "Giardino sul Duomo",
+              ato: "Ponto de Partida", hora: "09h00", coord: [36.92650, 14.74310],
+              linha: "A base da operação, encostada ao epicentro arquitetônico — começa e termina aqui.",
+              img: "https://commons.wikimedia.org/wiki/Special:FilePath/Ragusa%20Ibla,%20Sicily.jpg?width=900",
+              custo: "", duracao: "—", horarioIdeal: "Saída cedo, 09h00 — a cidade ainda pertence ao silêncio",
+              descricao: "A jornada começa exatamente na sua base, nas costas do epicentro arquitetônico de Ragusa Ibla. A luz da manhã começa a varrer a rocha calcária, desenhando sombras duras sobre o esporão de pedra onde a cidade antiga está pendurada.",
+              historia: "Ragusa partiu-se em duas após o evento sísmico de 1693: Ibla, agarrada ao promontório barroco, e a Superiore, no planalto. O que o turista comum lê como um vale florido é, na verdade, uma falha tectônica escancarada — a rocha rompida separou fisicamente o poder e as classes sociais da cidade.",
               insights: [
-                "Marca a parte alta e 'nova', reconstruída em grelha após 1693.",
-                "A fachada larga é típica do barroco siciliano.",
-                "Daqui parte a descida rumo a Ragusa Ibla."
+                "A pedra calcária local muda de tom conforme a luz — fria de manhã, mel ao entardecer.",
+                "Guarde energia: a logística foi otimizada para máxima eficiência e atrito operacional zero.",
+                "Tudo parte e regressa a este ponto — o terraço do jardim é o pouso final ao pôr do sol."
               ]
             },
             {
-              id: "santa-maria-scale", tipo: "foco", nome: "Santa Maria delle Scale", ato: "Ato I · Ragusa Superiore", hora: "09h40", coord: [36.92522, 14.73516],
-              linha: "A igreja-mirante no alto da escadaria que liga a Ragusa alta a Ibla.",
-              img: "https://commons.wikimedia.org/wiki/Special:FilePath/Ragusa%20-%20Santa%20Maria%20delle%20Scale%20-%2020150523103045.jpg?width=900",
-              custo: "Gratuito",
-              duracao: "20 min",
-              horarioIdeal: "Manhã, vista sobre Ibla",
-              descricao: "No topo da longa escadaria que une as duas Ragusas, Santa Maria delle Scale abre o melhor panorama sobre Ragusa Ibla, agarrada à colina.",
-              historia: "De origem medieval, conserva portal e púlpito gótico-renascentistas que sobreviveram ao terramoto de 1693 — raros vestígios da Ragusa pré-barroca.",
+              id: "duomo-san-giorgio", tipo: "foco", nome: "Duomo di San Giorgio",
+              ato: "Ato I · A Ilha de Pedra", hora: "09h15", coord: [36.92670, 14.74350],
+              linha: "O foco: a fachada rotacionada de Gagliardi que distorce a perspectiva e infla a cúpula.",
+              img: "https://commons.wikimedia.org/wiki/Special:FilePath/Duomo%20di%20San%20Giorgio%20a%20Ragusa%20Ibla.jpg?width=900",
+              custo: "Gratuito", duracao: "40 min", horarioIdeal: "Manhã, praça inclinada em sombra dura",
+              descricao: "Dê a volta no quarteirão e entre na praça inclinada. O arquiteto Rosario Gagliardi rotacionou propositalmente a fachada em relação à praça — esse pequeno desvio angular, somado à topografia em rampa, distorce a perspectiva e faz a cúpula parecer colossal. É ilusão de ótica aplicada à alvenaria.",
+              historia: "Reconstruído após 1693 sobre o traçado barroco tardio siciliano, o Duomo é a obra-prima de Gagliardi. A escadaria e o adro inclinado foram desenhados para amplificar a monumentalidade da fachada convexa e da cúpula neoclássica, acrescentada no século XIX.",
               insights: [
-                "A vista de Ibla daqui é a imagem-cartão de Ragusa.",
-                "Mistura gótico sobrevivente e reconstrução barroca.",
-                "O nome vem dos degraus que descem até Ibla."
+                "A rotação da fachada não é acaso: é cenografia urbana calculada em pedra.",
+                "A cúpula azulada flutua sobre os telhados — guarde a referência para a captura no mirante.",
+                "Suba o adro devagar: cada degrau muda o ângulo e a percepção da escala."
               ]
+            },
+            {
+              id: "corso-xxv-aprile", tipo: "peripheral", nome: "Corso XXV Aprile",
+              ato: "Ato I", hora: "10h00", coord: [36.92660, 14.74450],
+              linha: "Caminhada periférica em ritmo fluido — olhe para cima: os mascheroni sob as sacadas de pedra."
             }
           ]
         },
+
+        /* ===================== ATO II ===================== */
         {
           id: "ato-2",
-          faixa: "10h00 — 10h45",
-          titulo: "Ato II · A Descida a Ibla",
+          faixa: "11h00 — 12h00",
+          titulo: "Ato II · O Fim da Linha e a Vertigem",
           pontos: [
             {
-              id: "palazzo-cosentini", tipo: "peripheral", nome: "Palazzo Cosentini", ato: "Ato II · A Descida a Ibla", hora: "10h10", coord: [36.92679, 14.73651],
-              linha: "Palácio barroco com mísulas esculpidas — mascarões e figuras grotescas sob as varandas.",
-              descricao: "Palácio barroco com mísulas esculpidas — mascarões e figuras grotescas sob as varandas."
+              id: "portale-san-giorgio", tipo: "foco", nome: "Portale di San Giorgio",
+              ato: "Ato II · O Fim da Linha", hora: "11h00", coord: [36.92680, 14.74710],
+              linha: "A única anomalia do percurso: o portal gótico sobrevivente da catedral pulverizada.",
+              img: "https://commons.wikimedia.org/wiki/Special:FilePath/Portale%20di%20San%20Giorgio%20Ragusa%20Ibla.jpg?width=900",
+              custo: "Gratuito", duracao: "15 min", horarioIdeal: "Antes dos jardins, luz de leste",
+              descricao: "Antes dos jardins, uma estrutura gótica isolada e escura surge sozinha. É a única anomalia arquitetônica do percurso: o único pedaço da antiga catedral de San Giorgio que não foi pulverizado pelo terramoto. Um fóssil urbano solitário, em pé contra o vazio.",
+              historia: "O portal catalão-gótico do século XV é o que restou da catedral medieval de Ragusa Ibla, destruída em 1693. Sobreviveu isolado quando todo o resto da estrutura colapsou — preservado como relíquia, testemunha muda da cidade anterior ao barroco.",
+              insights: [
+                "Repare no relevo de São Jorge e o dragão sobre o arco apontado — escultura pré-terramoto.",
+                "É o contraponto exato ao Duomo barroco: o antes e o depois da catástrofe, a 300 metros.",
+                "Solitário e escuro, contrasta com a pedra clara de tudo à volta."
+              ]
             },
             {
-              id: "santa-maria-itria", tipo: "peripheral", nome: "Chiesa di Santa Maria dell'Itria", ato: "Ato II · A Descida a Ibla", hora: "10h25", coord: [36.9267, 14.7363],
-              linha: "Igreja com campanário revestido de azulejos de maiólica de Caltagirone.",
-              descricao: "Igreja com campanário revestido de azulejos de maiólica de Caltagirone."
+              id: "giardini-iblei", tipo: "foco", nome: "Giardini Iblei",
+              ato: "Ato II · O Fim da Linha", hora: "11h30", coord: [36.92690, 14.74850],
+              linha: "O drama geológico: a borda leste sobre a Cava della Misericordia — o abismo começa aqui.",
+              img: "https://commons.wikimedia.org/wiki/Special:FilePath/Giardino%20Ibleo%20-%20Ragusa%20Ibla.jpg?width=900",
+              custo: "Gratuito", duracao: "30 min", horarioIdeal: "Fim da manhã, antes do almoço",
+              descricao: "Atravessem os jardins até a borda leste, onde a península de pedra termina abruptamente. Aproximem-se do limite e olhem para o fundo da Cava della Misericordia — o desfiladeiro. É entender a estratigrafia da cidade: Ragusa Ibla está pendurada num promontório brutal, cercada pelo vazio nos três lados.",
+              historia: "Os Giardini Iblei são o jardim público mais antigo da província, dispostos na ponta extrema do esporão calcário. Daqui lê-se a geomorfologia que define Ragusa: vales kársticos profundos (le cave) escavados pela água na rocha sedimentar, que isolaram a cidade num dedo de pedra.",
+              insights: [
+                "A Cava da Misericórdia é a falha que separa Ibla do resto do território.",
+                "Três igrejas pontuam a alameda dos jardins — a caminhada é parte da contemplação.",
+                "É o ponto de virada: daqui em diante a fome exige resposta rápida."
+              ]
             }
           ]
         },
+
+        /* ===================== ATO III ===================== */
         {
           id: "ato-3",
-          faixa: "10h45 — 12h00",
-          titulo: "Ato III · O Coração Barroco",
+          faixa: "12h30 — 13h15",
+          titulo: "Ato III · A Arquitetura do Sabor e a Velocidade",
           pontos: [
             {
-              id: "duomo-san-giorgio", tipo: "foco", nome: "Duomo di San Giorgio", ato: "Ato III · O Coração Barroco", hora: "11h00", coord: [36.92655, 14.7423],
-              linha: "A obra-prima de Gagliardi — fachada-torre convexa no topo de uma escadaria, em Ibla.",
-              img: "https://commons.wikimedia.org/wiki/Special:FilePath/San%20giorgio%20ragusa%20ibla%20italy.jpg?width=900",
-              custo: "Gratuito",
-              duracao: "30 min",
-              horarioIdeal: "Meio da manhã, fachada ao sol",
-              descricao: "O Duomo di San Giorgio é o clímax de Ragusa Ibla: fachada-torre convexa de três ordens, coroada por cúpula neoclássica, no alto de uma escadaria sobre a praça inclinada.",
-              historia: "Projetado por Rosario Gagliardi e concluído em meados do séc. XVIII — ícone do barroco siciliano tardio, Património Mundial da UNESCO (2002).",
+              id: "i-banchi", tipo: "food", nome: "I Banchi",
+              ato: "Ato III · A Arquitetura do Sabor", hora: "12h30", coord: [36.92600, 14.74380],
+              linha: "A execução tática: padaria/bistrô de chef Michelin, focada na rua. Scaccia Ragusana ao balcão.",
+              img: "https://commons.wikimedia.org/wiki/Special:FilePath/Scaccia.jpg?width=900",
+              custo: "€ · custo baixo", duracao: "45 min", horarioIdeal: "12h30 — densidade calórica, tempo mínimo",
+              descricao: "Cortem caminho direto para esta padaria/bistrô idealizada por um chef Michelin, focada na rua. A meta é densidade calórica e cultura local sem o peso financeiro e temporal de um restaurante com serviço completo. Comam nos balcões: custo baixo, tempo mínimo, imersão total.",
+              historia: "A Scaccia Ragusana é uma engenharia de massa finíssima, dobrada em múltiplas camadas estruturais para reter o calor, recheada com tomate denso, azeite e o queijo Cosacavaddu (caciocavallo ragusano) derretido. É o street food estrutural do altiplano ibleu — comida de pastores transformada em ícone.",
               insights: [
-                "A fachada convexa cria um efeito teatral de movimento.",
-                "A cúpula neoclássica foi acrescentada no séc. XIX.",
-                "Cenário das séries do Comissário Montalbano."
+                "Acompanhe de uma taça de tinto Cerasuolo di Vittoria — o único DOCG da Sicília.",
+                "Em 45 minutos vocês estão prontos para o próximo avanço.",
+                "As camadas dobradas da scaccia ecoam a estratigrafia da própria rocha da cidade."
               ]
-            },
-            {
-              id: "circolo-conversazione", tipo: "peripheral", nome: "Circolo di Conversazione", ato: "Ato III · O Coração Barroco", hora: "11h30", coord: [36.92637, 14.74425],
-              linha: "Elegante clube oitocentista da nobreza, de interiores neoclássicos, junto ao Duomo.",
-              descricao: "Elegante clube oitocentista da nobreza, de interiores neoclássicos, junto ao Duomo."
-            },
-            {
-              id: "san-giuseppe", tipo: "peripheral", nome: "Chiesa di San Giuseppe", ato: "Ato III · O Coração Barroco", hora: "11h40", coord: [36.92569, 14.74479],
-              linha: "Igreja barroca de planta elíptica, atribuída a Gagliardi, com fachada convexa.",
-              descricao: "Igreja barroca de planta elíptica, atribuída a Gagliardi, com fachada convexa."
-            },
-            {
-              id: "portale-san-giorgio", tipo: "peripheral", nome: "Portale di San Giorgio", ato: "Ato III · O Coração Barroco", hora: "11h55", coord: [36.92531, 14.74782],
-              linha: "Portal gótico-catalão (séc. XV), único vestígio da igreja de São Jorge anterior ao sismo.",
-              descricao: "Portal gótico-catalão (séc. XV), único vestígio da igreja de São Jorge anterior ao sismo."
             }
           ]
         },
+
+        /* ===================== ATO IV ===================== */
         {
           id: "ato-4",
-          faixa: "12h00 — 13h00",
-          titulo: "Ato IV · Giardino & Dolce",
+          faixa: "14h00 — 15h30",
+          titulo: "Ato IV · A Ascensão Motorizada e a Captura Visual",
           pontos: [
             {
-              id: "giardino-ibleo", tipo: "foco", nome: "Giardino Ibleo", ato: "Ato IV · Giardino & Dolce", hora: "12h10", coord: [36.92598, 14.74867],
-              linha: "Jardim público oitocentista na ponta de Ibla, com vista sobre o vale do Irminio.",
-              img: "https://commons.wikimedia.org/wiki/Special:FilePath/Giardino%20Ibleo%20-%20Ragusa%20Ibla.jpg?width=900",
-              custo: "Gratuito",
-              duracao: "30 min",
-              horarioIdeal: "Final da manhã",
-              descricao: "Na extremidade leste de Ibla, o Giardino Ibleo é um jardim público de 1858 com palmeiras, igrejas antigas e miradouros sobre o vale do rio Irminio.",
-              historia: "Criado pelos cidadãos em meados do séc. XIX sobre terraços panorâmicos; abriga as ruínas de San Giorgio Vecchio e capelas medievais.",
+              id: "corso-mazzini", tipo: "peripheral", nome: "Corso Mazzini",
+              ato: "Ato IV", hora: "14h30", coord: [36.92550, 14.73900],
+              linha: "A rota do cânion: a estrada rasgada na encosta, dirigindo sobre a falha entre as duas Ragusas."
+            },
+            {
+              id: "santa-maria-scale", tipo: "foco", nome: "Mirante de Santa Maria delle Scale",
+              ato: "Ato IV · A Captura Visual", hora: "15h00", coord: [36.92520, 14.73520],
+              linha: "O tiro duplo: a volumetria macro da rocha empilhada e a cúpula isolada no zoom.",
+              img: "https://commons.wikimedia.org/wiki/Special:FilePath/Ragusa%20Ibla%20al%20crepuscolo.jpg?width=900",
+              custo: "Gratuito", duracao: "30 min", horarioIdeal: "14h–15h, luz dura e alto contraste",
+              descricao: "Estacionem no topo (Ragusa Superiore) e caminhem até a mureta da igreja. É o ponto de captura visual definitivo: do alto, Ibla inteira desdobra-se sobre o esporão, a cúpula do Duomo flutuando sobre o caos dos telhados, e as cavernas expostas nas encostas calcárias laterais.",
+              historia: "Santa Maria delle Scale marca o limiar entre a Ragusa Superiore (planalto, classes em ascensão pós-1693) e a Ibla barroca (a nobreza que recusou abandonar o esporão). A igreja, de fachada gótico-renascentista remendada, deu nome às escadarias que descem os 340 degraus rumo ao vale.",
               insights: [
-                "O melhor pôr do sol de Ragusa é daqui.",
-                "Reúne três igrejas antigas dentro do recinto.",
-                "Sombra de palmeiras e ciprestes para descansar."
+                "Escala macro: grande-angular para a volumetria insana e as sombras profundas do vale (estética Deep Winter).",
+                "Escala micro: zoom para isolar a cúpula e as cavernas das encostas — o colapso documentado em milímetros.",
+                "Esqueçam os 340 degraus a pé: o esforço físico deu lugar à logística motorizada."
+              ]
+            }
+          ]
+        },
+
+        /* ===================== ATO V ===================== */
+        {
+          id: "ato-5",
+          faixa: "16h30 — Pôr do Sol",
+          titulo: "Ato V · O Retorno e a Descompressão",
+          pontos: [
+            {
+              id: "palazzo-cosentini", tipo: "foco", nome: "Palazzo Cosentini",
+              ato: "Ato V · O Retorno", hora: "16h30", coord: [36.92650, 14.73800],
+              linha: "A descida suave: a luz dourada revela a textura crua dos palácios e os mascheroni.",
+              img: "https://commons.wikimedia.org/wiki/Special:FilePath/Ragusa%20CosentiniPalace%20009%209739.jpg?width=900",
+              custo: "Gratuito (exterior)", duracao: "20 min", horarioIdeal: "Fim de tarde, luz dourada rasante",
+              descricao: "Desçam de carro ou façam uma caminhada curta pelas ruelas do topo antes de retornar. A luz dourada varre as fachadas do Palazzo Cosentini, revelando a textura crua dos palácios e os mascheroni esculpidos sob as sacadas.",
+              historia: "O Palazzo Cosentini é um dos ápices do barroco siciliano tardio de Ragusa: as suas mensole (mísulas) ostentam mascheroni grotescos — rostos monstruosos, máscaras populares e figuras carnavalescas — demonstrações de que a rocha local aceita ser tensionada e esculpida até o seu limite físico.",
+              insights: [
+                "Os mascheroni do Cosentini são citados entre os mais expressivos do Val di Noto.",
+                "São o mesmo motivo entrevisto de manhã no Corso XXV Aprile — agora em close, sob luz quente.",
+                "A pedra dourada devolve ao entardecer a luz que absorveu o dia inteiro."
               ]
             },
             {
-              id: "gelati-divini", tipo: "food", nome: "Gelati DiVini", ato: "Ato IV · Giardino & Dolce", hora: "12h45", coord: [36.9252, 14.7432],
-              linha: "Gelataria criativa em Ibla — gelados de vinho, azeite e sabores sicilianos.",
-              img: "https://commons.wikimedia.org/wiki/Special:FilePath/Sagra%20del%20pesce%20spada%20Aci%20Trezza%202025%20-%20Granita%20and%20brioche.jpg?width=900",
-              custo: "€ · ~€4",
-              duracao: "20 min",
-              horarioIdeal: "Pausa doce",
-              descricao: "Junto à Piazza Duomo, a Gelati DiVini é célebre pelos gelados experimentais — de vinho Marsala e Nero d'Avola a azeite e amêndoa — feitos artesanalmente.",
-              historia: "Ragusa é terra de doçaria de raízes árabes e ibéricas; a granita e o gelato descendem dos sorbetes feitos com neve dos montes Iblei.",
+              id: "giardino-duomo-rientro", tipo: "base", nome: "Giardino sul Duomo · O Pouso",
+              ato: "O Círculo Fecha-se", hora: "17h30", coord: [36.92650, 14.74310],
+              linha: "O encerramento: Amaro Siciliano no terraço, com vista desobstruída para as costas do Duomo.",
+              img: "https://commons.wikimedia.org/wiki/Special:FilePath/21%20Ragusa%20bei%20Nacht.jpg?width=900",
+              custo: "€€ · aperitivo", duracao: "—", horarioIdeal: "17h30 → anoitecer mediterrâneo",
+              descricao: "Vocês retornam ao exato ponto inicial com horas de sobra. Caminhem até a piscina no terraço do jardim. Peçam um Amaro Siciliano com gelo e acomodem-se nas espreguiçadeiras com vista desobstruída para as costas do Duomo. A cidade vai se acender ao redor da cúpula enquanto o céu escurece.",
+              historia: "A gravidade trabalha a favor no regresso: a descida é suave e a missão está cumprida. Encerrar onde se começou é medir a sincronia da operação — topografia, história e eficiência operando em conjunto num único dia sobre o esporão de pedra.",
               insights: [
-                "Prove o gelado de vinho — a especialidade da casa.",
-                "A poucos passos do Duomo di San Giorgio.",
-                "Granita de amêndoa é sempre aposta certa."
+                "O Amaro Siciliano fecha o dia como digestivo amargo de ervas — ritual local.",
+                "A cúpula iluminada ao anoitecer espelha a fachada que abriu a jornada de manhã.",
+                "Atrito operacional zero: a logística devolveu o dia inteiro à contemplação."
               ]
             }
           ]
@@ -637,17 +666,16 @@
       ]
     };
 
-
     /* =========================================================================
        APLICAÇÃO (Alpine) — mapa, scroll-spy, flyTo, modal
        ========================================================================= */
-    function ortigiaGuide() {
+    function ragusaGuide() {
       return {
         atos: DB.atos,
         map: null,
         markers: {},
         activeId: null,
-        activeLabel: "09h00",
+        activeLabel: "09h30",
         modal: { open: false, p: {} },
         _suppressSpy: false,
         sheetScrolled: false,
@@ -725,10 +753,27 @@
               this.markers[p.id] = m;
             });
 
-            // ajusta o enquadramento aos pontos
+            // ajusta o enquadramento aos pontos. O contêiner pode ter dimensão 0 no
+            // primeiro frame (Safari iOS, telas largas, render fora de tela): só
+            // enquadra quando o mapa já tem área real — senão o fit cai para zoom 0.
             const group = L.featureGroup(Object.values(this.markers));
-            this.map.fitBounds(group.getBounds().pad(0.25), { animate: !this.prefersReducedMotion() });
-            setTimeout(() => this.map.invalidateSize(), 200);
+            const bounds = group.getBounds().pad(0.25);
+            let fitted = false;
+            const tryFit = () => {
+              if (fitted || !this.map) return;
+              const s = this.map.getSize();
+              if (s.x < 2 || s.y < 2) return false;          // ainda sem layout
+              this.map.invalidateSize();
+              this.map.fitBounds(bounds, { maxZoom: 17, animate: !this.prefersReducedMotion() });
+              fitted = true;
+              return true;
+            };
+            // tenta já; depois a cada frame até o contêiner ganhar dimensão
+            if (!tryFit() && 'ResizeObserver' in window) {
+              const ro = new ResizeObserver(() => { if (tryFit()) ro.disconnect(); });
+              ro.observe(document.getElementById('map'));
+            }
+            [120, 400, 900].forEach(t => setTimeout(tryFit, t));  // rede de segurança
 
             this.setActive(this.allPontos[0].id, false);
           };
@@ -806,8 +851,6 @@
           this.modal.p = p; this.modal.open = true;
           if (this.$refs.sheet) this.$refs.sheet.style.overflow = 'hidden';  // congela o fundo
           this.focusPoint(p.id);
-          // garante a exibição do painel mesmo se a transição deixar display:none preso (1º clique)
-          this.$nextTick(() => { const pn = this.$refs.panel; if (pn) { pn.style.display = ''; pn.scrollTop = 0; } });
         },
         closeModal() {
           this.modal.open = false;
@@ -818,8 +861,8 @@
         gmapsUrl(p) {
           if (!p || !p.coord) return 'https://www.google.com/maps';
           const [lat, lng] = p.coord;
-          // se houver endereço, busca por ele (mais preciso); senão, pelas coordenadas rotuladas
-          const q = encodeURIComponent(p.endereco ? p.endereco : `${p.nome}, Ragusa, Sicília`);
+          const q = encodeURIComponent(`${p.nome}, Ragusa, Sicilia`);
+          // abre o ponto exato (coordenadas) já rotulado com o nome do local
           return `https://www.google.com/maps/search/?api=1&query=${lat},${lng}&query_place=${q}`;
         }
       };
