@@ -39,7 +39,8 @@
       border-bottom:1px solid var(--line); }
     .nav-brand { font-family:'Playfair Display',serif; font-size:.95rem; color:var(--ice); text-decoration:none; white-space:nowrap; }
     .nav-brand span { color:var(--emerald); font-style:italic; }
-    .nav-tabs { display:flex; gap:.2rem; }
+    .nav-tabs { display:flex; gap:.2rem; min-width:0; overflow-x:auto; scrollbar-width:none; -ms-overflow-style:none; -webkit-overflow-scrolling:touch; }
+    .nav-tabs::-webkit-scrollbar { display:none; }
     .nav-tab { font-size:.72rem; letter-spacing:.03em; color:var(--mute); padding:.34rem .62rem; border-radius:999px; text-decoration:none; transition:color .2s, background .2s; white-space:nowrap; }
     .nav-tab:hover { color:var(--ice); }
     .nav-tab--active { background:var(--emerald-deep); color:var(--ice); }
@@ -116,7 +117,8 @@
       <a href="noto.html" class="nav-tab">Noto</a>
       <a href="ragusa.html" class="nav-tab">Ragusa</a>
       <a href="modica.html" class="nav-tab">Modica</a>
-      <a href="taormina.html" class="nav-tab">Taormina</a>
+      <a href="taormina.html" class="nav-tab">Taormina I</a>
+      <a href="taormina-ii.html" class="nav-tab">Taormina II</a>
     </div>
   </nav>
 
@@ -128,7 +130,7 @@
         <p class="kicker">Val di Noto · Costa Jónica · Monti Iblei</p>
         <h1>Sicília <i>Orientale</i></h1>
         <p>O sudeste barroco da ilha — onde a pedra dourada, reconstruída do zero após o
-           terramoto de 1693, virou Património Mundial. Cinco cidades, cinco guias interativos.</p>
+           terramoto de 1693, virou Património Mundial. Cinco cidades, seis jornadas interativas.</p>
       </div>
     </header>
 
@@ -210,9 +212,21 @@
             <img loading="lazy" alt="Teatro Antico de Taormina com o Etna ao fundo" onload="this.classList.add('loaded')"
                  src="https://commons.wikimedia.org/wiki/Special:FilePath/Mt%20Etna%20and%20Taormina%20as%20seen%20from%20the%20Ancient%20Theatre%20of%20Taormina%20(22290641726).jpg?width=800" /></div>
           <div class="cc-body">
-            <h3>Taormina</h3>
+            <h3>Taormina · Dia I</h3>
             <p class="cc-line">O penhasco aristocrático sobre o Jónico: operação logística de um dia entre o Etna e o check-in — Porta Catania, a sacada da Piazza IX Aprile, o Teatro Antico e o ocaso.</p>
             <div class="cc-meta"><span class="cc-stats">12 paragens · 5 atos · dia inteiro</span>
+              <span class="cc-go">Abrir guia →</span></div>
+          </div>
+        </a>
+
+        <a class="city-card" href="taormina-ii.html">
+          <div class="cc-img"><span class="cc-tag">Peloritani · ninhos de águia</span>
+            <img loading="lazy" alt="Panorama de Taormina visto de Castelmola" onload="this.classList.add('loaded')"
+                 src="https://commons.wikimedia.org/wiki/Special:FilePath/Castelmola%20-%20Panorama%20di%20Taormina%20da%20Piazza%20Sant%27Antonio.jpg?width=800" /></div>
+          <div class="cc-body">
+            <h3>Taormina · Dia II</h3>
+            <p class="cc-line">As fortalezas de pedra: estradas de montanha até Savoca, a aldeia d'O Poderoso Chefão, e Castelmola, o mirante 360° acima de Taormina — cinema, mitologia e altitude.</p>
+            <div class="cc-meta"><span class="cc-stats">8 paragens · 4 atos · dia inteiro</span>
               <span class="cc-go">Abrir guia →</span></div>
           </div>
         </a>
