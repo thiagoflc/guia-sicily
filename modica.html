@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover" />
-  <title>Noto · Itinerário Quiet Luxury</title>
-  <meta name="description" content="Guia interativo de alto padrão para uma manhã pela cidade barroca de Noto, Sicília — do eixo geométrico ao abastecimento clássico." />
+  <title>Modica · A Cidade dos Dois Rios</title>
+  <meta name="description" content="Guia interativo de alto padrão para uma jornada de meio-dia por Modica — a cidade-desfiladeiro do Val di Noto: barroco vertical, rios enterrados sob o Corso e o chocolate frio herdado dos astecas. Sicília." />
 
   <!-- ===== Web-app no iPhone (homescreen, barra de status integrada) ===== -->
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-  <meta name="apple-mobile-web-app-title" content="Noto" />
+  <meta name="apple-mobile-web-app-title" content="Modica" />
   <meta name="theme-color" content="#0c0f12" />
   <meta name="format-detection" content="telephone=no" />
 
@@ -23,7 +23,7 @@
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
   <script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 
-  <!-- ===== Tailwind (precompilado e inline — sem runtime no browser) ===== -->
+  <!-- ===== Tailwind (pré-compilado, inline — sem runtime CDN) ===== -->
   <style>*,:after,:before{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgba(59,130,246,.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgba(59,130,246,.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/*! tailwindcss v3.4.19 | MIT License | https://tailwindcss.com*/*,:after,:before{box-sizing:border-box;border:0 solid #e5e7eb}:after,:before{--tw-content:""}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;-o-tab-size:4;tab-size:4;font-family:Inter,system-ui,sans-serif;font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0}fieldset,legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::-moz-placeholder,textarea::-moz-placeholder{opacity:1;color:#9ca3af}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.pointer-events-none{pointer-events:none}.fixed{position:fixed}.absolute{position:absolute}.relative{position:relative}.inset-0{inset:0}.inset-x-0{left:0;right:0}.bottom-0{bottom:0}.bottom-32{bottom:8rem}.bottom-4{bottom:1rem}.left-1\/2{left:50%}.left-3{left:.75rem}.left-5{left:1.25rem}.left-\[30px\]{left:30px}.left-\[34px\]{left:34px}.right-3\.5{right:.875rem}.right-4{right:1rem}.right-5{right:1.25rem}.top-0{top:0}.top-2\.5{top:.625rem}.top-3{top:.75rem}.top-3\.5{top:.875rem}.z-0{z-index:0}.z-10{z-index:10}.z-20{z-index:20}.z-30{z-index:30}.z-40{z-index:40}.z-50{z-index:50}.-my-1{margin-top:-.25rem;margin-bottom:-.25rem}.-mt-3{margin-top:-.75rem}.mb-2{margin-bottom:.5rem}.mb-3{margin-bottom:.75rem}.mb-4{margin-bottom:1rem}.mb-5{margin-bottom:1.25rem}.ml-2{margin-left:.5rem}.ml-\[15px\]{margin-left:15px}.mt-0\.5{margin-top:.125rem}.mt-1{margin-top:.25rem}.mt-1\.5{margin-top:.375rem}.mt-12{margin-top:3rem}.mt-2{margin-top:.5rem}.mt-3{margin-top:.75rem}.mt-4{margin-top:1rem}.mt-6{margin-top:1.5rem}.mt-9{margin-top:2.25rem}.block{display:block}.flex{display:flex}.grid{display:grid}.hidden{display:none}.h-1{height:.25rem}.h-1\.5{height:.375rem}.h-11{height:2.75rem}.h-12{height:3rem}.h-2{height:.5rem}.h-3{height:.75rem}.h-3\.5{height:.875rem}.h-4{height:1rem}.h-40{height:10rem}.h-5{height:1.25rem}.h-52{height:13rem}.h-full{height:100%}.max-h-\[92dvh\]{max-height:92dvh}.min-h-\[44px\]{min-height:44px}.min-h-\[52px\]{min-height:52px}.w-1\.5{width:.375rem}.w-10{width:2.5rem}.w-11{width:2.75rem}.w-12{width:3rem}.w-2{width:.5rem}.w-3{width:.75rem}.w-3\.5{width:.875rem}.w-4{width:1rem}.w-5{width:1.25rem}.w-\[52px\]{width:52px}.w-full{width:100%}.w-px{width:1px}.max-w-prose{max-width:65ch}.flex-1{flex:1 1 0%}.shrink-0{flex-shrink:0}.-translate-x-1\/2{--tw-translate-x:-50%}.-translate-x-1\/2,.translate-y-0{transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.translate-y-0{--tw-translate-y:0px}.translate-y-2{--tw-translate-y:0.5rem}.translate-y-2,.translate-y-full{transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.translate-y-full{--tw-translate-y:100%}.rotate-45{--tw-rotate:45deg}.rotate-45,.scale-150{transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.scale-150{--tw-scale-x:1.5;--tw-scale-y:1.5}.transform{transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.cursor-pointer{cursor:pointer}.resize{resize:both}.list-none{list-style-type:none}.grid-cols-3{grid-template-columns:repeat(3,minmax(0,1fr))}.flex-col{flex-direction:column}.items-end{align-items:flex-end}.items-center{align-items:center}.items-baseline{align-items:baseline}.items-stretch{align-items:stretch}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-1{gap:.25rem}.gap-2{gap:.5rem}.gap-3{gap:.75rem}.space-y-1\.5>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(.375rem*(1 - var(--tw-space-y-reverse)));margin-bottom:calc(.375rem*var(--tw-space-y-reverse))}.space-y-2\.5>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(.625rem*(1 - var(--tw-space-y-reverse)));margin-bottom:calc(.625rem*var(--tw-space-y-reverse))}.space-y-6>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1.5rem*(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1.5rem*var(--tw-space-y-reverse))}.overflow-hidden{overflow:hidden}.overflow-y-auto{overflow-y:auto}.overflow-x-hidden{overflow-x:hidden}.scroll-smooth{scroll-behavior:smooth}.rounded-2xl{border-radius:1rem}.rounded-full{border-radius:9999px}.rounded-sm{border-radius:.125rem}.rounded-xl{border-radius:.75rem}.rounded-t-3xl{border-top-left-radius:1.5rem;border-top-right-radius:1.5rem}.rounded-t-\[28px\]{border-top-left-radius:28px;border-top-right-radius:28px}.border{border-width:1px}.border-l-2{border-left-width:2px}.border-t{border-top-width:1px}.border-bordeaux\/40{border-color:rgba(110,31,43,.4)}.border-bordeaux\/60{border-color:rgba(110,31,43,.6)}.border-emerald\/40{border-color:rgba(31,111,92,.4)}.border-emerald\/50{border-color:rgba(31,111,92,.5)}.border-emerald\/60{border-color:rgba(31,111,92,.6)}.border-emerald\/70{border-color:rgba(31,111,92,.7)}.border-gold\/40{border-color:hsla(39,47%,60%,.4)}.border-line{--tw-border-opacity:1;border-color:rgb(35 44 54/var(--tw-border-opacity,1))}.border-line\/50{border-color:rgba(35,44,54,.5)}.border-line\/60{border-color:rgba(35,44,54,.6)}.bg-bordeauxlt{--tw-bg-opacity:1;background-color:rgb(207 107 121/var(--tw-bg-opacity,1))}.bg-charcoal{--tw-bg-opacity:1;background-color:rgb(12 15 18/var(--tw-bg-opacity,1))}.bg-charcoal\/70{background-color:rgba(12,15,18,.7)}.bg-emeraldlt{--tw-bg-opacity:1;background-color:rgb(58 156 132/var(--tw-bg-opacity,1))}.bg-faint{--tw-bg-opacity:1;background-color:rgb(139 151 163/var(--tw-bg-opacity,1))}.bg-gold{--tw-bg-opacity:1;background-color:rgb(201 168 106/var(--tw-bg-opacity,1))}.bg-ice\/50{background-color:rgba(238,242,244,.5)}.bg-ink\/60{background-color:rgba(17,22,27,.6)}.bg-line{--tw-bg-opacity:1;background-color:rgb(35 44 54/var(--tw-bg-opacity,1))}.bg-slatecard{--tw-bg-opacity:1;background-color:rgb(22 28 35/var(--tw-bg-opacity,1))}.bg-gradient-to-b{background-image:linear-gradient(to bottom,var(--tw-gradient-stops))}.bg-gradient-to-t{background-image:linear-gradient(to top,var(--tw-gradient-stops))}.from-\[\#161c23\]{--tw-gradient-from:#161c23 var(--tw-gradient-from-position);--tw-gradient-to:rgba(22,28,35,0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from),var(--tw-gradient-to)}.from-charcoal{--tw-gradient-from:#0c0f12 var(--tw-gradient-from-position);--tw-gradient-to:rgba(12,15,18,0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from),var(--tw-gradient-to)}.from-slatecard{--tw-gradient-from:#161c23 var(--tw-gradient-from-position);--tw-gradient-to:rgba(22,28,35,0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from),var(--tw-gradient-to)}.from-transparent{--tw-gradient-from:transparent var(--tw-gradient-from-position);--tw-gradient-to:transparent var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from),var(--tw-gradient-to)}.via-charcoal\/75{--tw-gradient-to:rgba(12,15,18,0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from),rgba(12,15,18,.75) var(--tw-gradient-via-position),var(--tw-gradient-to)}.via-slatecard\/10{--tw-gradient-to:rgba(22,28,35,0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from),rgba(22,28,35,.1) var(--tw-gradient-via-position),var(--tw-gradient-to)}.via-transparent{--tw-gradient-to:transparent var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from),transparent var(--tw-gradient-via-position),var(--tw-gradient-to)}.to-charcoal{--tw-gradient-to:#0c0f12 var(--tw-gradient-to-position)}.to-charcoal\/30{--tw-gradient-to:rgba(12,15,18,.3) var(--tw-gradient-to-position)}.to-transparent{--tw-gradient-to:transparent var(--tw-gradient-to-position)}.object-cover{-o-object-fit:cover;object-fit:cover}.p-3{padding:.75rem}.p-4{padding:1rem}.px-2\.5{padding-left:.625rem;padding-right:.625rem}.px-5{padding-left:1.25rem;padding-right:1.25rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.py-1{padding-top:.25rem;padding-bottom:.25rem}.py-2\.5{padding-top:.625rem;padding-bottom:.625rem}.py-3\.5{padding-top:.875rem;padding-bottom:.875rem}.pb-1{padding-bottom:.25rem}.pb-14{padding-bottom:3.5rem}.pb-2{padding-bottom:.5rem}.pb-\[calc\(1\.5rem\+env\(safe-area-inset-bottom\)\)\]{padding-bottom:calc(1.5rem + env(safe-area-inset-bottom))}.pb-\[calc\(11rem\+env\(safe-area-inset-bottom\)\)\]{padding-bottom:calc(11rem + env(safe-area-inset-bottom))}.pl-4{padding-left:1rem}.pl-\[52px\]{padding-left:52px}.pr-2{padding-right:.5rem}.pt-3{padding-top:.75rem}.pt-4{padding-top:1rem}.pt-5{padding-top:1.25rem}.pt-6{padding-top:1.5rem}.pt-\[calc\(env\(safe-area-inset-top\)\+1rem\)\]{padding-top:calc(env(safe-area-inset-top) + 1rem)}.text-center{text-align:center}.font-sans{font-family:Inter,system-ui,sans-serif}.font-serif{font-family:Playfair Display,Georgia,serif}.text-2xl{font-size:1.5rem;line-height:2rem}.text-\[0\.5625rem\]{font-size:.5625rem}.text-\[0\.625rem\]{font-size:.625rem}.text-\[0\.65625rem\]{font-size:.65625rem}.text-\[0\.6875rem\]{font-size:.6875rem}.text-\[0\.75rem\]{font-size:.75rem}.text-\[0\.8125rem\]{font-size:.8125rem}.text-\[0\.84375rem\]{font-size:.84375rem}.text-\[0\.875rem\]{font-size:.875rem}.text-\[0\.9375rem\]{font-size:.9375rem}.text-\[1\.1875rem\]{font-size:1.1875rem}.text-\[1\.625rem\]{font-size:1.625rem}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:.875rem;line-height:1.25rem}.font-light{font-weight:300}.font-medium{font-weight:500}.uppercase{text-transform:uppercase}.italic{font-style:italic}.not-italic{font-style:normal}.tabular-nums{--tw-numeric-spacing:tabular-nums;font-variant-numeric:var(--tw-ordinal) var(--tw-slashed-zero) var(--tw-numeric-figure) var(--tw-numeric-spacing) var(--tw-numeric-fraction)}.leading-none{line-height:1}.leading-relaxed{line-height:1.625}.leading-snug{line-height:1.375}.leading-tight{line-height:1.25}.tracking-\[0\.25em\]{letter-spacing:.25em}.tracking-\[0\.2em\]{letter-spacing:.2em}.tracking-\[0\.35em\]{letter-spacing:.35em}.tracking-\[0\.3em\]{letter-spacing:.3em}.tracking-\[0\.45em\]{letter-spacing:.45em}.tracking-\[0\.4em\]{letter-spacing:.4em}.tracking-wide{letter-spacing:.025em}.tracking-widest{letter-spacing:.1em}.text-bordeauxlt{--tw-text-opacity:1;color:rgb(207 107 121/var(--tw-text-opacity,1))}.text-emeraldlt{--tw-text-opacity:1;color:rgb(58 156 132/var(--tw-text-opacity,1))}.text-faint{--tw-text-opacity:1;color:rgb(139 151 163/var(--tw-text-opacity,1))}.text-gold{--tw-text-opacity:1;color:rgb(201 168 106/var(--tw-text-opacity,1))}.text-ice{--tw-text-opacity:1;color:rgb(238 242 244/var(--tw-text-opacity,1))}.text-ice\/60{color:rgba(238,242,244,.6)}.text-ice\/75{color:rgba(238,242,244,.75)}.text-mute{--tw-text-opacity:1;color:rgb(154 166 177/var(--tw-text-opacity,1))}.antialiased{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.opacity-0{opacity:0}.opacity-100{opacity:1}.opacity-65{opacity:.65}.shadow-\[0_-20px_60px_rgba\(0\2c 0\2c 0\2c \.6\)\]{--tw-shadow:0 -20px 60px rgba(0,0,0,.6);--tw-shadow-colored:0 -20px 60px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)}.shadow-\[0_-20px_80px_rgba\(0\2c 0\2c 0\2c \.7\)\]{--tw-shadow:0 -20px 80px rgba(0,0,0,.7);--tw-shadow-colored:0 -20px 80px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)}.ring-2{--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow),var(--tw-ring-shadow),var(--tw-shadow,0 0 #0000)}.ring-emerald\/30{--tw-ring-color:rgba(31,111,92,.3)}.blur{--tw-blur:blur(8px)}.blur,.drop-shadow-\[0_1px_8px_rgba\(0\2c 0\2c 0\2c \.6\)\]{filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.drop-shadow-\[0_1px_8px_rgba\(0\2c 0\2c 0\2c \.6\)\]{--tw-drop-shadow:drop-shadow(0 1px 8px rgba(0,0,0,.6))}.sepia{--tw-sepia:sepia(100%)}.filter,.sepia{filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.backdrop-blur-sm{--tw-backdrop-blur:blur(4px)}.backdrop-blur-sm,.backdrop-filter{-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.transition{transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,-webkit-backdrop-filter;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,backdrop-filter;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,backdrop-filter,-webkit-backdrop-filter;transition-timing-function:cubic-bezier(.4,0,.2,1);transition-duration:.15s}.transition-all{transition-property:all;transition-timing-function:cubic-bezier(.4,0,.2,1);transition-duration:.15s}.transition-colors{transition-property:color,background-color,border-color,text-decoration-color,fill,stroke;transition-timing-function:cubic-bezier(.4,0,.2,1);transition-duration:.15s}.transition-opacity{transition-property:opacity;transition-timing-function:cubic-bezier(.4,0,.2,1);transition-duration:.15s}.transition-transform{transition-property:transform;transition-timing-function:cubic-bezier(.4,0,.2,1)}.duration-150,.transition-transform{transition-duration:.15s}.duration-200{transition-duration:.2s}.duration-300{transition-duration:.3s}.ease-in{transition-timing-function:cubic-bezier(.4,0,1,1)}.ease-out{transition-timing-function:cubic-bezier(0,0,.2,1)}.first\:mt-0:first-child{margin-top:0}.hover\:scale-105:hover{--tw-scale-x:1.05;--tw-scale-y:1.05;transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.hover\:bg-bordeaux\/10:hover{background-color:rgba(110,31,43,.1)}.hover\:bg-emerald\/10:hover{background-color:rgba(31,111,92,.1)}.hover\:bg-ice\/5:hover{background-color:rgba(238,242,244,.05)}.focus\:outline-none:focus{outline:2px solid transparent;outline-offset:2px}.focus-visible\:ring-2:focus-visible{--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow),var(--tw-ring-shadow),var(--tw-shadow,0 0 #0000)}.focus-visible\:ring-emeraldlt\/70:focus-visible{--tw-ring-color:rgba(58,156,132,.7)}.focus-visible\:ring-offset-2:focus-visible{--tw-ring-offset-width:2px}.focus-visible\:ring-offset-charcoal:focus-visible{--tw-ring-offset-color:#0c0f12}.active\:scale-90:active{--tw-scale-x:.9;--tw-scale-y:.9}.active\:scale-90:active,.active\:scale-95:active{transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.active\:scale-95:active{--tw-scale-x:.95;--tw-scale-y:.95}.active\:scale-\[0\.98\]:active{--tw-scale-x:0.98;--tw-scale-y:0.98;transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.active\:text-mute:active{--tw-text-opacity:1;color:rgb(154 166 177/var(--tw-text-opacity,1))}.active\:opacity-100:active{opacity:1}.group[open] .group-open\:rotate-90{--tw-rotate:90deg;transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.group:hover .group-hover\:border-line{--tw-border-opacity:1;border-color:rgb(35 44 54/var(--tw-border-opacity,1))}.group:hover .group-hover\:text-ice{--tw-text-opacity:1;color:rgb(238 242 244/var(--tw-text-opacity,1))}.group:hover .group-hover\:opacity-100{opacity:1}@media (min-width:640px){.sm\:hidden{display:none}.sm\:max-w-lg{max-width:32rem}.sm\:translate-y-6{--tw-translate-y:1.5rem;transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.sm\:items-center{align-items:center}.sm\:rounded-3xl{border-radius:1.5rem}.sm\:rounded-t-3xl{border-top-left-radius:1.5rem;border-top-right-radius:1.5rem}}</style>
 
   <!-- ===== Alpine.js ===== -->
@@ -81,7 +81,7 @@
     }
     /* gastronomia: acento bordô */
     .pin-food .pin-dot { width: 14px; height: 14px; background: var(--pin-food); }
-    /* base (ponto de partida): cobre escuro, losango */
+    /* base (Palazzo Alfeo): cobre escuro, losango */
     .pin-base .pin-dot { width: 15px; height: 15px; background: var(--pin-base); border-radius: 3px; transform: rotate(45deg); }
 
     /* pin ativo (sincronizado com a timeline) */
@@ -130,11 +130,6 @@
       *, *::before, *::after { animation-duration: .001ms !important; transition-duration: .001ms !important; scroll-behavior: auto !important; }
       .reveal { opacity: 1 !important; transform: none !important; }
     }
-    /* Animações do modal via CSS (disparam a cada exibição; reduced-motion zera acima) */
-    @keyframes modalFade { from { opacity: 0 } to { opacity: 1 } }
-    @keyframes modalUp { from { transform: translateY(40px); opacity: 0 } to { transform: none; opacity: 1 } }
-    .modal-backdrop { animation: modalFade .25s ease; }
-    .modal-panel { animation: modalUp .34s cubic-bezier(.2,.7,.2,1); }
     /* ===== Navbar do portal Sicília Orientale ===== */
     :root { --navh: calc(2.9rem + env(safe-area-inset-top)); }
     .sicily-nav { position:fixed; top:0; left:0; right:0; height:var(--navh); z-index:45;
@@ -157,15 +152,15 @@
   </style>
 </head>
 
-<body x-data="ortigiaGuide()" x-init="init()" class="font-sans text-ice antialiased overflow-x-hidden">
+<body x-data="modicaGuide()" x-init="init()" class="font-sans text-ice antialiased overflow-x-hidden">
   <nav class="sicily-nav">
     <a href="index.html" class="nav-brand">Sicília <span>Orientale</span></a>
     <div class="nav-tabs">
       <a href="index.html" class="nav-tab">Home</a>
       <a href="ortigia.html" class="nav-tab">Ortigia</a>
-      <a href="noto.html" class="nav-tab nav-tab--active" aria-current="page">Noto</a>
+      <a href="noto.html" class="nav-tab">Noto</a>
       <a href="ragusa.html" class="nav-tab">Ragusa</a>
-      <a href="modica.html" class="nav-tab">Modica</a>
+      <a href="modica.html" class="nav-tab nav-tab--active" aria-current="page">Modica</a>
     </div>
   </nav>
 
@@ -177,13 +172,13 @@
     <div class="px-5 pt-[calc(env(safe-area-inset-top)+1rem)] pb-14
                 bg-gradient-to-b from-charcoal via-charcoal/75 to-transparent">
       <p class="text-[0.625rem] tracking-[0.45em] text-ice/60 uppercase">Sicília · Val di Noto</p>
-      <h1 class="font-serif text-2xl text-ice mt-1 leading-none drop-shadow-[0_1px_8px_rgba(0,0,0,.6)]">Noto</h1>
-      <p class="text-[0.6875rem] text-ice/75 mt-1.5 tracking-wide">Uma manhã · 08h15 → 13h30 · 8 paragens</p>
+      <h1 class="font-serif text-2xl text-ice mt-1 leading-none drop-shadow-[0_1px_8px_rgba(0,0,0,.6)]">Modica</h1>
+      <p class="text-[0.6875rem] text-ice/75 mt-1.5 tracking-wide">Meio-dia essencial · 10h30 → 15h00 · 10 paragens · de carro</p>
     </div>
   </header>
 
   <!-- O mapa fica SEMPRE visível no topo; só o sheet rola por baixo -->
-  <div id="map" class="fixed top-0 inset-x-0 z-0" role="region" aria-label="Mapa de Noto"></div>
+  <div id="map" role="region" aria-label="Mapa de Modica" class="fixed top-0 inset-x-0 z-0"></div>
 
   <!-- véu inferior para fundir mapa ↔ folha -->
   <div class="veil fixed inset-x-0 z-10 pointer-events-none
@@ -205,16 +200,17 @@
       <div class="px-6 pt-4 pb-2">
         <div class="flex items-end justify-between">
           <div>
-            <p class="text-[0.625rem] tracking-[0.4em] text-emeraldlt uppercase">O Itinerário</p>
-            <h2 class="font-serif text-[1.625rem] leading-tight text-ice mt-1">A Jornada em Três Atos</h2>
+            <p class="text-[0.625rem] tracking-[0.4em] text-emeraldlt uppercase">Jornada Essencial</p>
+            <h2 class="font-serif text-[1.625rem] leading-tight text-ice mt-1">A Cidade dos Dois Rios</h2>
           </div>
           <span class="font-serif italic text-faint text-sm pb-1" x-text="activeLabel"></span>
         </div>
         <p class="text-[0.8125rem] text-mute mt-3 leading-relaxed font-light max-w-prose">
-          De <span class="text-ice">Porta Reale</span> a <span class="text-ice">Santa Chiara</span>, uma linha reta
-          que sobe o Corso Vittorio Emanuele — do <span class="text-emeraldlt">eixo geométrico</span> nascido do
-          terramoto de 1693 ao <span class="text-bordeauxlt">abastecimento clássico</span> siciliano.
-          Toque em cada ponto para abri-lo no mapa ou no Google Maps.
+          De carro às <span class="text-ice">10h30</span> à mesa do <span class="text-ice">limoeiro</span> às 15h00:
+          subimos uma <span class="text-emeraldlt">garganta cárstica</span> onde dois rios foram enterrados sob o Corso,
+          a cidade se partiu em <span class="text-emeraldlt">Alta e Bassa</span> e o chocolate guarda, frio,
+          a receita dos astecas. Pontos de <span class="text-emeraldlt">foco</span> para parar e ler a pedra,
+          paragens de <span class="text-mute">trânsito</span> para sentir a vertigem entre uma e outra.
         </p>
       </div>
 
@@ -247,9 +243,9 @@
                 :aria-label="p.hora + ' — ' + p.nome"
                 class="reveal relative pl-[52px] mb-4 cursor-pointer group rounded-2xl focus:outline-none focus-visible:ring-2 focus-visible:ring-emeraldlt/70 focus-visible:ring-offset-2 focus-visible:ring-offset-charcoal"
                 data-reveal
-                @click="openModal(p)"
-                @keydown.enter.prevent="openModal(p)"
-                @keydown.space.prevent="openModal(p)">
+                @click="p.tipo==='foco' || p.tipo==='food' || p.tipo==='base' ? openModal(p) : focusPoint(p.id)"
+                @keydown.enter.prevent="p.tipo==='foco' || p.tipo==='food' || p.tipo==='base' ? openModal(p) : focusPoint(p.id)"
+                @keydown.space.prevent="p.tipo==='foco' || p.tipo==='food' || p.tipo==='base' ? openModal(p) : focusPoint(p.id)">
 
                 <!-- marcador no eixo -->
                 <span class="absolute left-[30px] top-2.5 -translate-x-1/2 z-10">
@@ -312,11 +308,11 @@
                       <div class="flex items-center justify-between mt-4">
                         <div class="flex items-center gap-3 text-[0.6875rem] text-faint">
                           <span x-show="p.custo" class="flex items-center gap-1">
-                            <svg class="w-3 h-3" aria-hidden="true" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" d="M12 6v12m-3-9h4a2 2 0 010 4H9m6 0h-1"/></svg>
+                            <svg aria-hidden="true" class="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" d="M12 6v12m-3-9h4a2 2 0 010 4H9m6 0h-1"/></svg>
                             <span x-text="p.custo"></span>
                           </span>
                           <span class="flex items-center gap-1">
-                            <svg class="w-3 h-3" aria-hidden="true" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path stroke-linecap="round" d="M12 7v5l3 2"/></svg>
+                            <svg aria-hidden="true" class="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path stroke-linecap="round" d="M12 7v5l3 2"/></svg>
                             <span x-text="p.duracao"></span>
                           </span>
                         </div>
@@ -327,7 +323,7 @@
                                 'text-gold': p.tipo==='base'
                               }">
                           Detalhes
-                          <svg class="w-3.5 h-3.5" aria-hidden="true" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+                          <svg aria-hidden="true" class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
                         </span>
                       </div>
                     </div>
@@ -341,38 +337,36 @@
         <!-- nota de fecho -->
         <div class="reveal pl-[52px] mt-12 pr-2" data-reveal>
           <p class="font-serif italic text-mute text-[0.9375rem] leading-relaxed">
-            “Noto não foi reconstruída: foi inventada. Uma cidade barroca desenhada do zero
-            sobre uma grelha — onde até a <span class="text-gold not-italic">curva de Santa Chiara</span>
-            é uma decisão deliberada contra a linha reta.”
+            “Descemos da pedra alta para a sombra do limoeiro. Os rios continuam a correr,
+            invisíveis, sob a mesa — e o chocolate, frio, ainda guarda o segredo de um império perdido.”
           </p>
           <p class="text-[0.6875rem] text-faint mt-6 leading-relaxed font-light border-t border-line/50 pt-5">
-            Roteiro completo — <span class="text-mute">8 paragens</span> em três atos, das 08h15 às 13h30,
-            subindo o Corso Vittorio Emanuele. Toque nos pontos de <span class="text-emeraldlt">foco</span> e nas
-            <span class="text-bordeauxlt">pausas</span> para abrir os detalhes ou a rota no Google Maps;
-            role para que o mapa siga a jornada.
+            Jornada essencial — <span class="text-mute">10 paragens</span> em cinco atos, das águas enterradas
+            sob o Corso ao pátio dos limoeiros do <span class="text-bordeauxlt">Fattoria delle Torri</span>. Toque nos pontos de
+            <span class="text-emeraldlt">foco</span> e nas <span class="text-bordeauxlt">pausas de chocolate</span>
+            para abrir os detalhes; role para que o mapa siga a subida.
           </p>
 
           <!-- Créditos das imagens (atribuição exigida pelas licenças) -->
           <details class="mt-6 border-t border-line/50 pt-5 group">
             <summary class="text-[0.6875rem] tracking-[0.25em] uppercase text-faint cursor-pointer list-none flex items-center gap-2 active:text-mute">
-              <svg class="w-3.5 h-3.5 transition-transform group-open:rotate-90" aria-hidden="true" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+              <svg aria-hidden="true" class="w-3.5 h-3.5 transition-transform group-open:rotate-90" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
               Créditos das imagens
             </summary>
             <p class="text-[0.6875rem] text-faint mt-4 leading-relaxed font-light">
               Todas as fotografias são reais e de licença livre, via <span class="text-mute">Wikimedia Commons</span>.
-              Os monumentos têm a imagem exata; nas pausas gastronómicas (Caffè Sicilia, Siculamente) —
-              que não possuem foto de licença livre — usa-se uma fotografia real do prato/categoria
-              (granita com brioche, panino com porchetta), jamais um placeholder.
+              Cada imagem aponta para o ficheiro de origem; as licenças variam (CC BY / CC BY-SA / domínio público) —
+              consulte a página do ficheiro indicado para a atribuição completa do autor.
             </p>
             <ul class="mt-4 space-y-1.5 text-[0.65625rem] text-faint font-light leading-snug">
-              <li>· <span class="text-mute">Porta Reale</span> — Effems, CC0</li>
-              <li>· <span class="text-mute">Palazzo Nicolaci · varandas (mascheroni)</span> — sailko, CC BY 2.5</li>
-              <li>· <span class="text-mute">Cattedrale di San Nicolò</span> — Berthold Werner, CC BY-SA 4.0</li>
-              <li>· <span class="text-mute">San Carlo al Corso</span> (vista do campanário) — Palickap, CC BY-SA 4.0</li>
-              <li>· <span class="text-mute">Granita com brioche</span> (Caffè Sicilia) — Auregann, CC BY-SA 4.0</li>
-              <li>· <span class="text-mute">Panino com porchetta</span> (Siculamente) — Nicholas Gemini, CC BY-SA 4.0</li>
-              <li>· <span class="text-mute">Chiesa di Santa Chiara</span> — sailko, CC BY 2.5</li>
-              <li>· <span class="text-mute">Via Cavour</span> (Parcheggio Centrale) — sailko, CC BY 2.5</li>
+              <li>· <span class="text-mute">Corso Umberto I, frente à San Pietro</span> (base) — <span class="italic">Across Corso Umberto from San Pietro Church Modica Sicily Muòrica Sicilia Italy 1.jpg</span></li>
+              <li>· <span class="text-mute">Chiesa di San Pietro · escadaria dos Apóstolos</span> — <span class="italic">San Pietro Modica 1.jpg</span></li>
+              <li>· <span class="text-mute">Cioccolato di Modica</span> (degustação) — <span class="italic">Cioccolato modicano.jpg</span></li>
+              <li>· <span class="text-mute">Duomo di San Giorgio · fachada-torre</span> — <span class="italic">Duomo di San Giorgio 3.jpg</span></li>
+              <li>· <span class="text-mute">Chocolate Sabadì</span> (artesanal moderno) — <span class="italic">Sabadi-modica-chocolate.jpg</span></li>
+              <li>· <span class="text-mute">Anfiteatro de casas na garganta</span> (belvedere) — <span class="italic">Modica-panorama.jpg</span></li>
+              <li>· <span class="text-mute">Chiesa di San Giovanni Evangelista</span> (ponto mais alto) — <span class="italic">Modica, Chiesa di San Giovanni.jpg</span></li>
+              <li>· <span class="text-mute">Panorama de Modica</span> (o pouso) — <span class="italic">Panorama di Modica 2018.jpg</span></li>
             </ul>
           </details>
         </div>
@@ -387,33 +381,38 @@
           @click="scrollSheetTop()" aria-label="Voltar ao início"
           class="fixed right-4 z-40 h-12 w-12 rounded-full glass flex items-center justify-center text-emeraldlt active:scale-90 transition"
           style="bottom: calc(1rem + env(safe-area-inset-bottom));">
-    <svg class="w-5 h-5" aria-hidden="true" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7"/></svg>
+    <svg aria-hidden="true" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7"/></svg>
   </button>
 
   <!-- ============================================================= -->
   <!-- MODAL — Glassmorphism (sobe de baixo)                         -->
   <!-- ============================================================= -->
-  <div x-cloak x-show="modal.open" x-trap.noscroll="modal.open" role="dialog" aria-modal="true" :aria-label="modal.p.nome" class="fixed inset-0 z-50 flex items-end sm:items-center justify-center">
+  <div x-cloak x-show="modal.open" role="dialog" aria-modal="true" :aria-label="modal.p.nome" class="fixed inset-0 z-50 flex items-end sm:items-center justify-center">
     <!-- backdrop -->
-    <div x-show="modal.open" @click="closeModal()"
-         class="modal-backdrop absolute inset-0 bg-charcoal/70 backdrop-blur-sm"></div>
+    <div x-show="modal.open"
+         x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100"
+         x-transition:leave="transition ease-in duration-200" x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0"
+         @click="closeModal()"
+         class="absolute inset-0 bg-charcoal/70 backdrop-blur-sm"></div>
 
     <!-- painel -->
-    <div x-ref="panel" x-show="modal.open" tabindex="-1"
-         class="modal-panel glass relative w-full sm:max-w-lg sm:rounded-3xl rounded-t-3xl max-h-[92dvh] overflow-y-auto sheet
+    <div x-ref="panel" x-show="modal.open" x-trap.noscroll="modal.open" tabindex="-1"
+         x-transition:enter="transition ease-out duration-400" x-transition:enter-start="translate-y-full sm:translate-y-6 opacity-0" x-transition:enter-end="translate-y-0 opacity-100"
+         x-transition:leave="transition ease-in duration-250" x-transition:leave-start="translate-y-0 opacity-100" x-transition:leave-end="translate-y-full opacity-0"
+         class="glass relative w-full sm:max-w-lg sm:rounded-3xl rounded-t-3xl max-h-[92dvh] overflow-y-auto sheet
                 shadow-[0_-20px_80px_rgba(0,0,0,.7)]">
 
       <!-- imagem topo + zona de arrasto (deslize ↓ para fechar) -->
       <div @touchstart.passive="dragStart($event)" @touchmove.passive="dragMove($event)" @touchend="dragEnd()"
-           class="ph-img relative w-full overflow-hidden sm:rounded-t-3xl" :class="modal.p.img ? 'h-52' : 'h-24'">
+           class="ph-img relative h-52 w-full overflow-hidden sm:rounded-t-3xl">
         <!-- alça de arrasto -->
         <div class="absolute top-2.5 left-1/2 -translate-x-1/2 w-10 h-1 rounded-full bg-ice/50 z-20 sm:hidden"></div>
-        <img x-show="modal.p.img" :src="modal.p.img" :alt="modal.p.nome + ' — ' + modal.p.linha" class="h-full w-full object-cover"
+        <img :src="modal.p.img" :alt="modal.p.nome + ' — ' + modal.p.linha" class="h-full w-full object-cover"
              @load="$el.classList.add('loaded')" x-effect="modal.open && $el.classList.remove('loaded')" />
         <div class="absolute inset-0 bg-gradient-to-t from-[#161c23] via-transparent to-charcoal/30"></div>
         <button @click="closeModal()" aria-label="Fechar"
                 class="absolute top-3.5 right-3.5 h-11 w-11 rounded-full glass flex items-center justify-center text-ice active:scale-95 hover:scale-105 transition">
-          <svg class="w-4 h-4" aria-hidden="true" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" d="M6 6l12 12M18 6L6 18"/></svg>
+          <svg aria-hidden="true" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" d="M6 6l12 12M18 6L6 18"/></svg>
         </button>
         <div class="absolute bottom-4 left-5 right-5">
           <p class="text-[0.625rem] tracking-[0.35em] uppercase"
@@ -425,7 +424,7 @@
 
       <div class="px-5 pt-6 pb-[calc(1.5rem+env(safe-area-inset-bottom))] space-y-6">
         <!-- meta rápida -->
-        <div x-show="modal.p.horarioIdeal" class="grid grid-cols-3 gap-3">
+        <div class="grid grid-cols-3 gap-3">
           <div class="rounded-xl bg-ink/60 border border-line/50 p-3">
             <p class="text-[0.5625rem] tracking-widest uppercase text-faint">Horário ideal</p>
             <p class="text-[0.8125rem] text-ice mt-1 font-medium" x-text="modal.p.horarioIdeal"></p>
@@ -440,15 +439,6 @@
           </div>
         </div>
 
-        <!-- endereço (quando houver) -->
-        <div x-show="modal.p.endereco" class="flex items-start gap-2.5 rounded-xl bg-ink/60 border border-line/50 p-3">
-          <svg class="w-4 h-4 mt-0.5 shrink-0 text-gold" aria-hidden="true" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>
-          <div>
-            <p class="text-[0.5625rem] tracking-widest uppercase text-faint">Endereço</p>
-            <p class="text-[0.8125rem] text-ice mt-0.5 leading-snug" x-text="modal.p.endereco"></p>
-          </div>
-        </div>
-
         <!-- descrição -->
         <div>
           <p class="text-[0.625rem] tracking-[0.3em] uppercase text-emeraldlt mb-2">Descrição</p>
@@ -456,13 +446,13 @@
         </div>
 
         <!-- resumo histórico -->
-        <div x-show="modal.p.historia" class="border-l-2 border-emerald/50 pl-4">
+        <div class="border-l-2 border-emerald/50 pl-4">
           <p class="text-[0.625rem] tracking-[0.3em] uppercase text-faint mb-2">Resumo histórico</p>
           <p class="text-[0.875rem] text-mute leading-relaxed font-light" x-text="modal.p.historia"></p>
         </div>
 
         <!-- insights -->
-        <div x-show="modal.p.insights && modal.p.insights.length">
+        <div>
           <p class="text-[0.625rem] tracking-[0.3em] uppercase text-gold mb-3">Insights curiosos</p>
           <ul class="space-y-2.5">
             <template x-for="ins in modal.p.insights" :key="ins">
@@ -503,151 +493,183 @@
   <!-- ============================================================= -->
   <script>
     /* =========================================================================
-       BANCO DE DADOS — Roteiro linear de Noto (8 paragens, 3 atos · 08h15–13h30)
-       tipo: 'base' | 'foco' | 'food'
+       BANCO DE DADOS — Jornada Modica (10 paragens, 5 atos · 10h30 → 15h00)
+       Chegada de carro; estacionar na Modica Bassa, junto ao Corso Umberto I.
+       tipo: 'base' | 'foco' | 'peripheral' | 'food'
        Imagens reais (Wikimedia Commons); links de rota abrem no Google Maps.
        ========================================================================= */
     const DB = {
-      centro: [36.8913, 15.0722],
+      centro: [36.85850, 14.76150],
       atos: [
+        /* ===================== ATO I ===================== */
         {
           id: "ato-1",
-          faixa: "08h15 — 10h45",
-          titulo: "Ato I · O Eixo Ortogonal",
+          faixa: "10h30 — 11h00",
+          titulo: "Ato I · Os Dois Rios Enterrados",
           pontos: [
             {
-              id: "parcheggio-centrale", tipo: "base", nome: "Parcheggio Centrale", ato: "Ponto de Partida", hora: "08h15", coord: [36.8906, 15.0743],
-              endereco: "Via Camillo Benso Conte di Cavour, 96017 Noto SR, Itália",
-              linha: "O ponto de partida — estacione na Via Cavour e desça a pé até Porta Reale.",
-              img: "https://commons.wikimedia.org/wiki/Special:FilePath/Noto%2C%20via%20cavour%2001.JPG?width=900",
-              custo: "€ · estacionamento",
-              duracao: "—",
-              horarioIdeal: "08h15 — cedo, antes do calor",
-              descricao: "O estacionamento central, na Via Camillo Benso Conte di Cavour, é o lugar mais prático para começar a pé pela Noto barroca.",
-              historia: "Noto move-se inteira a pé: o centro reconstruído em grelha após o terramoto de 1693 é compacto e em subida. A Via Cavour corre paralela ao Corso, um piso acima.",
+              id: "corso-umberto", tipo: "base", nome: "Corso Umberto I · O Leito do Rio",
+              ato: "Ponto de Partida", hora: "10h30", coord: [36.85680, 14.76000],
+              linha: "Deixe o carro na Modica Bassa e pise no antigo leito: o Corso corre exatamente sobre os dois rios aterrados.",
+              img: "https://commons.wikimedia.org/wiki/Special:FilePath/Across%20Corso%20Umberto%20from%20San%20Pietro%20Church%20Modica%20Sicily%20Mu%C3%B2rica%20Sicilia%20Italy%201.jpg?width=900",
+              custo: "Estac. € · linhas brancas grátis / azuis ~2,40€", duracao: "—",
+              horarioIdeal: "10h30 — luz de manhã ainda rasante no fundo da garganta",
+              descricao: "A jornada começa no chão mais improvável da Sicília: uma avenida que é, na verdade, o leito de dois rios. Estacione na Modica Bassa (procure as vagas de linha branca em torno da Via Medaglie d'Oro / baixo Corso) e caminhe pelo eixo da cidade. Sob o asfalto, em galerias de pedra, as águas continuam a correr.",
+              historia: "Modica encrava-se numa garganta cárstica dos Monti Iblei, no ponto onde o Pozzo dei Pruni e o Janni Mauro confluíam. Eram tantas as pontes — 17 — que a cidade era chamada a 'Veneza do Sul'. Depois da enchente devastadora de 1902, decidiu-se canalizar os dois rios em galerias subterrâneas e aterrá-los: nascia o Corso Umberto I, a espinha plana sobre um vale que antes era água.",
               insights: [
-                "Desça uma quadra até o Corso Vittorio Emanuele.",
-                "É também por onde a jornada termina, vinda de Santa Chiara.",
-                "Chegue cedo: as vagas enchem antes das 10h."
+                "Você está literalmente caminhando sobre dois rios — eles fluem em túneis sob o Corso.",
+                "Pare no meio da rua e olhe para cima dos dois lados: a cidade sobe em anfiteatro pelas paredes da gola.",
+                "Vagas de linha branca = grátis; linha azul = pago (compre o 'gratta e sosta' numa tabacaria)."
               ]
             },
             {
-              id: "porta-reale", tipo: "foco", nome: "Porta Reale", ato: "Ato I · O Eixo Ortogonal", hora: "08h30", coord: [36.8912, 15.0738],
-              linha: "A entrada na malha urbana perfeitamente geométrica, nascida do terramoto de 1693.",
-              img: "https://commons.wikimedia.org/wiki/Special:FilePath/Porta%20Reale%20%28Noto%29%2014%2001%202024%2001.jpg?width=900",
-              custo: "Gratuito",
-              duracao: "15 min",
-              horarioIdeal: "Manhã, luz no eixo do Corso",
-              descricao: "A Porta Reale (Ferdinandea) marca o limiar oriental do Corso Vittorio Emanuele, o eixo perfeitamente reto que organiza Noto.",
-              historia: "Erguida em 1838 para a visita de Fernando II; encima o eixo cenográfico da Noto reconstruída em grelha barroca após 1693.",
+              id: "san-pietro", tipo: "foco", nome: "Chiesa di San Pietro",
+              ato: "Ato I · Os Dois Rios", hora: "10h40", coord: [36.85760, 14.76080],
+              linha: "O foco: a escadaria barroca guardada por doze apóstolos em tamanho real — os 'Santoni'.",
+              img: "https://commons.wikimedia.org/wiki/Special:FilePath/San%20Pietro%20Modica%201.jpg?width=900",
+              custo: "Gratuito", duracao: "20 min", horarioIdeal: "Manhã, fachada de frente ao sol de leste",
+              descricao: "Poucos metros adiante, a primeira grande cena. Uma escadaria de três lances abre-se sobre o Corso, e em cada degrau central monta guarda uma estátua de apóstolo em tamanho natural. Suba devagar pelo eixo: a perspectiva alinha os doze 'Santoni' com a fachada barroca ao fundo.",
+              historia: "San Pietro tem origem documentada no século XIV, foi arruinada pelo terramoto de 1693 e reconstruída a partir de 1697 em pleno barroco siciliano. A escadaria com os doze apóstolos foi concluída em 1876, esculpida em pedra local por Salvatore Ammatuna e Pietro Petracolo — o povo batizou-os de 'Santoni'.",
               insights: [
-                "No alto: torre (poder), cão (fidelidade) e pelicano (sacrifício).",
-                "Daqui o Corso sobe em linha reta.",
-                "Pedra calcarenita dourada, comum a toda a cidade."
+                "A foto-assinatura sai do lado oposto do Corso: enquadre a escadaria, os apóstolos e o campanário juntos.",
+                "É a igreja-rival da San Giorgio lá no alto — Modica Bassa contra Modica Alta, em pedra.",
+                "Procure São Pedro com as chaves no topo da escadaria: o último dos doze antes do portal."
               ]
             },
             {
-              id: "san-carlo-corso", tipo: "foco", nome: "Chiesa di San Carlo al Corso", ato: "Ato I · O Eixo Ortogonal", hora: "09h00", coord: [36.8916, 15.0715],
-              linha: "Igreja jesuíta no Corso, com campanário que abre a melhor vista sobre Noto.",
-              img: "https://commons.wikimedia.org/wiki/Special:FilePath/Noto%2C%20chiesa%20di%20San%20Carlo%20al%20Corso%2C%20vista%20dal%20campanile%20%2802%29.jpg?width=900",
-              custo: "€ · ~€2 (campanário)",
-              duracao: "25 min",
-              horarioIdeal: "Manhã, subida ao campanário",
-              descricao: "A Chiesa di San Carlo al Corso (San Carlo Borromeo) abre o seu campanário à visita — a melhor vista panorâmica sobre os telhados barrocos de Noto.",
-              historia: "Igreja do antigo Collegio dei Gesuiti, projetada no séc. XVIII por Rosario Gagliardi, com fachada de três ordens sobrepostas.",
-              insights: [
-                "Suba ao campanário pela escada interna — vista de 360°.",
-                "Faz parte do conjunto jesuíta do Corso.",
-                "Luz dourada ao fim da manhã sobre a cidade."
-              ]
-            },
-            {
-              id: "palazzo-nicolaci", tipo: "foco", nome: "Via Nicolaci e Palazzo Nicolaci", ato: "Ato I · O Eixo Ortogonal", hora: "09h40", coord: [36.8918, 15.0709],
-              linha: "A exibição máxima do barroco — sacadas sustentadas por sereias e monstros na pedra.",
-              img: "https://commons.wikimedia.org/wiki/Special:FilePath/Noto%2C%20palazzo%20nicolaci%2C%20balconi%2007%20mascheroni.JPG?width=900",
-              custo: "€€ · ~€5 (interior)",
-              duracao: "30 min",
-              horarioIdeal: "Manhã — a luz lateral revela os relevos",
-              descricao: "Na estreita Via Nicolaci, o Palazzo Nicolaci di Villadorata exibe seis varandas barrocas sustentadas por mísulas esculpidas: sereias, cavalos alados, leões e mascarões grotescos.",
-              historia: "Meados do séc. XVIII, para os Nicolaci, marqueses de Villadorata — o ápice do barroco de Noto.",
-              insights: [
-                "Cada varanda tem o seu bestiário.",
-                "A Via Nicolaci cobre-se de flores na Infiorata, em maio.",
-                "Calcarenita macia ao talhe, perfeita para o excesso barroco."
-              ]
-            },
-            {
-              id: "cattedrale", tipo: "foco", nome: "Cattedrale di San Nicolò", ato: "Ato I · O Eixo Ortogonal", hora: "10h20", coord: [36.8916, 15.0705],
-              linha: "Monumento de resiliência geológica — a cúpula desabou em 1996 e foi reconstruída.",
-              img: "https://commons.wikimedia.org/wiki/Special:FilePath/Noto%20Cathedral%20BW%202025-04-26%2011-08-40.jpg?width=900",
-              custo: "Gratuito",
-              duracao: "30 min",
-              horarioIdeal: "Meio da manhã, sol na escadaria",
-              descricao: "No topo de uma escadaria monumental de três lances, na Piazza Municipio, a catedral impõe escala e poder.",
-              historia: "Concluída no séc. XVIII; a cúpula e a nave ruíram em 1996 por falhas estruturais. Reconstruída ao longo de uma década, reaberta em 2007.",
-              insights: [
-                "O colapso de 1996 ocorreu de madrugada, sem vítimas.",
-                "Blocos originais numerados e recolocados peça a peça.",
-                "A escadaria é palco do desfile barroco."
-              ]
+              id: "corso-passeio", tipo: "peripheral", nome: "O Corso e as Galerias",
+              ato: "Ato I", hora: "10h55", coord: [36.85820, 14.76120],
+              linha: "Trecho de trânsito pelo Corso — palácios barrocos de um lado, a parede da garganta subindo do outro."
             }
           ]
         },
+
+        /* ===================== ATO II ===================== */
         {
           id: "ato-2",
-          faixa: "11h15 — 12h30",
-          titulo: "Ato II · O Abastecimento",
+          faixa: "11h00 — 11h30",
+          titulo: "Ato II · A Alquimia Fria",
           pontos: [
             {
-              id: "caffe-sicilia", tipo: "food", nome: "Caffè Sicilia", ato: "Ato II · O Abastecimento", hora: "11h15", coord: [36.8914, 15.0722],
-              linha: "Granita di mandorla com brioche quente, na casa lendária de Corrado Assenza.",
-              img: "https://commons.wikimedia.org/wiki/Special:FilePath/Sagra%20del%20pesce%20spada%20Aci%20Trezza%202025%20-%20Granita%20and%20brioche.jpg?width=900",
-              custo: "€ · ~€5",
-              duracao: "30 min",
-              horarioIdeal: "11h15 — antes do meio-dia",
-              descricao: "No Corso Vittorio Emanuele, 125, o lendário Caffè Sicilia de Corrado Assenza: granita di mandorla (amêndoa) com brioche quente, ou o cannolo montado na hora.",
-              historia: "Casa histórica de doçaria, célebre mundialmente pela mestria de Assenza, que eleva a tradição siciliana à alta gastronomia.",
+              id: "bonajuto", tipo: "food", nome: "Antica Dolceria Bonajuto",
+              ato: "Ato II · A Alquimia Fria", hora: "11h05", coord: [36.85790, 14.76060],
+              linha: "A degustação fundadora: a casa de chocolate mais antiga da Sicília (1880) e o método frio dos astecas.",
+              img: "https://commons.wikimedia.org/wiki/Special:FilePath/Cioccolato%20modicano.jpg?width=900",
+              custo: "€ · degustação / barras", duracao: "25 min",
+              horarioIdeal: "Antes da subida — açúcar como combustível para os 250 degraus",
+              descricao: "Entre na loja-café de 1880 no número 159 do Corso. Aqui o chocolate não derrete na boca como os outros: cruza os dentes, granulado, arenoso, vivo. Prove o cioccolato di Modica IGP (canela, baunilha) e arrisque os 'mpanatigghi — biscoitos meio-lua recheados, surpreendentemente, com carne moída, chocolate e amêndoa.",
+              historia: "O segredo é a 'lavorazione a freddo': o cacau nunca passa dos ~40°C, então os cristais de açúcar não derretem — daí a textura granulosa. A técnica é asteca, moída a frio sobre a pedra 'metate'; chegou com os conquistadores espanhóis e enraizou-se na Contea di Modica, território da Coroa espanhola. A receita moderna remonta aos arquivos da família Grimaldi, por volta de 1746. Em 2018 o chocolate ganhou o selo IGP.",
               insights: [
-                "Granita de amêndoa com amêndoas de Avola, nunca pasta industrial.",
-                "Brioche col tuppo para mergulhar na granita.",
-                "Assenza ficou famoso após o 'Chef's Table'."
-              ]
-            },
-            {
-              id: "sabbinirica", tipo: "food", nome: "Sabbinirica · Siculamente", ato: "Ato II · O Abastecimento", hora: "12h15", coord: [36.8916, 15.0718],
-              linha: "O almoço tático — pães com porchetta, pecorino e creme de pistache de Bronte.",
-              img: "https://commons.wikimedia.org/wiki/Special:FilePath/Panino%20con%20porchetta%2001.jpg?width=900",
-              custo: "€ · ~€8",
-              duracao: "30 min",
-              horarioIdeal: "12h15 — denso, rápido, sem filas",
-              descricao: "No Corso Vittorio Emanuele, 93, a Siculamente serve panini artesanais: porchetta, pecorino, creme de pistache de Bronte e conservas. Sabor máximo, tempo mínimo.",
-              historia: "Siculamente é marca siciliana de identidade orgulhosa, que vai da moda à gastronomia de rua celebrando os produtos da ilha.",
-              insights: [
-                "O pistache de Bronte, D.O.P., cresce na lava do Etna.",
-                "Porchetta assada lentamente com ervas.",
-                "Comer em pé, no Corso, faz parte da experiência."
+                "Os 'mpanatigghi guardam carne dentro do doce — herança de uma cozinha sem refrigeração que disfarçava a proteína no açúcar.",
+                "Granulado é sinal de autenticidade, não de defeito: açúcar que nunca derreteu.",
+                "Reserve o paladar: às 12h20, no alto, o Sabadì oferece o contraponto moderno desta mesma alquimia."
               ]
             }
           ]
         },
+
+        /* ===================== ATO III ===================== */
         {
           id: "ato-3",
-          faixa: "13h00",
-          titulo: "Ato III · A Subversão da Linha",
+          faixa: "11h30 — 12h30",
+          titulo: "Ato III · A Ascensão à Cidade Alta",
           pontos: [
             {
-              id: "santa-chiara", tipo: "foco", nome: "Chiesa di Santa Chiara", ato: "Ato III · A Subversão da Linha", hora: "13h00", coord: [36.8914, 15.0728],
-              linha: "Interior em planta elíptica que subverte as linhas retas de Noto.",
-              img: "https://commons.wikimedia.org/wiki/Special:FilePath/Noto%2C%20chiesa%20di%20santa%20chiara.JPG?width=900",
-              custo: "€ · ~€2 (terraço)",
-              duracao: "25 min",
-              horarioIdeal: "Início da tarde",
-              descricao: "Atrás de fachada sóbria, esconde um interior de planta elíptica que subverte a grelha de Noto; do terraço, a melhor vista da cidade.",
-              historia: "Projetada por Rosario Gagliardi (séc. XVIII), a igreja elíptica do antigo convento beneditino contrasta com a rigidez urbana.",
+              id: "salita-alta", tipo: "peripheral", nome: "A Salita a Modica Alta",
+              ato: "Ato III", hora: "11h35", coord: [36.85840, 14.76180],
+              linha: "Trecho de trânsito vertical: becos e escadinhas que cosem a Bassa à Alta — a vertigem da garganta."
+            },
+            {
+              id: "san-giorgio", tipo: "foco", nome: "Duomo di San Giorgio",
+              ato: "Ato III · A Ascensão", hora: "11h50", coord: [36.85880, 14.76250],
+              linha: "O clímax barroco: 250 degraus rumo à fachada-torre de Gagliardi — e, ao meio-dia, a linha meridiana acende no chão.",
+              img: "https://commons.wikimedia.org/wiki/Special:FilePath/Duomo%20di%20San%20Giorgio%203.jpg?width=900",
+              custo: "Gratuito (torre ~2€)", duracao: "40 min",
+              horarioIdeal: "Chegue perto do meio-dia: a luz cruza o gnômon e marca a meridiana no piso",
+              descricao: "A escadaria de 250 degraus rasga a encosta e entrega, lá no topo, uma fachada que parece uma torre de três andares empilhados — pura cenografia barroca. Entre: no piso há uma linha meridiana de mármore. Se você chegar ao meio-dia, um raio de sol atravessa o orifício no alto e pousa exatamente sobre a hora local. É um relógio feito de igreja.",
+              historia: "Reconstruído por Rosario Gagliardi entre 1702 e 1738 sobre as ruínas de 1693, o Duomo di San Giorgio é o ápice do barroco siciliano de Modica Alta. A meridiana foi traçada em 1895 pelo matemático Armando Perini, com embutidos de mármore; uma lápide registra as coordenadas geográficas da cidade. A fachada-torre, com seus três níveis ascendentes, foi desenhada para ser vista de baixo, esmagando quem sobe.",
               insights: [
-                "A planta elíptica é assinatura de Gagliardi.",
-                "O terraço dá a vista panorâmica mais bela de Noto.",
-                "A saída faz-se pela silenciosa Via Cavour."
+                "Ao meio-dia exato, observe o chão: a luz toca a linha meridiana — programe a visita para esse momento.",
+                "Suba os degraus pelo eixo central: a cada lance a fachada-torre cresce e distorce a escala.",
+                "Se a torre do sino estiver aberta (~2€), suba: a cidade inteira se desdobra na garganta lá embaixo."
+              ]
+            },
+            {
+              id: "sabadi", tipo: "food", nome: "Sabadì",
+              ato: "Ato III · A Ascensão", hora: "12h20", coord: [36.85860, 14.76200],
+              linha: "O contraponto moderno: a poucos metros do Duomo, o chocolate de autor — sal marinho, limão, pistache.",
+              img: "https://commons.wikimedia.org/wiki/Special:FilePath/Sabadi-modica-chocolate.jpg?width=900",
+              custo: "€ · barras de autor", duracao: "15 min",
+              horarioIdeal: "Logo após o Duomo, ainda na Modica Alta",
+              descricao: "No Corso San Giorgio, a 20 metros da escadaria, está a contraparte do século XXI da alquimia que provou em Bonajuto. O Sabadì pega o mesmo chocolate granulado e o leva ao laboratório: sal marinho, limão, pistache de Bronte, menta selvagem. Tem até uma sala de envelhecimento onde as barras absorvem aromas — funcho, tabaco, pimenta de Sichuan — sem nada se adicionar à massa.",
+              historia: "Sabadì nasceu como projeto artesanal e orgânico moderno e levou por sete anos seguidos a Tavoletta d'Oro de melhor cioccolato di Modica. É a prova de que a técnica antiga, fria e asteca aceita a invenção contemporânea sem perder a alma granulada.",
+              insights: [
+                "Prove lado a lado com a memória de Bonajuto: a mesma técnica, dois séculos de distância no paladar.",
+                "A sala de envelhecimento aromatiza o chocolate sem adicionar ingrediente — perfume puro absorvido pela barra.",
+                "Leve as barras de sal marinho e limão: viajam bem e fixam a lembrança da subida."
+              ]
+            }
+          ]
+        },
+
+        /* ===================== ATO IV ===================== */
+        {
+          id: "ato-4",
+          faixa: "12h30 — 13h15",
+          titulo: "Ato IV · O Anfiteatro de Pedra",
+          pontos: [
+            {
+              id: "pizzo", tipo: "foco", nome: "Belvedere del Pizzo",
+              ato: "Ato IV · O Anfiteatro", hora: "12h40", coord: [36.86000, 14.76100],
+              linha: "A foto definitiva: do terraço do Pizzo, Modica inteira empilha-se nas paredes da garganta.",
+              img: "https://commons.wikimedia.org/wiki/Special:FilePath/Modica-panorama.jpg?width=900",
+              custo: "Gratuito", duracao: "25 min",
+              horarioIdeal: "Início da tarde — luz alta revela a estratigrafia das casas na rocha",
+              descricao: "Suba mais um pouco, além do Duomo, até o terraço do Pizzo. É aqui que a geologia vira retrato: as casas color-de-mel trepam umas sobre as outras pelas duas encostas da gola, costuradas pela escadaria de San Giorgio. O vale inteiro se lê de uma vez — a cidade como sedimento humano depositado na pedra.",
+              historia: "O Pizzo é uma das quatro colinas que Modica ocupa (com Idria, Giganta e Monserrato). Do mirante entende-se por que a cidade foi descrita como uma 'romã aberta': cada casa é um grão encaixado na fenda cárstica. É o ponto onde a estrutura urbana e a falha geológica finalmente coincidem ao olho.",
+              insights: [
+                "Grande-angular para a volumetria do anfiteatro; depois feche o zoom na fachada-torre do Duomo flutuando entre os telhados.",
+                "Há bancos no terraço — é o melhor lugar para respirar antes da descida ao almoço.",
+                "Ao pôr do sol é ainda mais dramático; guarde a referência para um eventual retorno ao fim do dia."
+              ]
+            },
+            {
+              id: "san-giovanni", tipo: "foco", nome: "Chiesa di San Giovanni Evangelista",
+              ato: "Ato IV · O Anfiteatro", hora: "13h00", coord: [36.86070, 14.76000],
+              linha: "O telhado da cidade: a cruz da sua flecha, a 449 m, é o ponto mais alto de Modica.",
+              img: "https://commons.wikimedia.org/wiki/Special:FilePath/Modica%2C%20Chiesa%20di%20San%20Giovanni.jpg?width=900",
+              custo: "Gratuito", duracao: "15 min",
+              horarioIdeal: "Passagem rápida no topo antes de descer para a mesa",
+              descricao: "No ponto mais alto de Modica Alta, a fachada barroca de San Giovanni Evangelista fecha a perna da subida. A cruz no topo da sua flecha alcança 449 metros — o telhado da cidade. As ruelas medievais ao redor são o melhor cenário de despedida da pedra alta antes de mergulhar de volta para o almoço.",
+              historia: "Erguida no cume da colina, San Giovanni domina o casario com seu prospecto barroco e a longa escadaria frontal. É o vértice da Modica vertical: daqui em diante tudo é descida — em direção à sombra, à mesa e aos rios escondidos.",
+              insights: [
+                "Olhe para trás na descida: a flecha de San Giovanni e a fachada-torre de San Giorgio raramente cabem no mesmo quadro — tente.",
+                "As escadinhas medievais ao redor são fotogênicas e quase sempre vazias ao meio-dia.",
+                "É o ponto de virada do dia: feche a câmera, a próxima cena se come."
+              ]
+            }
+          ]
+        },
+
+        /* ===================== ATO V ===================== */
+        {
+          id: "ato-5",
+          faixa: "13h30 — 15h00",
+          titulo: "Ato V · A Mesa no Limoeiro",
+          pontos: [
+            {
+              id: "fattoria", tipo: "food", nome: "Fattoria delle Torri · O Pouso no Limoeiro",
+              ato: "O Dia Fecha-se à Mesa", hora: "13h30", coord: [36.85760, 14.76160],
+              linha: "O encerramento: almoço siciliano de autor num pátio de limoeiros, escondido numa ruela do centro.",
+              img: "https://commons.wikimedia.org/wiki/Special:FilePath/Panorama%20di%20Modica%202018.jpg?width=900",
+              custo: "€€€ · ~55€ · reserve antes", duracao: "1h30",
+              horarioIdeal: "13h30 → 15h00 — almoço sem pressa à sombra dos limoeiros",
+              descricao: "Desça de volta ao centro histórico e procure o Vico Napolitano, 14 — uma ruela tão estreita que esconde a recompensa. No verão, a mesa é posta ao ar livre, dentro de um pomar de limoeiros: cozinha siciliana de autor, massas e pão da casa, peixe dos Iblei. É o pouso perfeito para terminar às 15h00, com os dois rios correndo, invisíveis, em algum lugar sob os seus pés.",
+              historia: "Conduzido pelo chef-patron Peppe Barone e família, o Fattoria delle Torri figura no Guia Michelin com o 'Prato Michelin' (boa cozinha) e é citado entre os melhores de Modica. O limoneto interno transforma o almoço numa cena — a Sicília agrícola servida no coração barroco da cidade.",
+              insights: [
+                "Reserve com antecedência (telefone +39 0932 751286) e confirme o dia de fechamento — a sala é pequena e escondida.",
+                "Peça as massas frescas da casa e feche com um doce ao cioccolato di Modica: o dia inteiro num prato.",
+                "O pátio dos limoeiros é a última foto do roteiro — luz filtrada pelas folhas, sem pressa."
               ]
             }
           ]
@@ -655,17 +677,16 @@
       ]
     };
 
-
     /* =========================================================================
        APLICAÇÃO (Alpine) — mapa, scroll-spy, flyTo, modal
        ========================================================================= */
-    function ortigiaGuide() {
+    function modicaGuide() {
       return {
         atos: DB.atos,
         map: null,
         markers: {},
         activeId: null,
-        activeLabel: "08h15",
+        activeLabel: "10h30",
         modal: { open: false, p: {} },
         _suppressSpy: false,
         sheetScrolled: false,
@@ -743,10 +764,27 @@
               this.markers[p.id] = m;
             });
 
-            // ajusta o enquadramento aos pontos
+            // ajusta o enquadramento aos pontos. O contêiner pode ter dimensão 0 no
+            // primeiro frame (Safari iOS, telas largas, render fora de tela): só
+            // enquadra quando o mapa já tem área real — senão o fit cai para zoom 0.
             const group = L.featureGroup(Object.values(this.markers));
-            this.map.fitBounds(group.getBounds().pad(0.25), { animate: !this.prefersReducedMotion() });
-            setTimeout(() => this.map.invalidateSize(), 200);
+            const bounds = group.getBounds().pad(0.25);
+            let fitted = false;
+            const tryFit = () => {
+              if (fitted || !this.map) return;
+              const s = this.map.getSize();
+              if (s.x < 2 || s.y < 2) return false;          // ainda sem layout
+              this.map.invalidateSize();
+              this.map.fitBounds(bounds, { maxZoom: 17, animate: !this.prefersReducedMotion() });
+              fitted = true;
+              return true;
+            };
+            // tenta já; depois a cada frame até o contêiner ganhar dimensão
+            if (!tryFit() && 'ResizeObserver' in window) {
+              const ro = new ResizeObserver(() => { if (tryFit()) ro.disconnect(); });
+              ro.observe(document.getElementById('map'));
+            }
+            [120, 400, 900].forEach(t => setTimeout(tryFit, t));  // rede de segurança
 
             this.setActive(this.allPontos[0].id, false);
           };
@@ -824,8 +862,6 @@
           this.modal.p = p; this.modal.open = true;
           if (this.$refs.sheet) this.$refs.sheet.style.overflow = 'hidden';  // congela o fundo
           this.focusPoint(p.id);
-          // garante a exibição do painel mesmo se a transição deixar display:none preso (1º clique)
-          this.$nextTick(() => { const pn = this.$refs.panel; if (pn) { pn.style.display = ''; pn.scrollTop = 0; } });
         },
         closeModal() {
           this.modal.open = false;
@@ -837,7 +873,7 @@
           if (!p || !p.nome) return 'https://www.google.com/maps';
           // link pelo NOME do ponto + cidade → o Google Maps resolve para o POI registrado
           // (coordenadas não são usadas no link: podem cair fora do ponto real)
-          const q = encodeURIComponent(`${p.nome}, Noto`);
+          const q = encodeURIComponent(`${p.nome}, Modica`);
           // precisão cirúrgica: com placeId do Google, abre o POI exato (não o palpite por nome)
           if (p.placeId) return `https://www.google.com/maps/search/?api=1&query=${q}&query_place_id=${encodeURIComponent(p.placeId)}`;
           return `https://www.google.com/maps/search/?api=1&query=${q}`;

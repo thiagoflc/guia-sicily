@@ -115,6 +115,7 @@
       <a href="ortigia.html" class="nav-tab">Ortigia</a>
       <a href="noto.html" class="nav-tab">Noto</a>
       <a href="ragusa.html" class="nav-tab">Ragusa</a>
+      <a href="modica.html" class="nav-tab">Modica</a>
     </div>
   </nav>
 
@@ -126,7 +127,7 @@
         <p class="kicker">Val di Noto · Costa Jónica · Monti Iblei</p>
         <h1>Sicília <i>Orientale</i></h1>
         <p>O sudeste barroco da ilha — onde a pedra dourada, reconstruída do zero após o
-           terramoto de 1693, virou Património Mundial. Três cidades, três guias interativos.</p>
+           terramoto de 1693, virou Património Mundial. Quatro cidades, quatro guias interativos.</p>
       </div>
     </header>
 
@@ -137,14 +138,15 @@
       <p class="body-text">
         Em 11 de janeiro de 1693, um terramoto devastou o sudeste da Sicília. A reconstrução
         deu origem ao <b>barroco tardio do Val di Noto</b> — oito cidades hoje classificadas pela
-        <b>UNESCO</b>. Este portal reúne os guias de três delas: <b>Ortigia</b>, o coração grego
-        e marítimo de Siracusa; <b>Noto</b>, a cidade-cenário desenhada numa grelha perfeita; e
-        <b>Ragusa</b>, dupla e vertical, agarrada aos montes Iblei. Toque numa cidade para abrir
+        <b>UNESCO</b>. Este portal reúne os guias de quatro delas: <b>Ortigia</b>, o coração grego
+        e marítimo de Siracusa; <b>Noto</b>, a cidade-cenário desenhada numa grelha perfeita;
+        <b>Ragusa</b>, dupla e vertical, agarrada aos montes Iblei; e <b>Modica</b>, a cidade-desfiladeiro
+        do chocolate frio. Toque numa cidade para abrir
         o seu guia interativo — mapa, linha do tempo e rotas no Google Maps.
       </p>
 
       <!-- MAPA REGIONAL -->
-      <div id="region-map" role="region" aria-label="Mapa da Sicília Oriental com as três cidades"></div>
+      <div id="region-map" role="region" aria-label="Mapa da Sicília Oriental com as quatro cidades"></div>
     </section>
 
     <!-- CARDS -->
@@ -189,6 +191,18 @@
           </div>
         </a>
 
+        <a class="city-card" href="modica.html">
+          <div class="cc-img"><span class="cc-tag">Monti Iblei · cidade-desfiladeiro</span>
+            <img loading="lazy" alt="Panorama de Modica na garganta" onload="this.classList.add('loaded')"
+                 src="https://commons.wikimedia.org/wiki/Special:FilePath/Modica-panorama.jpg?width=800" /></div>
+          <div class="cc-body">
+            <h3>Modica</h3>
+            <p class="cc-line">A cidade dos dois rios enterrados: anfiteatro barroco na gola dos Iblei, os 250 degraus de San Giorgio e o chocolate frio dos astecas.</p>
+            <div class="cc-meta"><span class="cc-stats">10 paragens · 5 atos · meio-dia</span>
+              <span class="cc-go">Abrir guia →</span></div>
+          </div>
+        </a>
+
       </div>
     </section>
 
@@ -216,6 +230,7 @@
       { nome:"Ortigia",  href:"ortigia.html", coord:[37.0596,15.2938] },
       { nome:"Noto",     href:"noto.html",    coord:[36.8913,15.0722] },
       { nome:"Ragusa",   href:"ragusa.html",  coord:[36.9259,14.7385] },
+      { nome:"Modica",   href:"modica.html",  coord:[36.8585,14.7615] },
     ];
     function initMap(){
       const map=L.map('region-map',{ center:[36.96,15.02], zoom:9, zoomControl:false,

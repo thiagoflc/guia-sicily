@@ -11,18 +11,20 @@ Portal estilo *wiki/dashboard* que reúne os guias interativos da **Sicília Ori
 | **Ortigia** (Siracusa) | `ortigia.html` | 41 · 5 atos |
 | **Noto** | `noto.html` | 8 · 3 atos |
 | **Ragusa** | `ragusa.html` | 10 · 4 atos |
+| **Modica** | `modica.html` | 10 · 5 atos |
 
-A **home** (`index.html`) traz o resumo da Sicília Oriental, um mapa regional com as três cidades e cards de seleção.
+A **home** (`index.html`) traz o resumo da Sicília Oriental, um mapa regional com as quatro cidades e cards de seleção.
 
 ## Estrutura
 
-Multi-página estática, unificada por uma barra de navegação compartilhada (Home · Ortigia · Noto · Ragusa):
+Multi-página estática, unificada por uma barra de navegação compartilhada (Home · Ortigia · Noto · Ragusa · Modica):
 
 ```
 index.html      → home (panorama + mapa regional + cards)
 ortigia.html    → guia de Ortigia
 noto.html       → guia de Noto
 ragusa.html     → guia de Ragusa
+modica.html     → guia de Modica
 ```
 
 Cada guia é *self-contained*: mapa interativo claro (Leaflet + CartoDB Positron com filtro cobre), timeline com scroll-spy, modais glassmorphism acessíveis e rota no Google Maps por ponto.
