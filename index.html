@@ -148,7 +148,8 @@
         e marítimo de Siracusa; <b>Noto</b>, a cidade-cenário desenhada numa grelha perfeita;
         <b>Ragusa</b>, dupla e vertical, agarrada aos montes Iblei; e <b>Modica</b>, a cidade-desfiladeiro
         do chocolate frio — e soma-lhes <b>Taormina</b>, o penhasco grego suspenso sobre o mar Jónico,
-        à sombra do Etna. Toque numa cidade para abrir
+        à sombra do <b>Etna</b>, o maior vulcão ativo da Europa, cujos dois dias de imersão
+        encerram o portal. Toque numa cidade para abrir
         o seu guia interativo — mapa, linha do tempo e rotas no Google Maps.
       </p>
 
@@ -246,6 +247,30 @@
           </div>
         </a>
 
+        <a class="city-card" href="etna.html">
+          <div class="cc-img"><span class="cc-tag">Transição tectônica · Ragusa → Etna</span>
+            <img loading="lazy" alt="Panorama do Etna sobre os vinhedos de Nerello Mascalese" onload="this.classList.add('loaded')"
+                 src="https://commons.wikimedia.org/wiki/Special:FilePath/Etna_and_lava_field.jpg?width=800" /></div>
+          <div class="cc-body">
+            <h3>Etna · Dia I</h3>
+            <p class="cc-line">A rota do rifting: do platô calcário de Ragusa ao basalto do Etna — La Timpa de Acireale, o almoço em Santa Maria la Scala e o Fronte Lavico de 1992 em Zafferana.</p>
+            <div class="cc-meta"><span class="cc-stats">5 paragens · 4 atos · 11h00–15h30</span>
+              <span class="cc-go">Abrir guia →</span></div>
+          </div>
+        </a>
+
+        <a class="city-card" href="etna-ii.html">
+          <div class="cc-img"><span class="cc-tag">Vulcão ativo · crateras e adegas</span>
+            <img loading="lazy" alt="Erupção do Etna e campos de lava" onload="this.classList.add('loaded')"
+                 src="https://commons.wikimedia.org/wiki/Special:FilePath/Etna_eruption_2002.jpg?width=800" /></div>
+          <div class="cc-body">
+            <h3>Etna · Dia II</h3>
+            <p class="cc-line">A fortaleza de basalto: Red Etna Excursion nas crateras e túneis de lava, a catedral negra de Randazzo, a granita de pistache da Musumeci e o jantar de degustação na Murgo com a Pia.</p>
+            <div class="cc-meta"><span class="cc-stats">6 paragens · 5 atos · 08h00–22h00</span>
+              <span class="cc-go">Abrir guia →</span></div>
+          </div>
+        </a>
+
       </div>
     </section>
 
@@ -275,6 +300,8 @@
       { nome:"Ragusa",   href:"ragusa.html",  coord:[36.9259,14.7385] },
       { nome:"Modica",   href:"modica.html",  coord:[36.8585,14.7615] },
       { nome:"Taormina", href:"taormina.html",coord:[37.8522,15.2875] },
+      { nome:"Etna I",   href:"etna.html",    coord:[37.6128,15.1741] },
+      { nome:"Etna II",  href:"etna-ii.html", coord:[37.8778,14.9514] },
     ];
     function initMap(){
       const map=L.map('region-map',{ center:[36.96,15.02], zoom:9, zoomControl:false,
