@@ -3,30 +3,25 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover" />
-  <title>Taormina II · Os Ninhos de Águia</title>
-  <meta name="description" content="Guia interativo de alto padrão para o Dia II em Taormina — As Fortalezas de Pedra: estradas de montanha até Savoca (a aldeia de 'O Poderoso Chefão') e Castelmola (o mirante 360° acima de Taormina). Cinema, mitologia e altitude na Sicília." />
+  <title>Etna II · A Fortaleza de Basalto e o Sangue da Terra</title>
+  <meta name="description" content="Guia interativo para o dia completo no Etna — tour de crateras e túneis de lava, a Strada Quota Mille, a catedral negra de Randazzo e o jantar de degustação na Murgo." />
 
-  <!-- ===== Web-app no iPhone (homescreen, barra de status integrada) ===== -->
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-  <meta name="apple-mobile-web-app-title" content="Taormina II" />
+  <meta name="apple-mobile-web-app-title" content="Etna II" />
   <meta name="theme-color" content="#0c0f12" />
   <meta name="format-detection" content="telephone=no" />
 
-  <!-- ===== Tipografia ===== -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet" />
 
-  <!-- ===== Leaflet (mapa escuro, sem token) ===== -->
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
   <script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 
-  <!-- ===== Tailwind (pré-compilado, inline — sem runtime CDN) ===== -->
   <style>*,:after,:before{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgba(59,130,246,.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgba(59,130,246,.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/*! tailwindcss v3.4.19 | MIT License | https://tailwindcss.com*/*,:after,:before{box-sizing:border-box;border:0 solid #e5e7eb}:after,:before{--tw-content:""}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;-o-tab-size:4;tab-size:4;font-family:Inter,system-ui,sans-serif;font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0}fieldset,legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::-moz-placeholder,textarea::-moz-placeholder{opacity:1;color:#9ca3af}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.pointer-events-none{pointer-events:none}.fixed{position:fixed}.absolute{position:absolute}.relative{position:relative}.inset-0{inset:0}.inset-x-0{left:0;right:0}.bottom-0{bottom:0}.bottom-32{bottom:8rem}.bottom-4{bottom:1rem}.left-1\/2{left:50%}.left-3{left:.75rem}.left-5{left:1.25rem}.left-\[30px\]{left:30px}.left-\[34px\]{left:34px}.right-3\.5{right:.875rem}.right-4{right:1rem}.right-5{right:1.25rem}.top-0{top:0}.top-2\.5{top:.625rem}.top-3{top:.75rem}.top-3\.5{top:.875rem}.z-0{z-index:0}.z-10{z-index:10}.z-20{z-index:20}.z-30{z-index:30}.z-40{z-index:40}.z-50{z-index:50}.-my-1{margin-top:-.25rem;margin-bottom:-.25rem}.-mt-3{margin-top:-.75rem}.mb-2{margin-bottom:.5rem}.mb-3{margin-bottom:.75rem}.mb-4{margin-bottom:1rem}.mb-5{margin-bottom:1.25rem}.ml-2{margin-left:.5rem}.ml-\[15px\]{margin-left:15px}.mt-0\.5{margin-top:.125rem}.mt-1{margin-top:.25rem}.mt-1\.5{margin-top:.375rem}.mt-12{margin-top:3rem}.mt-2{margin-top:.5rem}.mt-3{margin-top:.75rem}.mt-4{margin-top:1rem}.mt-6{margin-top:1.5rem}.mt-9{margin-top:2.25rem}.block{display:block}.flex{display:flex}.grid{display:grid}.hidden{display:none}.h-1{height:.25rem}.h-1\.5{height:.375rem}.h-11{height:2.75rem}.h-12{height:3rem}.h-2{height:.5rem}.h-3{height:.75rem}.h-3\.5{height:.875rem}.h-4{height:1rem}.h-40{height:10rem}.h-5{height:1.25rem}.h-52{height:13rem}.h-full{height:100%}.max-h-\[92dvh\]{max-height:92dvh}.min-h-\[44px\]{min-height:44px}.min-h-\[52px\]{min-height:52px}.w-1\.5{width:.375rem}.w-10{width:2.5rem}.w-11{width:2.75rem}.w-12{width:3rem}.w-2{width:.5rem}.w-3{width:.75rem}.w-3\.5{width:.875rem}.w-4{width:1rem}.w-5{width:1.25rem}.w-\[52px\]{width:52px}.w-full{width:100%}.w-px{width:1px}.max-w-prose{max-width:65ch}.flex-1{flex:1 1 0%}.shrink-0{flex-shrink:0}.-translate-x-1\/2{--tw-translate-x:-50%}.-translate-x-1\/2,.translate-y-0{transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.translate-y-0{--tw-translate-y:0px}.translate-y-2{--tw-translate-y:0.5rem}.translate-y-2,.translate-y-full{transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.translate-y-full{--tw-translate-y:100%}.rotate-45{--tw-rotate:45deg}.rotate-45,.scale-150{transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.scale-150{--tw-scale-x:1.5;--tw-scale-y:1.5}.transform{transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.cursor-pointer{cursor:pointer}.resize{resize:both}.list-none{list-style-type:none}.grid-cols-3{grid-template-columns:repeat(3,minmax(0,1fr))}.flex-col{flex-direction:column}.items-end{align-items:flex-end}.items-center{align-items:center}.items-baseline{align-items:baseline}.items-stretch{align-items:stretch}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-1{gap:.25rem}.gap-2{gap:.5rem}.gap-3{gap:.75rem}.space-y-1\.5>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(.375rem*(1 - var(--tw-space-y-reverse)));margin-bottom:calc(.375rem*var(--tw-space-y-reverse))}.space-y-2\.5>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(.625rem*(1 - var(--tw-space-y-reverse)));margin-bottom:calc(.625rem*var(--tw-space-y-reverse))}.space-y-6>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1.5rem*(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1.5rem*var(--tw-space-y-reverse))}.overflow-hidden{overflow:hidden}.overflow-y-auto{overflow-y:auto}.overflow-x-hidden{overflow-x:hidden}.scroll-smooth{scroll-behavior:smooth}.rounded-2xl{border-radius:1rem}.rounded-full{border-radius:9999px}.rounded-sm{border-radius:.125rem}.rounded-xl{border-radius:.75rem}.rounded-t-3xl{border-top-left-radius:1.5rem;border-top-right-radius:1.5rem}.rounded-t-\[28px\]{border-top-left-radius:28px;border-top-right-radius:28px}.border{border-width:1px}.border-l-2{border-left-width:2px}.border-t{border-top-width:1px}.border-bordeaux\/40{border-color:rgba(110,31,43,.4)}.border-bordeaux\/60{border-color:rgba(110,31,43,.6)}.border-emerald\/40{border-color:rgba(31,111,92,.4)}.border-emerald\/50{border-color:rgba(31,111,92,.5)}.border-emerald\/60{border-color:rgba(31,111,92,.6)}.border-emerald\/70{border-color:rgba(31,111,92,.7)}.border-gold\/40{border-color:hsla(39,47%,60%,.4)}.border-line{--tw-border-opacity:1;border-color:rgb(35 44 54/var(--tw-border-opacity,1))}.border-line\/50{border-color:rgba(35,44,54,.5)}.border-line\/60{border-color:rgba(35,44,54,.6)}.bg-bordeauxlt{--tw-bg-opacity:1;background-color:rgb(207 107 121/var(--tw-bg-opacity,1))}.bg-charcoal{--tw-bg-opacity:1;background-color:rgb(12 15 18/var(--tw-bg-opacity,1))}.bg-charcoal\/70{background-color:rgba(12,15,18,.7)}.bg-emeraldlt{--tw-bg-opacity:1;background-color:rgb(58 156 132/var(--tw-bg-opacity,1))}.bg-faint{--tw-bg-opacity:1;background-color:rgb(139 151 163/var(--tw-bg-opacity,1))}.bg-gold{--tw-bg-opacity:1;background-color:rgb(201 168 106/var(--tw-bg-opacity,1))}.bg-ice\/50{background-color:rgba(238,242,244,.5)}.bg-ink\/60{background-color:rgba(17,22,27,.6)}.bg-line{--tw-bg-opacity:1;background-color:rgb(35 44 54/var(--tw-bg-opacity,1))}.bg-slatecard{--tw-bg-opacity:1;background-color:rgb(22 28 35/var(--tw-bg-opacity,1))}.bg-gradient-to-b{background-image:linear-gradient(to bottom,var(--tw-gradient-stops))}.bg-gradient-to-t{background-image:linear-gradient(to top,var(--tw-gradient-stops))}.from-\[\#161c23\]{--tw-gradient-from:#161c23 var(--tw-gradient-from-position);--tw-gradient-to:rgba(22,28,35,0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from),var(--tw-gradient-to)}.from-charcoal{--tw-gradient-from:#0c0f12 var(--tw-gradient-from-position);--tw-gradient-to:rgba(12,15,18,0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from),var(--tw-gradient-to)}.from-slatecard{--tw-gradient-from:#161c23 var(--tw-gradient-from-position);--tw-gradient-to:rgba(22,28,35,0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from),var(--tw-gradient-to)}.from-transparent{--tw-gradient-from:transparent var(--tw-gradient-from-position);--tw-gradient-to:transparent var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from),var(--tw-gradient-to)}.via-charcoal\/75{--tw-gradient-to:rgba(12,15,18,0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from),rgba(12,15,18,.75) var(--tw-gradient-via-position),var(--tw-gradient-to)}.via-slatecard\/10{--tw-gradient-to:rgba(22,28,35,0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from),rgba(22,28,35,.1) var(--tw-gradient-via-position),var(--tw-gradient-to)}.via-transparent{--tw-gradient-to:transparent var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from),transparent var(--tw-gradient-via-position),var(--tw-gradient-to)}.to-charcoal{--tw-gradient-to:#0c0f12 var(--tw-gradient-to-position)}.to-charcoal\/30{--tw-gradient-to:rgba(12,15,18,.3) var(--tw-gradient-to-position)}.to-transparent{--tw-gradient-to:transparent var(--tw-gradient-to-position)}.object-cover{-o-object-fit:cover;object-fit:cover}.p-3{padding:.75rem}.p-4{padding:1rem}.px-2\.5{padding-left:.625rem;padding-right:.625rem}.px-5{padding-left:1.25rem;padding-right:1.25rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.py-1{padding-top:.25rem;padding-bottom:.25rem}.py-2\.5{padding-top:.625rem;padding-bottom:.625rem}.py-3\.5{padding-top:.875rem;padding-bottom:.875rem}.pb-1{padding-bottom:.25rem}.pb-14{padding-bottom:3.5rem}.pb-2{padding-bottom:.5rem}.pb-\[calc\(1\.5rem\+env\(safe-area-inset-bottom\)\)\]{padding-bottom:calc(1.5rem + env(safe-area-inset-bottom))}.pb-\[calc\(11rem\+env\(safe-area-inset-bottom\)\)\]{padding-bottom:calc(11rem + env(safe-area-inset-bottom))}.pl-4{padding-left:1rem}.pl-\[52px\]{padding-left:52px}.pr-2{padding-right:.5rem}.pt-3{padding-top:.75rem}.pt-4{padding-top:1rem}.pt-5{padding-top:1.25rem}.pt-6{padding-top:1.5rem}.pt-\[calc\(env\(safe-area-inset-top\)\+1rem\)\]{padding-top:calc(env(safe-area-inset-top) + 1rem)}.text-center{text-align:center}.font-sans{font-family:Inter,system-ui,sans-serif}.font-serif{font-family:Playfair Display,Georgia,serif}.text-2xl{font-size:1.5rem;line-height:2rem}.text-\[0\.5625rem\]{font-size:.5625rem}.text-\[0\.625rem\]{font-size:.625rem}.text-\[0\.65625rem\]{font-size:.65625rem}.text-\[0\.6875rem\]{font-size:.6875rem}.text-\[0\.75rem\]{font-size:.75rem}.text-\[0\.8125rem\]{font-size:.8125rem}.text-\[0\.84375rem\]{font-size:.84375rem}.text-\[0\.875rem\]{font-size:.875rem}.text-\[0\.9375rem\]{font-size:.9375rem}.text-\[1\.1875rem\]{font-size:1.1875rem}.text-\[1\.625rem\]{font-size:1.625rem}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:.875rem;line-height:1.25rem}.font-light{font-weight:300}.font-medium{font-weight:500}.uppercase{text-transform:uppercase}.italic{font-style:italic}.not-italic{font-style:normal}.tabular-nums{--tw-numeric-spacing:tabular-nums;font-variant-numeric:var(--tw-ordinal) var(--tw-slashed-zero) var(--tw-numeric-figure) var(--tw-numeric-spacing) var(--tw-numeric-fraction)}.leading-none{line-height:1}.leading-relaxed{line-height:1.625}.leading-snug{line-height:1.375}.leading-tight{line-height:1.25}.tracking-\[0\.25em\]{letter-spacing:.25em}.tracking-\[0\.2em\]{letter-spacing:.2em}.tracking-\[0\.35em\]{letter-spacing:.35em}.tracking-\[0\.3em\]{letter-spacing:.3em}.tracking-\[0\.45em\]{letter-spacing:.45em}.tracking-\[0\.4em\]{letter-spacing:.4em}.tracking-wide{letter-spacing:.025em}.tracking-widest{letter-spacing:.1em}.text-bordeauxlt{--tw-text-opacity:1;color:rgb(207 107 121/var(--tw-text-opacity,1))}.text-emeraldlt{--tw-text-opacity:1;color:rgb(58 156 132/var(--tw-text-opacity,1))}.text-faint{--tw-text-opacity:1;color:rgb(139 151 163/var(--tw-text-opacity,1))}.text-gold{--tw-text-opacity:1;color:rgb(201 168 106/var(--tw-text-opacity,1))}.text-ice{--tw-text-opacity:1;color:rgb(238 242 244/var(--tw-text-opacity,1))}.text-ice\/60{color:rgba(238,242,244,.6)}.text-ice\/75{color:rgba(238,242,244,.75)}.text-mute{--tw-text-opacity:1;color:rgb(154 166 177/var(--tw-text-opacity,1))}.antialiased{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.opacity-0{opacity:0}.opacity-100{opacity:1}.opacity-65{opacity:.65}.shadow-\[0_-20px_60px_rgba\(0\2c 0\2c 0\2c \.6\)\]{--tw-shadow:0 -20px 60px rgba(0,0,0,.6);--tw-shadow-colored:0 -20px 60px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)}.shadow-\[0_-20px_80px_rgba\(0\2c 0\2c 0\2c \.7\)\]{--tw-shadow:0 -20px 80px rgba(0,0,0,.7);--tw-shadow-colored:0 -20px 80px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)}.ring-2{--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow),var(--tw-ring-shadow),var(--tw-shadow,0 0 #0000)}.ring-emerald\/30{--tw-ring-color:rgba(31,111,92,.3)}.blur{--tw-blur:blur(8px)}.blur,.drop-shadow-\[0_1px_8px_rgba\(0\2c 0\2c 0\2c \.6\)\]{filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.drop-shadow-\[0_1px_8px_rgba\(0\2c 0\2c 0\2c \.6\)\]{--tw-drop-shadow:drop-shadow(0 1px 8px rgba(0,0,0,.6))}.sepia{--tw-sepia:sepia(100%)}.filter,.sepia{filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.backdrop-blur-sm{--tw-backdrop-blur:blur(4px)}.backdrop-blur-sm,.backdrop-filter{-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.transition{transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,-webkit-backdrop-filter;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,backdrop-filter;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,backdrop-filter,-webkit-backdrop-filter;transition-timing-function:cubic-bezier(.4,0,.2,1);transition-duration:.15s}.transition-all{transition-property:all;transition-timing-function:cubic-bezier(.4,0,.2,1);transition-duration:.15s}.transition-colors{transition-property:color,background-color,border-color,text-decoration-color,fill,stroke;transition-timing-function:cubic-bezier(.4,0,.2,1);transition-duration:.15s}.transition-opacity{transition-property:opacity;transition-timing-function:cubic-bezier(.4,0,.2,1);transition-duration:.15s}.transition-transform{transition-property:transform;transition-timing-function:cubic-bezier(.4,0,.2,1)}.duration-150,.transition-transform{transition-duration:.15s}.duration-200{transition-duration:.2s}.duration-300{transition-duration:.3s}.ease-in{transition-timing-function:cubic-bezier(.4,0,1,1)}.ease-out{transition-timing-function:cubic-bezier(0,0,.2,1)}.first\:mt-0:first-child{margin-top:0}.hover\:scale-105:hover{--tw-scale-x:1.05;--tw-scale-y:1.05;transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.hover\:bg-bordeaux\/10:hover{background-color:rgba(110,31,43,.1)}.hover\:bg-emerald\/10:hover{background-color:rgba(31,111,92,.1)}.hover\:bg-ice\/5:hover{background-color:rgba(238,242,244,.05)}.focus\:outline-none:focus{outline:2px solid transparent;outline-offset:2px}.focus-visible\:ring-2:focus-visible{--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow),var(--tw-ring-shadow),var(--tw-shadow,0 0 #0000)}.focus-visible\:ring-emeraldlt\/70:focus-visible{--tw-ring-color:rgba(58,156,132,.7)}.focus-visible\:ring-offset-2:focus-visible{--tw-ring-offset-width:2px}.focus-visible\:ring-offset-charcoal:focus-visible{--tw-ring-offset-color:#0c0f12}.active\:scale-90:active{--tw-scale-x:.9;--tw-scale-y:.9}.active\:scale-90:active,.active\:scale-95:active{transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.active\:scale-95:active{--tw-scale-x:.95;--tw-scale-y:.95}.active\:scale-\[0\.98\]:active{--tw-scale-x:0.98;--tw-scale-y:0.98;transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.active\:text-mute:active{--tw-text-opacity:1;color:rgb(154 166 177/var(--tw-text-opacity,1))}.active\:opacity-100:active{opacity:1}.group[open] .group-open\:rotate-90{--tw-rotate:90deg;transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.group:hover .group-hover\:border-line{--tw-border-opacity:1;border-color:rgb(35 44 54/var(--tw-border-opacity,1))}.group:hover .group-hover\:text-ice{--tw-text-opacity:1;color:rgb(238 242 244/var(--tw-text-opacity,1))}.group:hover .group-hover\:opacity-100{opacity:1}@media (min-width:640px){.sm\:hidden{display:none}.sm\:max-w-lg{max-width:32rem}.sm\:translate-y-6{--tw-translate-y:1.5rem;transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.sm\:items-center{align-items:center}.sm\:rounded-3xl{border-radius:1.5rem}.sm\:rounded-t-3xl{border-top-left-radius:1.5rem;border-top-right-radius:1.5rem}}</style>
 
-  <!-- ===== Alpine.js ===== -->
   <script defer src="https://unpkg.com/@alpinejs/focus@3.x.x/dist/cdn.min.js"></script>
   <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
 
@@ -38,20 +33,15 @@
     * { -webkit-tap-highlight-color: transparent; }
     html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
     html, body { height: 100%; }
-    /* App-shell: a página não rola; só o bottom sheet rola por dentro */
     body {
       background: #0c0f12; -webkit-font-smoothing: antialiased;
       height: 100vh; height: 100dvh;
       overflow: hidden; overscroll-behavior: none;
       touch-action: manipulation;
     }
-
-    /* ===== Alturas responsivas (vh com fallback → dvh evita o "pulo" da barra no Safari iOS) ===== */
     #map      { height: 46vh; height: 46dvh; }
     .veil     { top: 34vh;  top: 34dvh;  height: 11vh; height: 11dvh; }
     .sheet-wrap { top: 42vh; top: 42dvh; }
-
-    /* Mapa claro — fundo pergaminho e atribuição discreta */
     #map { background: var(--map-bg); touch-action: pan-x pan-y; }
     .leaflet-container { font-family: 'Inter', sans-serif; }
     .leaflet-control-attribution {
@@ -61,76 +51,49 @@
     }
     .leaflet-control-attribution a { color: #5c4a2e !important; }
     .leaflet-control-zoom { display: none; }
-
-    /* Tiles claras (Positron) viradas para um tom quente amarelo-cobre/âmbar */
     .leaflet-tile { filter: sepia(.92) saturate(1.5) hue-rotate(-20deg) brightness(.98) contrast(.97); }
-
-    /* ===== Pins customizados ===== */
     .pin { position: relative; display:flex; align-items:center; justify-content:center; }
     .pin-dot {
       border-radius: 9999px; transition: all .35s cubic-bezier(.4,0,.2,1);
       border: 1.5px solid rgba(255,250,242,.9); box-shadow: 0 1px 6px rgba(60,40,15,.55);
     }
-    /* periférico: pequeno e discreto (escuro p/ contraste no mapa claro) */
     .pin-peripheral .pin-dot { width: 10px; height: 10px; background: var(--pin-peripheral); }
-    /* foco: maior, acento esmeralda + anel */
     .pin-focus .pin-dot { width: 15px; height: 15px; background: var(--pin-focus); }
     .pin-focus::after {
       content:''; position:absolute; width:30px; height:30px; border-radius:9999px;
       border:1.5px solid rgba(21,84,70,.55);
     }
-    /* gastronomia: acento bordô */
     .pin-food .pin-dot { width: 14px; height: 14px; background: var(--pin-food); }
-    /* base (Palazzo Alfeo): cobre escuro, losango */
     .pin-base .pin-dot { width: 15px; height: 15px; background: var(--pin-base); border-radius: 3px; transform: rotate(45deg); }
-
-    /* pin ativo (sincronizado com a timeline) */
     .pin-active .pin-dot { transform: scale(1.7); box-shadow: 0 0 0 5px rgba(21,84,70,.22), 0 3px 12px rgba(60,40,15,.5); }
     .pin-active.pin-base .pin-dot { transform: rotate(45deg) scale(1.6); }
     .pin-active::after { width:46px; height:46px; border-color: rgba(21,84,70,.75); }
-
-    /* ===== Fade-in no scroll (lazy reveal) ===== */
     .reveal { opacity: 0; transform: translateY(24px); transition: opacity .7s ease, transform .7s cubic-bezier(.2,.7,.2,1); }
     .reveal.in { opacity: 1; transform: none; }
-
-    /* Imagem com fade-in ao carregar */
     .ph-img { background: linear-gradient(135deg,#1a222b 0%,#11161b 100%); }
     .ph-img img { opacity: 0; transition: opacity .8s ease; }
     .ph-img img.loaded { opacity: 1; }
-
-    /* Rolagem do sheet/modal: momentum nativo + sem encadear pro fundo */
     .sheet { -webkit-overflow-scrolling: touch; overscroll-behavior: contain; }
     .sheet::-webkit-scrollbar { width: 6px; }
     .sheet::-webkit-scrollbar-thumb { background: #232c36; border-radius: 9px; }
     .sheet::-webkit-scrollbar-track { background: transparent; }
-
-    /* Glassmorphism do modal */
     .glass {
       background: rgba(22,28,35,.72);
       backdrop-filter: blur(16px) saturate(1.2);
       -webkit-backdrop-filter: blur(16px) saturate(1.2);
       border: 1px solid rgba(238,242,244,.10);
     }
-
-    /* Transições do modal */
     [x-cloak] { display: none !important; }
-
-    /* linha vertical da timeline */
     .tl-line { background: linear-gradient(to bottom, transparent, #232c36 12%, #232c36 88%, transparent); }
-
     @media (min-width: 1024px) {
       .leaflet-control-zoom { display: block; }
-      .leaflet-control-zoom a {
-        background:#161c23 !important; color:#9aa6b1 !important; border-color:#232c36 !important;
-      }
+      .leaflet-control-zoom a { background:#161c23 !important; color:#9aa6b1 !important; border-color:#232c36 !important; }
     }
-
-    /* Respeita usuários sensíveis a movimento */
     @media (prefers-reduced-motion: reduce) {
       *, *::before, *::after { animation-duration: .001ms !important; transition-duration: .001ms !important; scroll-behavior: auto !important; }
       .reveal { opacity: 1 !important; transform: none !important; }
     }
-    /* ===== Navbar do portal Sicília Orientale ===== */
+      /* ===== Navbar do portal Sicília Orientale ===== */
     :root { --navh: calc(2.9rem + env(safe-area-inset-top)); }
     .sicily-nav { position:fixed; top:0; left:0; right:0; height:var(--navh); z-index:45;
       display:flex; align-items:center; justify-content:space-between; gap:.5rem;
@@ -151,9 +114,10 @@
     .veil { top: calc(var(--navh) + 34dvh) !important; }
     .sheet-wrap { top: calc(var(--navh) + 42dvh) !important; }
   </style>
+
 </head>
 
-<body x-data="taormina2Guide()" x-init="init()" class="font-sans text-ice antialiased overflow-x-hidden">
+<body x-data="etna2Guide()" x-init="init()" class="font-sans text-ice antialiased overflow-x-hidden">
   <nav class="sicily-nav">
     <a href="index.html" class="nav-brand">Sicília <span>Orientale</span></a>
     <div class="nav-tabs">
@@ -163,73 +127,59 @@
       <a href="ragusa.html" class="nav-tab">Ragusa</a>
       <a href="modica.html" class="nav-tab">Modica</a>
       <a href="taormina.html" class="nav-tab">Taormina I</a>
-      <a href="taormina-ii.html" class="nav-tab nav-tab--active" aria-current="page">Taormina II</a>
+      <a href="taormina-ii.html" class="nav-tab">Taormina II</a>
       <a href="taormina-iii.html" class="nav-tab">Taormina III</a>
       <a href="etna.html" class="nav-tab">Etna I</a>
-      <a href="etna-ii.html" class="nav-tab">Etna II</a>
+      <a href="etna-ii.html" class="nav-tab nav-tab--active" aria-current="page">Etna II</a>
     </div>
   </nav>
 
 
-  <!-- ============================================================= -->
-  <!-- A. MAPA FIXO (metade superior / background)                   -->
-  <!-- ============================================================= -->
   <header class="fixed top-0 inset-x-0 z-30 pointer-events-none">
     <div class="px-5 pt-[calc(env(safe-area-inset-top)+1rem)] pb-14
                 bg-gradient-to-b from-charcoal via-charcoal/75 to-transparent">
-      <p class="text-[0.625rem] tracking-[0.45em] text-ice/60 uppercase">Taormina · Dia II</p>
-      <h1 class="font-serif text-2xl text-ice mt-1 leading-none drop-shadow-[0_1px_8px_rgba(0,0,0,.6)]">Os Ninhos de Águia</h1>
-      <p class="text-[0.6875rem] text-ice/75 mt-1.5 tracking-wide">As Fortalezas de Pedra · 09h00 → noite · 8 paragens · estradas de montanha</p>
+      <p class="text-[0.625rem] tracking-[0.45em] text-ice/60 uppercase">Sicília · Etna · Flanco Oriental</p>
+      <h1 class="font-serif text-2xl text-ice mt-1 leading-none drop-shadow-[0_1px_8px_rgba(0,0,0,.6)]">Etna II</h1>
+      <p class="text-[0.6875rem] text-ice/75 mt-1.5 tracking-wide">Fortaleza de basalto · 08h00 → 22h00 · 6 pontos nodais</p>
     </div>
   </header>
 
-  <!-- O mapa fica SEMPRE visível no topo; só o sheet rola por baixo -->
-  <div id="map" role="region" aria-label="Mapa do Dia II em Taormina — Savoca e Castelmola" class="fixed top-0 inset-x-0 z-0"></div>
+  <div id="map" role="region" aria-label="Mapa Etna II" class="fixed top-0 inset-x-0 z-0"></div>
 
-  <!-- véu inferior para fundir mapa ↔ folha -->
   <div class="veil fixed inset-x-0 z-10 pointer-events-none
               bg-gradient-to-b from-transparent to-charcoal"></div>
 
-  <!-- ============================================================= -->
-  <!-- B. TIMELINE — Bottom Sheet fixo, com rolagem interna           -->
-  <!-- ============================================================= -->
   <main class="sheet-wrap fixed inset-x-0 bottom-0 z-20">
     <section x-ref="sheet" @scroll.passive="onSheetScroll($event)"
              class="sheet h-full overflow-y-auto rounded-t-[28px] bg-charcoal border-t border-line/60 shadow-[0_-20px_60px_rgba(0,0,0,.6)]">
 
-      <!-- alça da folha -->
       <div class="flex flex-col items-center pt-3 pb-1">
         <div class="w-10 h-1 rounded-full bg-line"></div>
       </div>
 
-      <!-- cabeçalho da jornada -->
       <div class="px-6 pt-4 pb-2">
         <div class="flex items-end justify-between">
           <div>
-            <p class="text-[0.625rem] tracking-[0.4em] text-emeraldlt uppercase">As Fortalezas de Pedra</p>
-            <h2 class="font-serif text-[1.625rem] leading-tight text-ice mt-1">Os Ninhos de Águia</h2>
+            <p class="text-[0.625rem] tracking-[0.4em] text-emeraldlt uppercase">Dia Completo no Vulcão</p>
+            <h2 class="font-serif text-[1.625rem] leading-tight text-ice mt-1">Em Cinco Atos</h2>
           </div>
           <span class="font-serif italic text-faint text-sm pb-1" x-text="activeLabel"></span>
         </div>
         <p class="text-[0.8125rem] text-mute mt-3 leading-relaxed font-light max-w-prose">
-          Sem praia, o dia ganha um respiro sofisticado e <span class="text-gold">uso total do carro</span> nas
-          estradas de montanha. Dois ninhos de águia: <span class="text-emeraldlt">Savoca</span>, a aldeia
-          onde se filmou <span class="text-ice">'O Poderoso Chefão'</span> — igreja do casamento e o terraço do
-          Bar Vitelli; e <span class="text-emeraldlt">Castelmola</span>, o mirante
-          <span class="text-ice">360°</span> acima de Taormina, com o vinho de amêndoas e a sua
-          conexão pagã grega. Cinema, mitologia e altitude.
+          Da <span class="text-ice">cratera às adegas subterrâneas</span>, este dia disseca o Etna em todas as suas
+          camadas: a geodinâmica ativa ao amanhecer com a
+          <span class="text-emeraldlt">Red Etna Excursion</span>, a arquitetura negra de
+          <span class="text-ice">Randazzo</span> que a lava nunca tocou, a granita de pistache de
+          <span class="text-bordeauxlt">Bronte</span> na confeitaria mais premiada da montanha — e o encerramento
+          com o <span class="text-gold">jantar de degustação na Murgo</span>, onde a geologia se traduz em estado líquido.
         </p>
       </div>
 
-      <!-- Linha do tempo -->
       <div class="relative px-6 pt-6 pb-[calc(11rem+env(safe-area-inset-bottom))]">
-        <!-- eixo vertical -->
         <div class="tl-line absolute left-[34px] top-0 bottom-32 w-px"></div>
 
-        <!-- ATOS + PONTOS (renderizados via Alpine a partir do JSON) -->
         <template x-for="(ato, ai) in atos" :key="ato.id">
           <div class="mb-2">
-            <!-- Cabeçalho do Ato -->
             <div class="reveal flex items-center gap-3 mb-5 mt-9 first:mt-0" data-reveal>
               <span class="relative z-10 flex h-5 w-5 items-center justify-center rounded-full
                            bg-charcoal border border-emerald/70 ml-[15px]">
@@ -241,7 +191,6 @@
               </div>
             </div>
 
-            <!-- Pontos do Ato -->
             <template x-for="p in ato.pontos" :key="p.id">
               <article
                 :data-ponto="p.id"
@@ -254,7 +203,6 @@
                 @keydown.enter.prevent="p.tipo==='foco' || p.tipo==='food' || p.tipo==='base' ? openModal(p) : focusPoint(p.id)"
                 @keydown.space.prevent="p.tipo==='foco' || p.tipo==='food' || p.tipo==='base' ? openModal(p) : focusPoint(p.id)">
 
-                <!-- marcador no eixo -->
                 <span class="absolute left-[30px] top-2.5 -translate-x-1/2 z-10">
                   <span class="block rounded-full transition-all duration-300"
                         :class="{
@@ -266,7 +214,6 @@
                         }"></span>
                 </span>
 
-                <!-- ---- CARD PERIFÉRICO (discreto) ---- -->
                 <template x-if="p.tipo==='peripheral'">
                   <div class="py-2.5 -my-1 min-h-[44px] flex flex-col justify-center transition-opacity active:opacity-100"
                        :class="activeId===p.id ? 'opacity-100' : 'opacity-65 group-hover:opacity-100'">
@@ -278,7 +225,6 @@
                   </div>
                 </template>
 
-                <!-- ---- CARD DE FOCO / GASTRONOMIA / BASE (grande, expansível) ---- -->
                 <template x-if="p.tipo!=='peripheral'">
                   <div class="rounded-2xl overflow-hidden bg-slatecard border transition-all duration-300
                               group-hover:border-line"
@@ -286,53 +232,31 @@
                          'border-emerald/40': p.tipo==='foco' && activeId===p.id,
                          'border-bordeaux/40': p.tipo==='food' && activeId===p.id,
                          'border-gold/40': p.tipo==='base' && activeId===p.id,
-                         'border-line/60': activeId!==p.id
+                         'border-line/50': activeId!==p.id
                        }">
-                    <!-- imagem com lazy fade-in -->
                     <div class="ph-img relative h-40 w-full overflow-hidden">
-                      <img loading="lazy" :src="p.img" :alt="p.nome + ' — ' + p.linha"
-                           class="h-full w-full object-cover"
-                           @load="$el.classList.add('loaded')" />
-                      <div class="absolute inset-0 bg-gradient-to-t from-slatecard via-slatecard/10 to-transparent"></div>
-                      <!-- etiqueta de tipo -->
-                      <span class="absolute top-3 left-3 text-[0.5625rem] tracking-[0.3em] uppercase px-2.5 py-1 rounded-full
-                                   glass"
-                            :class="{
-                              'text-emeraldlt': p.tipo==='foco',
-                              'text-bordeauxlt': p.tipo==='food',
-                              'text-gold': p.tipo==='base'
-                            }"
-                            x-text="p.tipo==='food' ? 'Pausa' : (p.tipo==='base' ? 'Base' : 'Foco')"></span>
-                    </div>
-
-                    <div class="p-4">
-                      <div class="flex items-baseline justify-between gap-3">
-                        <h4 class="font-serif text-[1.1875rem] text-ice leading-tight" x-text="p.nome"></h4>
-                        <span class="text-[0.6875rem] tabular-nums text-faint shrink-0" x-text="p.hora"></span>
+                      <img :src="p.img" :alt="p.nome" class="h-full w-full object-cover"
+                           @load="$el.classList.add('loaded')" loading="lazy" />
+                      <div class="absolute inset-0 bg-gradient-to-b from-slatecard via-slatecard/10 to-transparent opacity-65"></div>
+                      <div class="absolute top-3 left-3">
+                        <span class="text-[0.5625rem] tracking-[0.3em] uppercase font-medium"
+                              :class="p.tipo==='food' ? 'text-bordeauxlt' : (p.tipo==='base' ? 'text-gold' : 'text-emeraldlt')"
+                              x-text="p.hora"></span>
                       </div>
-                      <p class="text-[0.8125rem] text-mute mt-2 leading-relaxed font-light" x-text="p.linha"></p>
-
-                      <div class="flex items-center justify-between mt-4">
-                        <div class="flex items-center gap-3 text-[0.6875rem] text-faint">
-                          <span x-show="p.custo" class="flex items-center gap-1">
-                            <svg aria-hidden="true" class="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" d="M12 6v12m-3-9h4a2 2 0 010 4H9m6 0h-1"/></svg>
-                            <span x-text="p.custo"></span>
-                          </span>
-                          <span class="flex items-center gap-1">
-                            <svg aria-hidden="true" class="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path stroke-linecap="round" d="M12 7v5l3 2"/></svg>
-                            <span x-text="p.duracao"></span>
-                          </span>
+                    </div>
+                    <div class="p-4">
+                      <div class="flex items-start justify-between gap-2">
+                        <div>
+                          <p class="text-[0.625rem] tracking-[0.3em] uppercase mb-1"
+                             :class="p.tipo==='food' ? 'text-bordeauxlt' : (p.tipo==='base' ? 'text-gold' : 'text-emeraldlt')"
+                             x-text="p.ato"></p>
+                          <h4 class="font-serif text-[1.1875rem] text-ice leading-tight" x-text="p.nome"></h4>
                         </div>
-                        <span class="text-[0.6875rem] tracking-wide flex items-center gap-1 transition-colors"
-                              :class="{
-                                'text-emeraldlt': p.tipo==='foco',
-                                'text-bordeauxlt': p.tipo==='food',
-                                'text-gold': p.tipo==='base'
-                              }">
-                          Detalhes
+                        <span class="shrink-0 mt-0.5 text-faint group-hover:text-ice transition-colors group-hover:opacity-100 opacity-65">
                           <svg aria-hidden="true" class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
                         </span>
                       </div>
+                      <p class="text-[0.8125rem] text-mute mt-2 leading-snug font-light" x-text="p.linha"></p>
                     </div>
                   </div>
                 </template>
@@ -341,22 +265,18 @@
           </div>
         </template>
 
-        <!-- nota de fecho -->
         <div class="reveal pl-[52px] mt-12 pr-2" data-reveal>
           <p class="font-serif italic text-mute text-[0.9375rem] leading-relaxed">
-            “Dirigimos pela cumeada até onde o cinema inventou a Sicília e onde os gregos plantaram a
-            fertilidade na rocha. Do alto de Castelmola, Taormina e o seu teatro eram miniaturas, e a Etna
-            fumava ao lado do mar. À noite, o carro na garagem e a cidade iluminada só para os pés.”
+            "Você pisou na cratera de manhã, bebeu as lavas à noite — e no meio percebeu que
+            <span class="text-emeraldlt not-italic">Randazzo</span> existe porque a montanha
+            escolheu poupar aquela cidade por 3.000 anos."
           </p>
           <p class="text-[0.6875rem] text-faint mt-6 leading-relaxed font-light border-t border-line/50 pt-5">
-            Dia II — <span class="text-mute">8 paragens</span> em quatro atos, das estradas de montanha de
-            <span class="text-emeraldlt">Savoca</span> ao mirante 360° de <span class="text-emeraldlt">Castelmola</span>
-            e à passeggiata noturna. Toque nos pontos de <span class="text-emeraldlt">foco</span> e nas
-            <span class="text-bordeauxlt">pausas gastronómicas</span> para abrir os detalhes; role para que o
-            mapa siga a rota pela cumeada.
+            Operação completa — <span class="text-mute">6 pontos nodais</span> em cinco atos, da explosão macrocósmica
+            ao ritual do vinho e do solo. Toque nos pontos de <span class="text-emeraldlt">foco</span> e nas
+            <span class="text-bordeauxlt">pausas táticas</span> para abrir os detalhes; role para que o mapa siga a jornada.
           </p>
 
-          <!-- Créditos das imagens (atribuição exigida pelas licenças) -->
           <details class="mt-6 border-t border-line/50 pt-5 group">
             <summary class="text-[0.6875rem] tracking-[0.25em] uppercase text-faint cursor-pointer list-none flex items-center gap-2 active:text-mute">
               <svg aria-hidden="true" class="w-3.5 h-3.5 transition-transform group-open:rotate-90" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
@@ -364,16 +284,15 @@
             </summary>
             <p class="text-[0.6875rem] text-faint mt-4 leading-relaxed font-light">
               Todas as fotografias são reais e de licença livre, via <span class="text-mute">Wikimedia Commons</span>.
-              Cada imagem aponta para o ficheiro de origem; as licenças variam (CC BY / CC BY-SA / domínio público) —
-              consulte a página do ficheiro indicado para a atribuição completa do autor.
+              Consulte a página do ficheiro indicado para a atribuição completa do autor.
             </p>
             <ul class="mt-4 space-y-1.5 text-[0.65625rem] text-faint font-light leading-snug">
-              <li>· <span class="text-mute">Taormina vista de Castelmola</span> (o café) — <span class="italic">Panorama di Taormina da Castelmola.jpg</span></li>
-              <li>· <span class="text-mute">Chiesa di San Nicolò · Savoca</span> (igreja do casamento) — <span class="italic">Savoca St Nicolo.jpg</span></li>
-              <li>· <span class="text-mute">Bar Vitelli · Savoca</span> (o bar do Padrinho) — <span class="italic">Bar Vitelli Savoca 8-7-21.jpg</span></li>
-              <li>· <span class="text-mute">Castelmola · Piazza Sant'Antonio</span> (o 360°) — <span class="italic">Castelmola - Panorama di Taormina da Piazza Sant'Antonio.jpg</span></li>
-              <li>· <span class="text-mute">Bar Turrisi · Castelmola</span> (vinho de amêndoas) — <span class="italic">Bar Turrisi Castelmola 14-9-21.jpg</span></li>
-              <li>· <span class="text-mute">Corso Umberto à noite</span> (a passeggiata) — <span class="italic">Taormina street market at night 31-8-21.jpg</span></li>
+              <li>· <span class="text-mute">Tenuta San Michele · Murgo</span> (base) — <span class="italic">Etna vineyards nerello mascalese.jpg</span></li>
+              <li>· <span class="text-mute">Red Etna Excursion · Cratera e Lava</span> (tour) — <span class="italic">Etna eruption 2002.jpg</span></li>
+              <li>· <span class="text-mute">Strada Quota Mille · Linguaglossa</span> (rota cênica) — <span class="italic">Etna landscape lava vineyard.jpg</span></li>
+              <li>· <span class="text-mute">Cattedrale di Santa Maria Assunta</span> (basalto negro) — <span class="italic">Randazzo Cattedrale Santa Maria Assunta.jpg</span></li>
+              <li>· <span class="text-mute">Pasticceria Musumeci · Granita di Pistacchio</span> — <span class="italic">Granita di pistacchio di Bronte.jpg</span></li>
+              <li>· <span class="text-mute">Murgo · Cellar Tour & Jantar de Degustação</span> — <span class="italic">Murgo Etna wine cellar.jpg</span></li>
             </ul>
           </details>
         </div>
@@ -381,7 +300,6 @@
     </section>
   </main>
 
-  <!-- Botão flutuante: voltar ao início da timeline -->
   <button x-show="sheetScrolled" x-cloak
           x-transition:enter="transition ease-out duration-200" x-transition:enter-start="opacity-0 translate-y-2" x-transition:enter-end="opacity-100 translate-y-0"
           x-transition:leave="transition ease-in duration-150" x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0"
@@ -391,28 +309,21 @@
     <svg aria-hidden="true" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7"/></svg>
   </button>
 
-  <!-- ============================================================= -->
-  <!-- MODAL — Glassmorphism (sobe de baixo)                         -->
-  <!-- ============================================================= -->
   <div x-cloak x-show="modal.open" role="dialog" aria-modal="true" :aria-label="modal.p.nome" class="fixed inset-0 z-50 flex items-end sm:items-center justify-center">
-    <!-- backdrop -->
     <div x-show="modal.open"
          x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100"
          x-transition:leave="transition ease-in duration-200" x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0"
          @click="closeModal()"
          class="absolute inset-0 bg-charcoal/70 backdrop-blur-sm"></div>
 
-    <!-- painel -->
     <div x-ref="panel" x-show="modal.open" x-trap.noscroll="modal.open" tabindex="-1"
          x-transition:enter="transition ease-out duration-400" x-transition:enter-start="translate-y-full sm:translate-y-6 opacity-0" x-transition:enter-end="translate-y-0 opacity-100"
          x-transition:leave="transition ease-in duration-250" x-transition:leave-start="translate-y-0 opacity-100" x-transition:leave-end="translate-y-full opacity-0"
          class="glass relative w-full sm:max-w-lg sm:rounded-3xl rounded-t-3xl max-h-[92dvh] overflow-y-auto sheet
                 shadow-[0_-20px_80px_rgba(0,0,0,.7)]">
 
-      <!-- imagem topo + zona de arrasto (deslize ↓ para fechar) -->
       <div @touchstart.passive="dragStart($event)" @touchmove.passive="dragMove($event)" @touchend="dragEnd()"
            class="ph-img relative h-52 w-full overflow-hidden sm:rounded-t-3xl">
-        <!-- alça de arrasto -->
         <div class="absolute top-2.5 left-1/2 -translate-x-1/2 w-10 h-1 rounded-full bg-ice/50 z-20 sm:hidden"></div>
         <img :src="modal.p.img" :alt="modal.p.nome + ' — ' + modal.p.linha" class="h-full w-full object-cover"
              @load="$el.classList.add('loaded')" x-effect="modal.open && $el.classList.remove('loaded')" />
@@ -430,7 +341,6 @@
       </div>
 
       <div class="px-5 pt-6 pb-[calc(1.5rem+env(safe-area-inset-bottom))] space-y-6">
-        <!-- meta rápida -->
         <div class="grid grid-cols-3 gap-3">
           <div class="rounded-xl bg-ink/60 border border-line/50 p-3">
             <p class="text-[0.5625rem] tracking-widest uppercase text-faint">Horário ideal</p>
@@ -438,7 +348,7 @@
           </div>
           <div class="rounded-xl bg-ink/60 border border-line/50 p-3">
             <p class="text-[0.5625rem] tracking-widest uppercase text-faint">Custo</p>
-            <p class="text-[0.8125rem] text-ice mt-1 font-medium" x-text="modal.p.custo || 'Gratuito'"></p>
+            <p class="text-[0.8125rem] text-ice mt-1 font-medium" x-text="modal.p.custo || 'Incluído'"></p>
           </div>
           <div class="rounded-xl bg-ink/60 border border-line/50 p-3">
             <p class="text-[0.5625rem] tracking-widest uppercase text-faint">Duração</p>
@@ -446,19 +356,16 @@
           </div>
         </div>
 
-        <!-- descrição -->
         <div>
           <p class="text-[0.625rem] tracking-[0.3em] uppercase text-emeraldlt mb-2">Descrição</p>
           <p class="text-[0.875rem] text-mute leading-relaxed font-light" x-text="modal.p.descricao"></p>
         </div>
 
-        <!-- resumo histórico -->
         <div class="border-l-2 border-emerald/50 pl-4">
-          <p class="text-[0.625rem] tracking-[0.3em] uppercase text-faint mb-2">Resumo histórico</p>
+          <p class="text-[0.625rem] tracking-[0.3em] uppercase text-faint mb-2">Contexto geológico / histórico</p>
           <p class="text-[0.875rem] text-mute leading-relaxed font-light" x-text="modal.p.historia"></p>
         </div>
 
-        <!-- insights -->
         <div>
           <p class="text-[0.625rem] tracking-[0.3em] uppercase text-gold mb-3">Insights curiosos</p>
           <ul class="space-y-2.5">
@@ -471,7 +378,6 @@
           </ul>
         </div>
 
-        <!-- ações -->
         <div class="flex items-stretch gap-3">
           <button @click="focusPoint(modal.p.id); closeModal()"
                   class="flex-1 min-h-[52px] rounded-full py-3.5 text-[0.75rem] tracking-[0.2em] uppercase font-medium transition
@@ -480,7 +386,6 @@
                                                  : 'border-emerald/60 text-emeraldlt'">
             Localizar no mapa
           </button>
-          <!-- Abrir o ponto no Google Maps -->
           <a :href="gmapsUrl(modal.p)" target="_blank" rel="noopener noreferrer"
              aria-label="Abrir no Google Maps"
              class="shrink-0 w-[52px] min-h-[52px] rounded-full border border-line flex items-center justify-center
@@ -496,40 +401,52 @@
   </div>
 
   <!-- ============================================================= -->
-  <!-- LÓGICA + BANCO DE DADOS (JSON)                                 -->
+  <!-- LÓGICA + BANCO DE DADOS                                        -->
   <!-- ============================================================= -->
   <script>
     /* =========================================================================
-       BANCO DE DADOS — Operação Taormina II (8 paragens, 4 atos · 09h00 → noite)
-       Dia das estradas de montanha: Savoca (cinema d'O Poderoso Chefão) e Castelmola
-       (mirante 360°), com regresso à passeggiata noturna no Corso Umberto de Taormina.
-       Pontos em comunas distintas usam 'place'/'cidade' no link do Google Maps.
+       BANCO DE DADOS — Etna II: A Fortaleza de Basalto e o Sangue da Terra
+       (6 pontos nodais, 5 atos · 08h00 → 22h00 · Flanco Oriental + Randazzo)
        tipo: 'base' | 'foco' | 'peripheral' | 'food'
-       Imagens reais (Wikimedia Commons); links de rota abrem no Google Maps.
        ========================================================================= */
     const DB = {
-      centro: [37.85700, 15.28200],
+      centro: [37.79, 15.05],
       atos: [
+
         /* ===================== ATO I ===================== */
         {
           id: "ato-1",
-          faixa: "09h00 — 10h00",
-          titulo: "Ato I · O Café sem Pressa",
+          faixa: "08h00 — 13h00",
+          titulo: "Ato I · A Explosão Macrocósmica",
           pontos: [
             {
-              id: "the-view-cafe", tipo: "base", nome: "The View · O Café sem Pressa",
-              place: "The View Luxury Apartments", cidade: "Taormina",
-              ato: "Ponto de Partida", hora: "09h00", coord: [37.85280, 15.27850],
-              linha: "Acorde sem pressa, café na varanda com a vista que dá nome ao apartamento, e prepare-se para dominar as estradas superiores.",
-              img: "https://commons.wikimedia.org/wiki/Special:FilePath/Panorama%20di%20Taormina%20da%20Castelmola.jpg?width=900",
-              custo: "—", duracao: "1h",
-              horarioIdeal: "09h00 — manhã limpa antes do calor; estradas de cumeada vazias",
-              descricao: "O Dia II abre devagar. Sem praia no roteiro, o dia ganha um respiro sofisticado: tome o café na varanda do The View, com Taormina e o golfo desenhados lá embaixo, e organize a saída. Hoje é um dia de uso total do carro — estradas de montanha, curvas sobre o vazio e dois ninhos de águia para conquistar: Savoca, a aldeia do cinema, e Castelmola, o mirante 360° acima de Taormina.",
-              historia: "Esta é a contracara do Dia I: ontem o carro foi neutralizado para um circuito a pé; hoje ele é a ferramenta. As estradas que ligam Taormina à cumeada dos Peloritani são sinuosas, estreitas e espetaculares — sobem por entre oliveiras e penhascos, com o mar Jónico sempre à direita. A logística inverte-se: o prazer está justamente em dirigir.",
+              id: "tenuta-pickup", tipo: "base", nome: "Tenuta San Michele · Pickup",
+              ato: "Ponto de Partida · Red Etna Excursion", hora: "08h00", coord: [37.69810, 15.11180],
+              linha: "O guia faz o pickup aqui — vocês não tocam no carro pelas próximas 5 horas.",
+              img: "https://commons.wikimedia.org/wiki/Special:FilePath/Etna_vineyards_nerello_mascalese.jpg?width=900",
+              custo: "€€€ · tour premium", duracao: "5h · 08h00–13h00",
+              horarioIdeal: "08h00 sharp — o grupo sai na hora",
+              descricao: "O guia da Red Etna Excursion faz o pickup diretamente na Tenuta San Michele. Vocês não tocam no carro. Pelas próximas 5 horas, serão expostos à geodinâmica ativa do vulcão: caminhada pelas bordas de crateras extintas, travessia de campos de lava cordada (pāhoehoe) e exploração técnica de túneis de lavagem subterrâneos com capacetes e lanternas. É o impacto visual da geologia em seu estado mais visceral.",
+              historia: "A Red Etna Excursion opera nas cotas entre 1.800 e 2.900 metros de altitude nas encostas oriental e meridional do vulcão — zonas que registaram as erupções mais recentes do século XXI (2001, 2002, 2021). Os túneis de lavagem (lava tubes) são condutas naturais formadas quando a superfície de um fluxo de lava arrefece e solidifica enquanto o interior continua a fluir — criando cavernas tubulares de até 20 metros de diâmetro com estalactites de lava.",
               insights: [
-                "Tanque cheio e GPS offline carregado: trechos de montanha podem perder sinal entre Taormina e Savoca.",
-                "Saia até as 10h00 — Savoca enche de tours do Padrinho a partir do meio-dia; chegar cedo garante o terraço vazio.",
-                "Calçado confortável: Savoca e Castelmola são aldeias verticais, de ladeiras e escadarias em pedra."
+                "A lava pāhoehoe (do havaiano) tem superfície enrolada e sedosa — sinal de que esfriou lentamente. A lava ʻaʻā tem superfície rugosa e cortante: esfriou rápido sob tensão.",
+                "Os túneis de lavagem do Etna são patrimônio geológico protegido — o acesso é regulado e os grupos têm tamanho máximo de 12 pessoas.",
+                "A altitude acima de 2.000 metros torna o ar rarefeito e frio mesmo no verão — o guia confirma o equipamento necessário na véspera."
+              ]
+            },
+            {
+              id: "etna-cratera-lava", tipo: "foco", nome: "Red Etna Excursion · Cratera e Túneis",
+              ato: "Ato I · Geodinâmica Ativa", hora: "08h30", coord: [37.72800, 15.02500],
+              linha: "Campos de lava cordada, bordas de crateras extintas e túneis subterrâneos — a geologia no estado bruto.",
+              img: "https://commons.wikimedia.org/wiki/Special:FilePath/Etna_eruption_2002.jpg?width=900",
+              custo: "—", duracao: "5h (incluído no tour)",
+              horarioIdeal: "Manhã cedo — antes da névoa sobe das encostas",
+              descricao: "O core do Amazing Etna Morning Tour: caminhadas técnicas pelos campos de lava da erupção de 2002 no flanco nordeste, com travessia de extensões de lava cordada pāhoehoe e acesso a túneis de lavagem ativos. Os capacetes e lanternas são fornecidos. O guia explica em tempo real a diferença entre as texturas de lava — cada campo tem a impressão digital da sua erupção.",
+              historia: "A erupção de 2002–2003 foi uma das maiores do Etna no século XXI: dois flancos abriram simultaneamente (norte e sul), destruindo a estação de esqui do Rifugio Sapienza a sul e ameaçando Linguaglossa a norte. O fluxo norte que vocês atravessam avançou 7 km em poucos dias — uma velocidade que, em geologia vulcânica, é considerada violenta. Os campos de lava solidificada são agora o arquivo mais legível da energia interna da Terra.",
+              insights: [
+                "As crateras do Etna não têm todas a mesma idade: a Summit Crater existe há ~2.000 anos; o Nuovo Cratere di Sud-Est (o mais jovem) nasceu em 1971.",
+                "O som dos pés na lava pāhoehoe é único — um clangor metálico e oco, porque a superfície solidificada é fina sobre o vazio do túnel que esfriou por baixo.",
+                "Vocês caminharão sobre lava que tinha ~1.100°C há apenas 23 anos — mais nova do que a maioria dos carros na estrada."
               ]
             }
           ]
@@ -538,45 +455,13 @@
         /* ===================== ATO II ===================== */
         {
           id: "ato-2",
-          faixa: "10h00 — 13h30",
-          titulo: "Ato II · A Rota do Padrinho · Savoca",
+          faixa: "14h15 — 15h15",
+          titulo: "Ato II · A Rota da Quota Mille",
           pontos: [
             {
-              id: "savoca-subida", tipo: "peripheral", nome: "Savoca · A Subida à Cumeada",
-              ato: "Ato II", hora: "10h40", coord: [37.95550, 15.34050],
-              linha: "Trecho de estrada de montanha (~40 min) pela cumeada até Savoca: curvas sobre olivais e o mar Jónico recortado lá embaixo."
-            },
-            {
-              id: "chiesa-san-nicolo", tipo: "foco", nome: "Chiesa di San Nicolò · A Igreja do Casamento",
-              place: "Chiesa di San Nicolò", cidade: "Savoca",
-              ato: "Ato II · A Rota do Padrinho", hora: "11h00", coord: [37.95670, 15.34110],
-              linha: "O foco: a igrejinha empoleirada na rocha onde Michael Corleone casou com Apollonia — Savoca fez de Corleone no cinema.",
-              img: "https://commons.wikimedia.org/wiki/Special:FilePath/Savoca%20St%20Nicolo.jpg?width=900",
-              custo: "Gratuito (entrada da igreja ~€)", duracao: "1h",
-              horarioIdeal: "Final da manhã — luz frontal na fachada e na vista para o vale",
-              descricao: "Caminhe pelas ladeiras de Savoca até a Chiesa di San Nicolò (também dita Santa Lucia), encravada num esporão de rocha com o vale aberto aos pés. É aqui que o cinema e a pedra se encontram: nesta igreja Francis Ford Coppola filmou o casamento de Michael Corleone com Apollonia, em 'O Poderoso Chefão' (1972). Suba até o adro e olhe em volta — a aldeia medieval e os montes Peloritani fazem o cenário que Hollywood escolheu para ser a Sicília arquetípica.",
-              historia: "Corleone, a cidade que dá nome à saga, foi considerada moderna demais para as filmagens; Coppola escolheu Savoca e a vizinha Forza d'Agrò como cenário do interior siciliano dos anos 1940. A Chiesa di San Nicolò, de origem medieval, tornou-se ponto de peregrinação cinéfila. A aldeia em si remonta ao período normando, agarrada à crista rochosa por razões de defesa — daí o apelido de 'ninho de águia'.",
-              insights: [
-                "Do adro da igreja sai a vista-assinatura: a fachada de pedra com o vale dos Peloritani ao fundo.",
-                "Savoca também guarda as múmias da cripta dos Capuchinhos — desvio macabro e fascinante para quem tiver tempo.",
-                "As ruelas são íngremes e em pedra: suba devagar, é parte da atmosfera de aldeia parada no tempo."
-              ]
-            },
-            {
-              id: "bar-vitelli", tipo: "food", nome: "Bar Vitelli · O Lanche Tático",
-              place: "Bar Vitelli", cidade: "Savoca",
-              ato: "Ato II · A Rota do Padrinho", hora: "12h00", coord: [37.95580, 15.34030],
-              linha: "O terraço sombreado do bar do Padrinho: pane cunzato rústico e granita de limão com o toque local de vinho Zibibbo.",
-              img: "https://commons.wikimedia.org/wiki/Special:FilePath/Bar%20Vitelli%20Savoca%208-7-21.jpg?width=900",
-              custo: "€ · lanche + granita", duracao: "1h",
-              horarioIdeal: "Meio-dia — sombra do terraço no auge do calor",
-              descricao: "Desça até a Piazza Fossia e sente-se no terraço sombreado do Bar Vitelli — o café mais famoso do cinema italiano. Esqueça pressa: peça o clássico pane cunzato (pão rústico temperado com azeite pungente, tomates secos, anchovas e pecorino) e a icônica granita de limão, aqui servida com o toque local do vinho Zibibbo. Rápido, histórico e genial — combustível perfeito antes de virar o carro para Castelmola.",
-              historia: "No Bar Vitelli, Coppola filmou a cena em que Michael Corleone pede ao Sr. Vitelli a mão de sua filha Apollonia. A família Vitelli mantém o café desde o século XIX, e o interior é um pequeno museu antiquário — cartazes do filme, ferramentas rurais e fotos de época. O pane cunzato ('pão temperado') é comida camponesa siciliana; o Zibibbo, uva moscatel de Pantelleria, dá à granita um perfume que só se prova aqui.",
-              insights: [
-                "Peça o pane cunzato para dividir: é denso e rende — sobra apetite para o vinho de amêndoas de Castelmola.",
-                "O salão interno guarda memorabilia do filme: vale espreitar antes ou depois do lanche.",
-                "Granita de limão com Zibibbo é a assinatura da casa — não troque pela de café aqui."
-              ]
+              id: "quota-mille-linguaglossa", tipo: "peripheral", nome: "Strada Quota Mille · Linguaglossa",
+              ato: "Ato II", hora: "14h15", coord: [37.84220, 15.14150],
+              linha: "A estrada cênica que corta o vulcão a 1.000 m de altitude — lavas pretas cortam vinhedos centenários."
             }
           ]
         },
@@ -584,39 +469,37 @@
         /* ===================== ATO III ===================== */
         {
           id: "ato-3",
-          faixa: "14h00 — 16h00",
-          titulo: "Ato III · A Conquista de Castelmola",
+          faixa: "15h15 — 17h15",
+          titulo: "Ato III · A Cidade Monocromática que a Lava Poupou",
           pontos: [
             {
-              id: "castelmola-360", tipo: "foco", nome: "Castelmola · O Impacto 360°",
-              place: "Piazza Sant'Antonio", cidade: "Castelmola",
-              ato: "Ato III · A Conquista", hora: "15h00", coord: [37.85840, 15.27740],
-              linha: "O ponto mais alto acima de Taormina: da Piazza Sant'Antonio, o visual absoluto do mar Jónico e da cratera da Etna num giro de 360°.",
-              img: "https://commons.wikimedia.org/wiki/Special:FilePath/Castelmola%20-%20Panorama%20di%20Taormina%20da%20Piazza%20Sant%27Antonio.jpg?width=900",
-              custo: "Gratuito · estac. €", duracao: "1h",
-              horarioIdeal: "Início da tarde — luz alta sobre o mar; ao entardecer fica incandescente",
-              descricao: "Dirija da costa de volta e suba até Castelmola, o vilarejo medieval pousado no cume acima de Taormina, a uns 530 metros. Estacione no topo e vá direto à Piazza Sant'Antonio: dali abre-se o visual absoluto — o mar Jónico de um lado, a silhueta fumegante da Etna do outro, Taormina e o seu Teatro Antico minúsculos lá embaixo. É a leitura aérea de tudo o que se caminhou no Dia I, agora vista do alto, num giro de 360°.",
-              historia: "Castelmola cresceu em torno das ruínas de um castelo de origem antiga (com vestígios sículos e gregos, depois fortaleza normanda), que coroa o penhasco. Por séculos foi a acrópole defensiva de Taormina — quem dominava Mola dominava a montanha. Hoje é um balcão suspenso: das suas praças e miradouros, a costa jónica desenrola-se da baía de Naxos até a ponta da Calábria, no horizonte.",
+              id: "cattedrale-randazzo", tipo: "foco", nome: "Cattedrale di Santa Maria Assunta",
+              ato: "Ato III · Randazzo", hora: "15h15", coord: [37.87780, 14.95140],
+              linha: "Construída em basalto negro e calcário branco de Siracusa — um drama fotográfico violento em pedra.",
+              img: "https://commons.wikimedia.org/wiki/Special:FilePath/Randazzo_Cattedrale_di_Santa_Maria.jpg?width=900",
+              custo: "Gratuito", duracao: "45 min",
+              horarioIdeal: "15h15 — luz de tarde rasante no basalto negro",
+              descricao: "Caminhem até a Cattedrale di Santa Maria Assunta. A arquitetura é de um drama fotográfico violento: o templo foi construído inteiramente com blocos maciços de basalto negro vulcânico, mas ostenta detalhes e molduras em pedra calcária branca de Siracusa. É o contraste perfeito — uma joia minimalista e sombria cravada na montanha, cercada por uma cidade que a lava nunca tocou em 3.000 anos de história eruptiva.",
+              historia: "Randazzo é uma anomalia histórica e geológica: a cidade mais próxima do cone principal do Etna que nunca foi soterrada. A topografia local — cumes rochosos naturais e elevações do terreno — divide e desvia os fluxos de magma para os flancos laterais há milênios. A catedral de Santa Maria Assunta data do século XIII, mas foi reconstruída e modificada repetidamente. O uso do basalto local como material construtivo principal criou um monumento que é, literalmente, feito do mesmo material que destrói tudo à sua volta.",
               insights: [
-                "Da Piazza Sant'Antonio, alinhe num só quadro Taormina, o Teatro Antico e a Etna — a foto que resume os dois dias.",
-                "As ruas de Castelmola são pedestres e estreitíssimas: deixe o carro no estacionamento do topo e suba a pé.",
-                "Em dias limpos avista-se a Calábria do outro lado do estreito de Messina — leve a câmera com zoom."
+                "O basalto negro do Etna foi o 'betão armado' da Sicília medieval — mais duro e mais durável do que o calcário, mas impossível de esculpir com detalhes finos.",
+                "Por isso as molduras e ornamentos são em calcário branco de Siracusa: o basalto dá a estrutura, o calcário permite a beleza decorativa.",
+                "Randazzo tem 3 igrejas medievais construídas com 3 tipos diferentes de pedra vulcânica local — cada uma pertencia a um bairro étnico diferente (latim, grego, lombardo) na Idade Média."
               ]
             },
             {
-              id: "bar-turrisi", tipo: "food", nome: "Bar Turrisi · O Vinho de Amêndoas",
-              place: "Bar Turrisi", cidade: "Castelmola",
-              ato: "Ato III · A Conquista", hora: "15h30", coord: [37.85870, 15.27720],
-              linha: "O bar mais intrigante da Sicília: prove o tradicional vino alla mandorla e entenda a conexão pagã grega da fertilidade.",
-              img: "https://commons.wikimedia.org/wiki/Special:FilePath/Bar%20Turrisi%20Castelmola%2014-9-21.jpg?width=900",
-              custo: "€ · taça de vino alla mandorla", duracao: "45 min",
-              horarioIdeal: "Tarde — pausa fresca antes da descida a Taormina",
-              descricao: "A poucos passos da praça, entre no Bar Turrisi — talvez o bar mais excêntrico da ilha. Espalhado por vários andares com terraços sobre o abismo, é decorado de cima a baixo com símbolos fálicos. Peça o tradicional vino alla mandorla (vinho de amêndoas), doce e perfumado, servido em pequenas doses. Por trás da brincadeira está uma raiz séria: a ligação pagã, grega, entre Castelmola e os antigos cultos de fertilidade.",
-              historia: "A família Turrisi transformou o bar num santuário irônico ao falo como símbolo ancestral de fertilidade e boa sorte — um motivo que remonta aos cultos dionisíacos e priápicos da Magna Grécia, dos quais a Sicília oriental foi coração. O vino alla mandorla, licoroso e aromático, é especialidade local de Castelmola, herdada das amendoeiras que cobrem estas encostas. Provocação e antropologia no mesmo copo.",
+              id: "pasticceria-musumeci", tipo: "food", nome: "Pasticceria Musumeci",
+              ato: "Ato III · Joia Doce Legítima", hora: "16h30", coord: [37.87760, 14.95120],
+              linha: "A granita artesanal de pistache de Bronte puro ou o sorvete de avelã da Etna no brioche com tuppo quente.",
+              img: "https://commons.wikimedia.org/wiki/Special:FilePath/Granita_di_pistacchio_Bronte_Sicily.jpg?width=900",
+              custo: "€ · custo baixo", duracao: "30 min",
+              horarioIdeal: "16h30 — pausa obrigatória antes da descida",
+              descricao: "Localizada na Piazza Santa Maria, logo em frente à catedral negra. Sente-se no pátio da Musumeci, uma das confeitarias mais premiadas da Itália e da Sicília. Esqueçam qualquer sobremesa industrial. Peça a lendária Granita artesanal de Pistache de Bronte puro ou o sorvete de avelã da Etna, servido dentro de um brioche com tuppo quente. É o auge da confeitaria clássica da região.",
+              historia: "O pistache de Bronte é cultivado nas encostas do Etna, a menos de 30 km de Randazzo, numa terra vulcânica que confere ao fruto uma intensidade de sabor e uma tonalidade verde vibrante impossíveis de replicar. A denominação 'Pistacchio Verde di Bronte DOP' é uma das mais rigorosas da Itália: colheita alternada (só a cada 2 anos), tudo feito à mão, sem mecanização. O resultado é um dos frutos secos mais caros do mundo — e justificadamente.",
               insights: [
-                "Suba aos terraços superiores: a vista sobre o vazio rivaliza com a da praça — e quase ninguém sobe.",
-                "O vino alla mandorla é doce e forte: uma dose basta antes de reassumir o volante para a descida.",
-                "A decoração é deliberadamente provocadora, mas ancorada em mitologia grega real — leia as placas para o contexto."
+                "O pistache de Bronte DOP é colhido apenas nos anos ímpares — as árvores repousam nos anos pares para concentrar toda a energia no fruto seguinte.",
+                "A granita siciliana autêntica não leva leite nem natas — é sorbetto de fruta ou fruto seco com açúcar e água, congelado e trabalhado manualmente.",
+                "O brioche com tuppo (o pequeno 'chapéu' por cima) é exclusivo da Sicília oriental — a massa é mais macia e amanteigada do que o croissant continental."
               ]
             }
           ]
@@ -625,51 +508,59 @@
         /* ===================== ATO IV ===================== */
         {
           id: "ato-4",
-          faixa: "19h00 — noite",
-          titulo: "Ato IV · A Noite Iluminada",
+          faixa: "17h15 — 19h00",
+          titulo: "Ato IV · O Retorno à Base e a Calmaria",
           pontos: [
             {
-              id: "regresso-the-view", tipo: "peripheral", nome: "Regresso ao The View · Carro na Garagem",
-              ato: "Ato IV", hora: "19h00", coord: [37.85280, 15.27850],
-              linha: "Desça de Castelmola, recolha o carro à garagem do apartamento e troque os pneus pelos pés: a noite é livre e a pé."
-            },
+              id: "descida-ss120", tipo: "peripheral", nome: "Descida SS120 / SP59 · La Lupa",
+              ato: "Ato IV", hora: "17h15", coord: [37.78000, 15.03500],
+              linha: "A névoa fria da montanha (la lupa) começa a subir e cobrir os vinhedos — o sinal da tarde que encerra."
+            }
+          ]
+        },
+
+        /* ===================== ATO V ===================== */
+        {
+          id: "ato-5",
+          faixa: "19h00 em diante",
+          titulo: "Ato V · O Ritual do Vinho e do Solo",
+          pontos: [
             {
-              id: "corso-noite", tipo: "foco", nome: "Corso Umberto à Noite",
-              place: "Corso Umberto", cidade: "Taormina",
-              ato: "Ato IV · A Noite Iluminada", hora: "21h00", coord: [37.85160, 15.28550],
-              linha: "O encerramento: o mesmo Corso do Dia I, agora iluminado — vitrines acesas, gelaterias, a passeggiata siciliana sem relógio.",
-              img: "https://commons.wikimedia.org/wiki/Special:FilePath/Taormina%20street%20market%20at%20night%2031-8-21.jpg?width=900",
-              custo: "—", duracao: "À vontade",
-              horarioIdeal: "Após o jantar — a passeggiata começa ao cair da noite",
-              descricao: "Com o carro guardado, desça a pé ao centro. O Corso Umberto à noite é outra cidade: as luzes acendem as fachadas de pedra, as gelaterias e bares enchem-se, e a passeggiata — o passeio noturno siciliano, sem pressa nem destino — toma a rua. Reveja a Piazza IX Aprile sob a lua, agora vazia de excursões, e deixe o segundo dia fechar como começou: devagar, com vista, sem relógio.",
-              historia: "A passeggiata é instituição mediterrânica: ao entardecer, a cidade inteira sai para caminhar, ver e ser vista, do início ao fim do corso e de volta. Em Taormina, eixo turístico de mil metros entre Porta Messina e Porta Catania, o ritual ganha cenário de pedra iluminada — o mesmo desfiladeiro urbano do Dia I, agora em chave noturna e contemplativa.",
+              id: "murgo-cellar-jantar", tipo: "base", nome: "Murgo · Cellar Tour & Jantar de Degustação",
+              ato: "Encerramento · Murgo Food & Wine", hora: "19h00", coord: [37.69820, 15.11190],
+              linha: "5 expressões puras do território: 1 Espumante Brut, 2 IGP e 2 Etna DOC — com a Pia e o jantar completo.",
+              img: "https://commons.wikimedia.org/wiki/Special:FilePath/Murgo_Etna_wine_cantina.jpg?width=900",
+              custo: "€€€ · jantar degustação", duracao: "3h · 19h00–22h00",
+              horarioIdeal: "19h00 — encontro com a Pia no portão das adegas",
+              descricao: "Vocês se encontram com a Pia para o início do Cellar Tour. Caminhem pelas adegas subterrâneas de pedra basáltica onde os espumantes de método clássico da vinícola repousam. O jantar siciliano completo será harmonizado com 5 expressões puras do território: 1 Espumante Brut Murgo, 2 vinhos IGP e 2 Etna DOC. Preste atenção especial ao Etna Rosso DOC — feito com Nerello Mascalese, cor translúcida e elegante, sabor com carga tânica e mineral explosiva.",
+              historia: "A vinícola Murgo pertence à família Cambria há gerações e opera na Contrada San Michele, a 650 metros de altitude no flanco oriental do Etna. O método clássico (champenoise) que produz os espumantes Murgo é uma raridade nas encostas do vulcão — a altitude fria e a acidez natural das uvas Nerello Mascalese e Nerello Cappuccio criam a base perfeita para segunda fermentação em garrafa. O Etna Rosso DOC que encerrará a noite é, literalmente, a geologia do dia traduzida em estado líquido: as videiras centenárias cavaram as suas raízes diretamente na cinza vulcânica que vocês pisaram pela manhã.",
               insights: [
-                "Volte à Piazza IX Aprile à noite: sem as excursões do dia, a sacada sobre o mar fica só sua.",
-                "Uma gelateria do Corso fecha bem o dia — peça pistache de Bronte ou amêndoa, eco do vinho de Castelmola.",
-                "Sem carro, sem pressa: a noite é a recompensa de um dia inteiro de estradas de montanha."
+                "O Nerello Mascalese é uma das poucas castas do mundo que expressa 'terroir' de altitude — o vinho da encosta norte do Etna (mais fria) é completamente diferente do da encosta sul (mais quente).",
+                "As adegas subterrâneas da Murgo são escavadas na rocha basáltica a temperatura constante de 12–14°C ao longo do ano — sem ar condicionado, sem tecnologia: a própria montanha conserva o vinho.",
+                "A Pia Cambria é a enóloga da vinícola: a degustação com ela é uma aula de geologia vulcânica contada através do copo."
               ]
             }
           ]
         }
+
       ]
     };
 
     /* =========================================================================
-       APLICAÇÃO (Alpine) — mapa, scroll-spy, flyTo, modal
+       FUNÇÃO ALPINE — etna2Guide()
        ========================================================================= */
-    function taormina2Guide() {
+    function etna2Guide() {
       return {
         atos: DB.atos,
         map: null,
         markers: {},
         activeId: null,
-        activeLabel: "10h30",
+        activeLabel: '',
         modal: { open: false, p: {} },
         _suppressSpy: false,
         sheetScrolled: false,
         _dy: 0, _y0: 0, _dragging: false,
 
-        // índice plano de todos os pontos
         get allPontos() { return this.atos.flatMap(a => a.pontos); },
 
         prefersReducedMotion() { return window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches; },
@@ -680,19 +571,16 @@
             this.observeReveals();
             this.observeSpy();
           });
-          // reacerta o mapa ao girar o iPhone ou quando a barra do Safari muda de altura
           window.addEventListener('resize', () => this.map && this.map.invalidateSize());
           window.addEventListener('orientationchange', () =>
             setTimeout(() => this.map && this.map.invalidateSize(), 300));
         },
 
-        /* ---------- bottom sheet: progresso de rolagem ---------- */
         onSheetScroll(e) { this.sheetScrolled = e.target.scrollTop > 480; },
         scrollSheetTop() { this.$refs.sheet.scrollTo({ top: 0, behavior: 'smooth' }); },
 
-        /* ---------- modal: deslizar para baixo e fechar (iOS) ---------- */
         dragStart(e) {
-          if (this.$refs.panel.scrollTop > 0) return;   // só inicia no topo
+          if (this.$refs.panel.scrollTop > 0) return;
           this._y0 = e.touches[0].clientY; this._dy = 0; this._dragging = true;
           this.$refs.panel.style.transition = 'none';
         },
@@ -706,20 +594,19 @@
           this._dragging = false;
           const p = this.$refs.panel;
           p.style.transition = 'transform .28s cubic-bezier(.2,.7,.2,1)';
-          if (this._dy > 110) {                          // ultrapassou o limiar → fecha
+          if (this._dy > 110) {
             p.style.transform = 'translateY(100%)';
             setTimeout(() => { this.closeModal(); p.style.transform = ''; p.style.transition = ''; }, 240);
-          } else {                                       // volta ao lugar
+          } else {
             p.style.transform = '';
           }
           this._dy = 0;
         },
 
-        /* ---------- Mapa Leaflet (estilo escuro) ---------- */
         buildMap() {
           const start = () => {
             this.map = L.map('map', {
-              center: DB.centro, zoom: 16, zoomControl: true,
+              center: DB.centro, zoom: 11, zoomControl: true,
               attributionControl: true, scrollWheelZoom: false,
               touchZoom: true, doubleClickZoom: true, tapTolerance: 18, bounceAtZoomLimits: false
             });
@@ -727,7 +614,6 @@
               attribution: '© OpenStreetMap · © CARTO', maxZoom: 20, subdomains: 'abcd'
             }).addTo(this.map);
 
-            // plota todos os pontos
             this.allPontos.forEach(p => {
               const cls = `pin pin-${p.tipo}`;
               const icon = L.divIcon({
@@ -741,48 +627,49 @@
               this.markers[p.id] = m;
             });
 
-            // ajusta o enquadramento aos pontos. O contêiner pode ter dimensão 0 no
-            // primeiro frame (Safari iOS, telas largas, render fora de tela): só
-            // enquadra quando o mapa já tem área real — senão o fit cai para zoom 0.
+            // Linha de rota: anel em torno do Etna
+            const coords = this.allPontos.map(p => p.coord);
+            L.polyline(coords, {
+              color: 'rgba(201,168,106,0.40)',
+              weight: 2,
+              dashArray: '6, 8'
+            }).addTo(this.map);
+
             const group = L.featureGroup(Object.values(this.markers));
-            const bounds = group.getBounds().pad(0.25);
+            const bounds = group.getBounds().pad(0.15);
             let fitted = false;
             const tryFit = () => {
               if (fitted || !this.map) return;
               const s = this.map.getSize();
-              if (s.x < 2 || s.y < 2) return false;          // ainda sem layout
+              if (s.x < 2 || s.y < 2) return false;
               this.map.invalidateSize();
-              this.map.fitBounds(bounds, { maxZoom: 17, animate: !this.prefersReducedMotion() });
+              this.map.fitBounds(bounds, { maxZoom: 12, animate: !this.prefersReducedMotion() });
               fitted = true;
               return true;
             };
-            // tenta já; depois a cada frame até o contêiner ganhar dimensão
             if (!tryFit() && 'ResizeObserver' in window) {
               const ro = new ResizeObserver(() => { if (tryFit()) ro.disconnect(); });
               ro.observe(document.getElementById('map'));
             }
-            [120, 400, 900].forEach(t => setTimeout(tryFit, t));  // rede de segurança
+            [120, 400, 900].forEach(t => setTimeout(tryFit, t));
 
             this.setActive(this.allPontos[0].id, false);
           };
           if (window.L) start(); else window.addEventListener('load', start, { once: true });
         },
 
-        /* ---------- flyTo dinâmico ---------- */
         focusPoint(id, fly = true) {
           const p = this.allPontos.find(x => x.id === id);
           if (!p || !this.map) return;
           this.setActive(id, false);
           if (fly) {
-            const zoom = (p.tipo === 'foco' || p.tipo === 'base' || p.tipo === 'food') ? 18 : 17;
-            this.prefersReducedMotion() ? this.map.setView(p.coord, zoom, { animate: false }) : this.map.flyTo(p.coord, zoom, { duration: 1.1, easeLinearity: 0.25 });
+            const zoom = (p.tipo === 'foco' || p.tipo === 'base' || p.tipo === 'food') ? 16 : 13;
+            this.prefersReducedMotion() ? this.map.setView(p.coord, zoom, { animate: false }) : this.map.flyTo(p.coord, zoom, { duration: 1.3, easeLinearity: 0.25 });
           }
         },
 
-        /* ---------- estado ativo (pin + label) ---------- */
         setActive(id, fly = true) {
           if (this.activeId === id) { if (fly) this._flyOnly(id); return; }
-          // limpa pin anterior
           if (this.activeId && this.markers[this.activeId]) {
             const el = this.markers[this.activeId].getElement()?.querySelector('.pin');
             el && el.classList.remove('pin-active');
@@ -797,11 +684,10 @@
         _flyOnly(id) {
           const p = this.allPontos.find(x => x.id === id);
           if (!p || !this.map) return;
-          const zoom = (p.tipo === 'peripheral') ? 17 : 18;
-          this.prefersReducedMotion() ? this.map.setView(p.coord, zoom, { animate: false }) : this.map.flyTo(p.coord, zoom, { duration: 1.1, easeLinearity: 0.25 });
+          const zoom = (p.tipo === 'peripheral') ? 13 : 15;
+          this.prefersReducedMotion() ? this.map.setView(p.coord, zoom, { animate: false }) : this.map.flyTo(p.coord, zoom, { duration: 1.3, easeLinearity: 0.25 });
         },
 
-        /* ---------- scroll-spy: timeline → mapa ---------- */
         observeSpy() {
           const opts = { root: this.$refs.sheet, rootMargin: '-42% 0px -45% 0px', threshold: 0 };
           const io = new IntersectionObserver((entries) => {
@@ -816,7 +702,6 @@
           document.querySelectorAll('[data-ponto]').forEach(el => io.observe(el));
         },
 
-        /* ---------- reveal (fade-in no scroll) ---------- */
         observeReveals() {
           const io = new IntersectionObserver((entries) => {
             entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
@@ -824,7 +709,6 @@
           document.querySelectorAll('[data-reveal]').forEach(el => io.observe(el));
         },
 
-        /* ---------- scroll suave até o card (mapa → timeline) ---------- */
         scrollToPoint(id) {
           const el = document.querySelector(`[data-ponto="${id}"]`);
           if (!el) return;
@@ -834,10 +718,9 @@
           setTimeout(() => { this._suppressSpy = false; }, 900);
         },
 
-        /* ---------- modal ---------- */
         openModal(p) {
           this.modal.p = p; this.modal.open = true;
-          if (this.$refs.sheet) this.$refs.sheet.style.overflow = 'hidden';  // congela o fundo
+          if (this.$refs.sheet) this.$refs.sheet.style.overflow = 'hidden';
           this.focusPoint(p.id);
         },
         closeModal() {
@@ -845,20 +728,14 @@
           if (this.$refs.sheet) this.$refs.sheet.style.overflow = '';
         },
 
-        /* ---------- link para o Google Maps ---------- */
         gmapsUrl(p) {
-          if (!p || !p.nome) return 'https://www.google.com/maps';
-          // link pelo NOME do ponto + cidade → o Google Maps resolve para o POI registrado
-          // (coordenadas não são usadas no link: podem cair fora do ponto real)
-          const q = encodeURIComponent(`${p.place || p.nome}, ${p.cidade || 'Taormina'}`);
-          // precisão cirúrgica: com placeId do Google, abre o POI exato (não o palpite por nome)
-          if (p.placeId) return `https://www.google.com/maps/search/?api=1&query=${q}&query_place_id=${encodeURIComponent(p.placeId)}`;
-          return `https://www.google.com/maps/search/?api=1&query=${q}`;
+          if (!p || !p.coord) return 'https://www.google.com/maps';
+          const [lat, lng] = p.coord;
+          return `https://www.google.com/maps/search/?api=1&query=${lat},${lng}`;
         }
       };
     }
 
-    // fecha modal com ESC
     window.addEventListener('keydown', e => {
       if (e.key === 'Escape') {
         const root = document.querySelector('[x-data]');
