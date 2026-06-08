@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover" />
-  <title>Taormina II · Os Ninhos de Águia</title>
-  <meta name="description" content="Guia interativo de alto padrão para o Dia II em Taormina — As Fortalezas de Pedra: estradas de montanha até Savoca (a aldeia de 'O Poderoso Chefão') e Castelmola (o mirante 360° acima de Taormina). Cinema, mitologia e altitude na Sicília." />
+  <title>Taormina II · Os Ninhos de Águia e o Abismo Azul</title>
+  <meta name="description" content="Guia interativo de alto padrão para o Dia II em Taormina — fuga cirúrgica às 08h30: Savoca deserta (a aldeia de 'O Poderoso Chefão'), snorkeling sob o Castello di Sant'Alessio, blecaute térmico no The View e food tour guiado de 3 horas pelas veias de pedra de Taormina." />
 
   <!-- ===== Web-app no iPhone (homescreen, barra de status integrada) ===== -->
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -177,14 +177,14 @@
   <header class="fixed top-0 inset-x-0 z-30 pointer-events-none">
     <div class="px-5 pt-[calc(env(safe-area-inset-top)+1rem)] pb-14
                 bg-gradient-to-b from-charcoal via-charcoal/75 to-transparent">
-      <p class="text-[0.625rem] tracking-[0.45em] text-ice/60 uppercase">Taormina · Dia II</p>
-      <h1 class="font-serif text-2xl text-ice mt-1 leading-none drop-shadow-[0_1px_8px_rgba(0,0,0,.6)]">Os Ninhos de Águia</h1>
-      <p class="text-[0.6875rem] text-ice/75 mt-1.5 tracking-wide">As Fortalezas de Pedra · 09h00 → noite · 8 paragens · estradas de montanha</p>
+      <p class="text-[0.625rem] tracking-[0.45em] text-ice/60 uppercase">Taormina · Dia II · Terça-feira</p>
+      <h1 class="font-serif text-2xl text-ice mt-1 leading-none drop-shadow-[0_1px_8px_rgba(0,0,0,.6)]">Os Ninhos de Águia e o Abismo Azul</h1>
+      <p class="text-[0.6875rem] text-ice/75 mt-1.5 tracking-wide">Savoca · Capo Sant'Alessio · Food Tour · 08h30 → noite · 10 paragens</p>
     </div>
   </header>
 
   <!-- O mapa fica SEMPRE visível no topo; só o sheet rola por baixo -->
-  <div id="map" role="region" aria-label="Mapa do Dia II em Taormina — Savoca e Castelmola" class="fixed top-0 inset-x-0 z-0"></div>
+  <div id="map" role="region" aria-label="Mapa do Dia II em Taormina — Savoca, Capo Sant'Alessio e Food Tour" class="fixed top-0 inset-x-0 z-0"></div>
 
   <!-- véu inferior para fundir mapa ↔ folha -->
   <div class="veil fixed inset-x-0 z-10 pointer-events-none
@@ -206,18 +206,18 @@
       <div class="px-6 pt-4 pb-2">
         <div class="flex items-end justify-between">
           <div>
-            <p class="text-[0.625rem] tracking-[0.4em] text-emeraldlt uppercase">As Fortalezas de Pedra</p>
-            <h2 class="font-serif text-[1.625rem] leading-tight text-ice mt-1">Os Ninhos de Águia</h2>
+            <p class="text-[0.625rem] tracking-[0.4em] text-emeraldlt uppercase">Exploração Geológica e Rigor Cultural</p>
+            <h2 class="font-serif text-[1.625rem] leading-tight text-ice mt-1">Os Ninhos de Águia e o Abismo Azul</h2>
           </div>
           <span class="font-serif italic text-faint text-sm pb-1" x-text="activeLabel"></span>
         </div>
         <p class="text-[0.8125rem] text-mute mt-3 leading-relaxed font-light max-w-prose">
-          Sem praia, o dia ganha um respiro sofisticado e <span class="text-gold">uso total do carro</span> nas
-          estradas de montanha. Dois ninhos de águia: <span class="text-emeraldlt">Savoca</span>, a aldeia
-          onde se filmou <span class="text-ice">'O Poderoso Chefão'</span> — igreja do casamento e o terraço do
-          Bar Vitelli; e <span class="text-emeraldlt">Castelmola</span>, o mirante
-          <span class="text-ice">360°</span> acima de Taormina, com o vinho de amêndoas e a sua
-          conexão pagã grega. Cinema, mitologia e altitude.
+          Uma fuga cirúrgica às <span class="text-gold">08h30</span> antes que o sol sature a ilha.
+          Cadência de picos: <span class="text-emeraldlt">Savoca deserta</span> — a chiesa do casamento e o terraço do Bar Vitelli;
+          snorkeling sob o <span class="text-ice">Castello di Sant'Alessio</span> no abismo azul-cobalto;
+          blecaute térmico no The View; e uma <span class="text-emeraldlt">infiltração antropológica</span>
+          pelas veias de pedra de Taormina com food tour guiado de 3 horas. A noite fecha no
+          <span class="text-ice">Morgana Lounge Bar</span>.
         </p>
       </div>
 
@@ -343,37 +343,42 @@
 
         <!-- nota de fecho -->
         <div class="reveal pl-[52px] mt-12 pr-2" data-reveal>
-          <p class="font-serif italic text-mute text-[0.9375rem] leading-relaxed">
-            “Dirigimos pela cumeada até onde o cinema inventou a Sicília e onde os gregos plantaram a
-            fertilidade na rocha. Do alto de Castelmola, Taormina e o seu teatro eram miniaturas, e a Etna
-            fumava ao lado do mar. À noite, o carro na garagem e a cidade iluminada só para os pés.”
+          <p class=”font-serif italic text-mute text-[0.9375rem] leading-relaxed”>
+            “Fugimos às 08h30 antes que a ilha acordasse. Savoca deserta, o silêncio mineral da igreja do
+            Padrinho, o pane cunzato ainda quente. Depois o abismo azul sob a fortaleza e a água de
+            transparência absurda. À tarde, as ruelas góticas com a luz oblíqua. À noite, os vinhos do vulcão
+            e a escadaria iluminada do Morgana. O dia que o carro tornou possível.”
           </p>
-          <p class="text-[0.6875rem] text-faint mt-6 leading-relaxed font-light border-t border-line/50 pt-5">
-            Dia II — <span class="text-mute">8 paragens</span> em quatro atos, das estradas de montanha de
-            <span class="text-emeraldlt">Savoca</span> ao mirante 360° de <span class="text-emeraldlt">Castelmola</span>
-            e à passeggiata noturna. Toque nos pontos de <span class="text-emeraldlt">foco</span> e nas
-            <span class="text-bordeauxlt">pausas gastronómicas</span> para abrir os detalhes; role para que o
-            mapa siga a rota pela cumeada.
+          <p class=”text-[0.6875rem] text-faint mt-6 leading-relaxed font-light border-t border-line/50 pt-5”>
+            Dia II — <span class=”text-mute”>10 paragens</span> em seis atos: fuga cirúrgica às 08h30,
+            <span class=”text-emeraldlt”>Savoca</span> deserta, snorkeling no
+            <span class=”text-emeraldlt”>Capo Sant'Alessio</span>, blecaute térmico, becos do Monte Tauro e
+            <span class=”text-bordeauxlt”>food tour guiado de 3 horas</span> pelas veias de pedra de Taormina.
+            Toque nos pontos de <span class=”text-emeraldlt”>foco</span> e nas
+            <span class=”text-bordeauxlt”>pausas gastronómicas</span> para abrir os detalhes; role para que o
+            mapa siga a rota do dia.
           </p>
 
           <!-- Créditos das imagens (atribuição exigida pelas licenças) -->
-          <details class="mt-6 border-t border-line/50 pt-5 group">
-            <summary class="text-[0.6875rem] tracking-[0.25em] uppercase text-faint cursor-pointer list-none flex items-center gap-2 active:text-mute">
-              <svg aria-hidden="true" class="w-3.5 h-3.5 transition-transform group-open:rotate-90" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+          <details class=”mt-6 border-t border-line/50 pt-5 group”>
+            <summary class=”text-[0.6875rem] tracking-[0.25em] uppercase text-faint cursor-pointer list-none flex items-center gap-2 active:text-mute”>
+              <svg aria-hidden=”true” class=”w-3.5 h-3.5 transition-transform group-open:rotate-90” fill=”none” viewBox=”0 0 24 24” stroke=”currentColor” stroke-width=”2”><path stroke-linecap=”round” stroke-linejoin=”round” d=”M9 5l7 7-7 7”/></svg>
               Créditos das imagens
             </summary>
-            <p class="text-[0.6875rem] text-faint mt-4 leading-relaxed font-light">
-              Todas as fotografias são reais e de licença livre, via <span class="text-mute">Wikimedia Commons</span>.
-              Cada imagem aponta para o ficheiro de origem; as licenças variam (CC BY / CC BY-SA / domínio público) —
+            <p class=”text-[0.6875rem] text-faint mt-4 leading-relaxed font-light”>
+              Todas as fotografias são reais e de licença livre, via <span class=”text-mute”>Wikimedia Commons</span>.
+              As licenças variam (CC BY / CC BY-SA / domínio público) —
               consulte a página do ficheiro indicado para a atribuição completa do autor.
             </p>
-            <ul class="mt-4 space-y-1.5 text-[0.65625rem] text-faint font-light leading-snug">
-              <li>· <span class="text-mute">Taormina vista de Castelmola</span> (o café) — <span class="italic">Panorama di Taormina da Castelmola.jpg</span></li>
-              <li>· <span class="text-mute">Chiesa di San Nicolò · Savoca</span> (igreja do casamento) — <span class="italic">Savoca St Nicolo.jpg</span></li>
-              <li>· <span class="text-mute">Bar Vitelli · Savoca</span> (o bar do Padrinho) — <span class="italic">Bar Vitelli Savoca 8-7-21.jpg</span></li>
-              <li>· <span class="text-mute">Castelmola · Piazza Sant'Antonio</span> (o 360°) — <span class="italic">Castelmola - Panorama di Taormina da Piazza Sant'Antonio.jpg</span></li>
-              <li>· <span class="text-mute">Bar Turrisi · Castelmola</span> (vinho de amêndoas) — <span class="italic">Bar Turrisi Castelmola 14-9-21.jpg</span></li>
-              <li>· <span class="text-mute">Corso Umberto à noite</span> (a passeggiata) — <span class="italic">Taormina street market at night 31-8-21.jpg</span></li>
+            <ul class=”mt-4 space-y-1.5 text-[0.65625rem] text-faint font-light leading-snug”>
+              <li>· <span class=”text-mute”>Taormina vista de Castelmola</span> (base + blecaute) — <span class=”italic”>Panorama di Taormina da Castelmola.jpg</span></li>
+              <li>· <span class=”text-mute”>Chiesa di San Nicolò · Savoca</span> (igreja do casamento) — <span class=”italic”>Savoca St Nicolo.jpg</span></li>
+              <li>· <span class=”text-mute”>Bar Vitelli · Savoca</span> (o bar do Padrinho) — <span class=”italic”>Bar Vitelli Savoca 8-7-21.jpg</span></li>
+              <li>· <span class=”text-mute”>Castello di Sant'Alessio Siculo</span> (snorkeling + fortaleza) — <span class=”italic”>Castello di Sant'Alessio Siculo.jpg</span></li>
+              <li>· <span class=”text-mute”>Arancine siciliane</span> (estação 2 do food tour) — <span class=”italic”>Arancine.jpg</span></li>
+              <li>· <span class=”text-mute”>Focaccia messinese</span> (estação 3 do food tour) — <span class=”italic”>Focaccia messinese.jpg</span></li>
+              <li>· <span class=”text-mute”>Cannolo siciliano</span> (estação 4 do food tour) — <span class=”italic”>Cannolo siciliano.jpg</span></li>
+              <li>· <span class=”text-mute”>Corso Umberto à noite</span> (passeggiata + Morgana) — <span class=”italic”>Taormina street market at night 31-8-21.jpg</span></li>
             </ul>
           </details>
         </div>
@@ -500,36 +505,68 @@
   <!-- ============================================================= -->
   <script>
     /* =========================================================================
-       BANCO DE DADOS — Operação Taormina II (8 paragens, 4 atos · 09h00 → noite)
-       Dia das estradas de montanha: Savoca (cinema d'O Poderoso Chefão) e Castelmola
-       (mirante 360°), com regresso à passeggiata noturna no Corso Umberto de Taormina.
+       BANCO DE DADOS — Operação Taormina II (10 paragens, 6 atos · 08h30 → noite)
+       Fuga cirúrgica: Savoca deserta → snorkeling Capo Sant'Alessio → blecaute térmico
+       → becos do Monte Tauro → food tour 3h (Do Eat Better) → Morgana Lounge Bar.
        Pontos em comunas distintas usam 'place'/'cidade' no link do Google Maps.
        tipo: 'base' | 'foco' | 'peripheral' | 'food'
        Imagens reais (Wikimedia Commons); links de rota abrem no Google Maps.
        ========================================================================= */
     const DB = {
-      centro: [37.85700, 15.28200],
+      centro: [37.90, 15.31],
       atos: [
         /* ===================== ATO I ===================== */
         {
           id: "ato-1",
-          faixa: "09h00 — 10h00",
-          titulo: "Ato I · O Café sem Pressa",
+          faixa: "08h30 — 11h45",
+          titulo: "Ato I · O Ninho de Águia e o Cinema de Confraria",
           pontos: [
             {
-              id: "the-view-cafe", tipo: "base", nome: "The View · O Café sem Pressa",
+              id: "the-view-partida", tipo: "base", nome: "The View · A Fuga Cirúrgica",
               place: "The View Luxury Apartments", cidade: "Taormina",
-              ato: "Ponto de Partida", hora: "09h00", coord: [37.85280, 15.27850],
-              linha: "Acorde sem pressa, café na varanda com a vista que dá nome ao apartamento, e prepare-se para dominar as estradas superiores.",
+              ato: "Ponto de Partida", hora: "08h30", coord: [37.85280, 15.27850],
+              linha: "Antes que o sol achate o relevo e os tours de massa saturem a ilha: ligue o motor e escape pela costeira rumo ao norte.",
               img: "https://commons.wikimedia.org/wiki/Special:FilePath/Panorama%20di%20Taormina%20da%20Castelmola.jpg?width=900",
-              custo: "—", duracao: "1h",
-              horarioIdeal: "09h00 — manhã limpa antes do calor; estradas de cumeada vazias",
-              descricao: "O Dia II abre devagar. Sem praia no roteiro, o dia ganha um respiro sofisticado: tome o café na varanda do The View, com Taormina e o golfo desenhados lá embaixo, e organize a saída. Hoje é um dia de uso total do carro — estradas de montanha, curvas sobre o vazio e dois ninhos de águia para conquistar: Savoca, a aldeia do cinema, e Castelmola, o mirante 360° acima de Taormina.",
-              historia: "Esta é a contracara do Dia I: ontem o carro foi neutralizado para um circuito a pé; hoje ele é a ferramenta. As estradas que ligam Taormina à cumeada dos Peloritani são sinuosas, estreitas e espetaculares — sobem por entre oliveiras e penhascos, com o mar Jónico sempre à direita. A logística inverte-se: o prazer está justamente em dirigir.",
+              custo: "—", duracao: "15 min",
+              horarioIdeal: "08h30 — antes dos tours de massa; estradas de montanha vazias",
+              descricao: "A terça-feira em Taormina não começa nas ruas polidas pelo comércio de luxo — exige uma fuga cirúrgica antes que o sol da manhã achate o relevo e sature a ilha. Às 08h30, ligue o motor e saia pela estrada costeira em direção ao norte, subindo depois para as montanhas Peloritanas rumo a Savoca. Conforme o carro ganha altitude, observe a transição drástica do relevo: você está subindo encostas compostas por rochas metamórficas antigas altamente fraturadas, cujo visual bruto e pontiagudo contrasta severamente com o calcário polido de Taormina.",
+              historia: "As montanhas Peloritanas são compostas por rochas metamórficas entre as mais antigas da Sicília — alguns afloramentos datam do Pré-Câmbrico. O contraste geológico com o calcário de Taormina é visível a olho nu: a paisagem muda de suave e polida para bruta e fraturada em questão de quilômetros. As aldeias na cumeada como Savoca ergueram-se neste terreno por razões puramente defensivas — impossível de escalar rapidamente sob ataque.",
               insights: [
-                "Tanque cheio e GPS offline carregado: trechos de montanha podem perder sinal entre Taormina e Savoca.",
-                "Saia até as 10h00 — Savoca enche de tours do Padrinho a partir do meio-dia; chegar cedo garante o terraço vazio.",
-                "Calçado confortável: Savoca e Castelmola são aldeias verticais, de ladeiras e escadarias em pedra."
+                "Saia até as 09h00 no máximo: Savoca enche de tours do Padrinho a partir do meio-dia.",
+                "GPS offline carregado: trechos de montanha entre Taormina e Savoca podem perder sinal.",
+                "A rota serpenteia pela costa antes de subir: observe a transição dramática calcário → metamórfico."
+              ]
+            },
+            {
+              id: "chiesa-san-nicolo", tipo: "foco", nome: "Chiesa di San Nicolò · O Drama Visual",
+              place: "Chiesa di San Nicolò", cidade: "Savoca",
+              ato: "Ato I · O Ninho de Águia", hora: "09h15", coord: [37.95670, 15.34110],
+              linha: "A igrejinha encravada no penhasco onde Coppola filmou o casamento de Michael Corleone — Savoca deserta, silêncio quase mineral.",
+              img: "https://commons.wikimedia.org/wiki/Special:FilePath/Savoca%20St%20Nicolo.jpg?width=900",
+              custo: "Gratuito", duracao: "1h30",
+              horarioIdeal: "09h15 — buses de turismo ainda a mais de uma hora; a cidade pertence exclusivamente a vocês",
+              descricao: "Ao estacionar na entrada da vila o relógio marca 09h15. Os ônibus de turismo ainda estão a mais de uma hora de distância. Caminhem em direção à Chiesa di San Nicolò — a imponente igreja medieval encravada diretamente na escarpa rochosa onde Francis Ford Coppola filmou as cenas do casamento de Michael Corleone com Apollonia em O Poderoso Chefão. A rocha cinzenta e severa da fachada se recorta contra o azul do céu matinal sem nenhuma poluição visual. O silêncio aqui é quase mineral.",
+              historia: "Savoca não foi escolhida por Coppola apenas pela beleza, mas pela sua autenticidade defensiva. As ruelas estreitas e a topografia de 'ninho de águia' eram a resposta arquitetônica medieval contra os ataques de piratas sarracenos. Corleone, a cidade que dá nome à saga, foi considerada moderna demais; Coppola escolheu Savoca e a vizinha Forza d'Agrò como cenário do interior siciliano dos anos 1940.",
+              insights: [
+                "Do adro da igreja sai a vista-assinatura: a fachada de pedra com o vale dos Peloritani ao fundo.",
+                "Savoca também guarda as múmias da cripta dos Capuchinhos — desvio macabro e fascinante para quem tiver tempo.",
+                "A topografia defensiva medieval é o próprio atrativo: cada ruela estreita foi projetada para desacelerar um invasor."
+              ]
+            },
+            {
+              id: "bar-vitelli", tipo: "food", nome: "Bar Vitelli · O Ritual no Terraço de Pedra",
+              place: "Bar Vitelli", cidade: "Savoca",
+              ato: "Ato I · O Ninho de Águia", hora: "10h45", coord: [37.95580, 15.34030],
+              linha: "Palazzo Trimarchi: pane cunzato rústico e granita de limão com Zibibbo — a culinária do interior siciliano, bruta, honesta e densa.",
+              img: "https://commons.wikimedia.org/wiki/Special:FilePath/Bar%20Vitelli%20Savoca%208-7-21.jpg?width=900",
+              custo: "€ · lanche + granita", duracao: "1h",
+              horarioIdeal: "10h45 — antes da chegada dos tours do meio-dia",
+              descricao: "Desçam em direção à praça principal e ocupem uma mesa no terraço de pedra do Bar Vitelli, no setecentista Palazzo Trimarchi. A fachada coberta de videiras preserva o exato frame gravado em 1971. Peça o Pane Cunzato — pão rústico de casca grossa, assado a lenha, generosamente regado com azeite de oliva de alta acidez, tomates secos, alcaparras e queijo pecorino curado. É a culinária do interior siciliano: bruta, honesta e densa. Arremate com a Granita di Limone com um fio de vinho doce Zibibbo batido diretamente no gelo.",
+              historia: "No Bar Vitelli, Coppola filmou a cena em que Michael Corleone pede ao Sr. Vitelli a mão de sua filha Apollonia. O pane cunzato ('pão temperado') é comida camponesa siciliana herdada dos trabalhadores rurais dos Peloritani. O Zibibbo é uma uva moscatel de Pantelleria usada em vinhos doces; o contraste entre o azedo cortante do citrino e a doçura alcoólica limpa o paladar e prepara o corpo para o calor que começa a subir.",
+              insights: [
+                "O salão interno guarda memorabilia d'O Poderoso Chefão: vale espreitar antes ou depois.",
+                "Granita de limão com Zibibbo é a assinatura da casa — não troque pela versão sem o vinho.",
+                "Peça o pane cunzato para dividir: é denso — deixe apetite para o food tour da tarde."
               ]
             }
           ]
@@ -538,44 +575,28 @@
         /* ===================== ATO II ===================== */
         {
           id: "ato-2",
-          faixa: "10h00 — 13h30",
-          titulo: "Ato II · A Rota do Padrinho · Savoca",
+          faixa: "12h00 — 13h45",
+          titulo: "Ato II · O Abismo Azul e a Cidadela de Pedra",
           pontos: [
             {
-              id: "savoca-subida", tipo: "peripheral", nome: "Savoca · A Subida à Cumeada",
-              ato: "Ato II", hora: "10h40", coord: [37.95550, 15.34050],
-              linha: "Trecho de estrada de montanha (~40 min) pela cumeada até Savoca: curvas sobre olivais e o mar Jónico recortado lá embaixo."
+              id: "descida-litoral", tipo: "peripheral", nome: "Savoca → Capo Sant'Alessio · Descida ao Mar",
+              ato: "Ato II", hora: "12h00", coord: [37.93500, 15.34800],
+              linha: "~15 min de descida pela montanha rumo ao litoral jônico. O alvo: a base do penhasco do Castello di Sant'Alessio."
             },
             {
-              id: "chiesa-san-nicolo", tipo: "foco", nome: "Chiesa di San Nicolò · A Igreja do Casamento",
-              place: "Chiesa di San Nicolò", cidade: "Savoca",
-              ato: "Ato II · A Rota do Padrinho", hora: "11h00", coord: [37.95670, 15.34110],
-              linha: "O foco: a igrejinha empoleirada na rocha onde Michael Corleone casou com Apollonia — Savoca fez de Corleone no cinema.",
-              img: "https://commons.wikimedia.org/wiki/Special:FilePath/Savoca%20St%20Nicolo.jpg?width=900",
-              custo: "Gratuito (entrada da igreja ~€)", duracao: "1h",
-              horarioIdeal: "Final da manhã — luz frontal na fachada e na vista para o vale",
-              descricao: "Caminhe pelas ladeiras de Savoca até a Chiesa di San Nicolò (também dita Santa Lucia), encravada num esporão de rocha com o vale aberto aos pés. É aqui que o cinema e a pedra se encontram: nesta igreja Francis Ford Coppola filmou o casamento de Michael Corleone com Apollonia, em 'O Poderoso Chefão' (1972). Suba até o adro e olhe em volta — a aldeia medieval e os montes Peloritani fazem o cenário que Hollywood escolheu para ser a Sicília arquetípica.",
-              historia: "Corleone, a cidade que dá nome à saga, foi considerada moderna demais para as filmagens; Coppola escolheu Savoca e a vizinha Forza d'Agrò como cenário do interior siciliano dos anos 1940. A Chiesa di San Nicolò, de origem medieval, tornou-se ponto de peregrinação cinéfila. A aldeia em si remonta ao período normando, agarrada à crista rochosa por razões de defesa — daí o apelido de 'ninho de águia'.",
+              id: "capo-sant-alessio", tipo: "foco", nome: "Capo Sant'Alessio · Snorkeling sob o Castelo",
+              place: "Spiaggia di Sant'Alessio Siculo", cidade: "Sant'Alessio Siculo",
+              ato: "Ato II · O Abismo Azul", hora: "12h15", coord: [37.92340, 15.35210],
+              linha: "O penhasco calcário com a fortaleza bizantina no topo, o abismo azul-cobalto embaixo — snorkeling rente ao paredão de pedra submerso em transparência absurda.",
+              img: "https://commons.wikimedia.org/wiki/Special:FilePath/Castello%20di%20Sant%27Alessio%20Siculo.jpg?width=900",
+              custo: "Gratuito", duracao: "1h30",
+              horarioIdeal: "12h15 — luz zenital ilumina o fundo submerso",
+              descricao: "Um cabo colossal de rocha calcária branca avança agressivamente sobre o mar Jônico. No topo desse penhasco vertical intransitável ergue-se o Castello di Sant'Alessio — fortaleza de origem bizantina que controlava o tráfego marítimo do estreito de Messina. O drama geológico é violento: a geometria militar medieval coroando a brutalidade da rocha escarpada. Caminhem pelo cascalho fino até a base da rocha. A topografia submarina espelha o penhasco: o fundo despenca para o abismo azul-cobalto muito rápido. Nadar rente ao paredão de pedra submerso revela fendas tectônicas e blocos colapsados onde a vida marinha se esconde em águas de transparência absurda.",
+              historia: "O Castello di Sant'Alessio foi construído pelos Bizantinos como posto de vigilância naval sobre o estreito de Messina. Sucessivamente modificado por Normandos e Aragoneses, controlou o tráfego marítimo por séculos. A geologia do cabo é calcária (diferente do metamórfico Peloritano de Savoca), criando estruturas erosivas espetaculares tanto acima como abaixo da linha d'água. É a Sicília selvagem, longe das praias saturadas de Taormina.",
               insights: [
-                "Do adro da igreja sai a vista-assinatura: a fachada de pedra com o vale dos Peloritani ao fundo.",
-                "Savoca também guarda as múmias da cripta dos Capuchinhos — desvio macabro e fascinante para quem tiver tempo.",
-                "As ruelas são íngremes e em pedra: suba devagar, é parte da atmosfera de aldeia parada no tempo."
-              ]
-            },
-            {
-              id: "bar-vitelli", tipo: "food", nome: "Bar Vitelli · O Lanche Tático",
-              place: "Bar Vitelli", cidade: "Savoca",
-              ato: "Ato II · A Rota do Padrinho", hora: "12h00", coord: [37.95580, 15.34030],
-              linha: "O terraço sombreado do bar do Padrinho: pane cunzato rústico e granita de limão com o toque local de vinho Zibibbo.",
-              img: "https://commons.wikimedia.org/wiki/Special:FilePath/Bar%20Vitelli%20Savoca%208-7-21.jpg?width=900",
-              custo: "€ · lanche + granita", duracao: "1h",
-              horarioIdeal: "Meio-dia — sombra do terraço no auge do calor",
-              descricao: "Desça até a Piazza Fossia e sente-se no terraço sombreado do Bar Vitelli — o café mais famoso do cinema italiano. Esqueça pressa: peça o clássico pane cunzato (pão rústico temperado com azeite pungente, tomates secos, anchovas e pecorino) e a icônica granita de limão, aqui servida com o toque local do vinho Zibibbo. Rápido, histórico e genial — combustível perfeito antes de virar o carro para Castelmola.",
-              historia: "No Bar Vitelli, Coppola filmou a cena em que Michael Corleone pede ao Sr. Vitelli a mão de sua filha Apollonia. A família Vitelli mantém o café desde o século XIX, e o interior é um pequeno museu antiquário — cartazes do filme, ferramentas rurais e fotos de época. O pane cunzato ('pão temperado') é comida camponesa siciliana; o Zibibbo, uva moscatel de Pantelleria, dá à granita um perfume que só se prova aqui.",
-              insights: [
-                "Peça o pane cunzato para dividir: é denso e rende — sobra apetite para o vinho de amêndoas de Castelmola.",
-                "O salão interno guarda memorabilia do filme: vale espreitar antes ou depois do lanche.",
-                "Granita de limão com Zibibbo é a assinatura da casa — não troque pela de café aqui."
+                "A praia é de cascalho fino: calçado aquático protege na entrada e saída da água.",
+                "Praticamente sem estrutura turística: traga água e protetor solar.",
+                "Em dias limpos a visibilidade subaquática é de 15–20 metros: a maior do litoral jônico nesta secção."
               ]
             }
           ]
@@ -584,39 +605,28 @@
         /* ===================== ATO III ===================== */
         {
           id: "ato-3",
-          faixa: "14h00 — 16h00",
-          titulo: "Ato III · A Conquista de Castelmola",
+          faixa: "13h45 — 16h00",
+          titulo: "Ato III · O Blecaute Térmico",
           pontos: [
             {
-              id: "castelmola-360", tipo: "foco", nome: "Castelmola · O Impacto 360°",
-              place: "Piazza Sant'Antonio", cidade: "Castelmola",
-              ato: "Ato III · A Conquista", hora: "15h00", coord: [37.85840, 15.27740],
-              linha: "O ponto mais alto acima de Taormina: da Piazza Sant'Antonio, o visual absoluto do mar Jónico e da cratera da Etna num giro de 360°.",
-              img: "https://commons.wikimedia.org/wiki/Special:FilePath/Castelmola%20-%20Panorama%20di%20Taormina%20da%20Piazza%20Sant%27Antonio.jpg?width=900",
-              custo: "Gratuito · estac. €", duracao: "1h",
-              horarioIdeal: "Início da tarde — luz alta sobre o mar; ao entardecer fica incandescente",
-              descricao: "Dirija da costa de volta e suba até Castelmola, o vilarejo medieval pousado no cume acima de Taormina, a uns 530 metros. Estacione no topo e vá direto à Piazza Sant'Antonio: dali abre-se o visual absoluto — o mar Jónico de um lado, a silhueta fumegante da Etna do outro, Taormina e o seu Teatro Antico minúsculos lá embaixo. É a leitura aérea de tudo o que se caminhou no Dia I, agora vista do alto, num giro de 360°.",
-              historia: "Castelmola cresceu em torno das ruínas de um castelo de origem antiga (com vestígios sículos e gregos, depois fortaleza normanda), que coroa o penhasco. Por séculos foi a acrópole defensiva de Taormina — quem dominava Mola dominava a montanha. Hoje é um balcão suspenso: das suas praças e miradouros, a costa jónica desenrola-se da baía de Naxos até a ponta da Calábria, no horizonte.",
-              insights: [
-                "Da Piazza Sant'Antonio, alinhe num só quadro Taormina, o Teatro Antico e a Etna — a foto que resume os dois dias.",
-                "As ruas de Castelmola são pedestres e estreitíssimas: deixe o carro no estacionamento do topo e suba a pé.",
-                "Em dias limpos avista-se a Calábria do outro lado do estreito de Messina — leve a câmera com zoom."
-              ]
+              id: "regresso-the-view", tipo: "peripheral", nome: "Regresso ao The View · Carro na Garagem",
+              ato: "Ato III", hora: "13h45", coord: [37.85280, 15.27850],
+              linha: "~25 min de subida de volta a Taormina. O carro entra na vaga privativa e sua função mecânica está encerrada por hoje."
             },
             {
-              id: "bar-turrisi", tipo: "food", nome: "Bar Turrisi · O Vinho de Amêndoas",
-              place: "Bar Turrisi", cidade: "Castelmola",
-              ato: "Ato III · A Conquista", hora: "15h30", coord: [37.85870, 15.27720],
-              linha: "O bar mais intrigante da Sicília: prove o tradicional vino alla mandorla e entenda a conexão pagã grega da fertilidade.",
-              img: "https://commons.wikimedia.org/wiki/Special:FilePath/Bar%20Turrisi%20Castelmola%2014-9-21.jpg?width=900",
-              custo: "€ · taça de vino alla mandorla", duracao: "45 min",
-              horarioIdeal: "Tarde — pausa fresca antes da descida a Taormina",
-              descricao: "A poucos passos da praça, entre no Bar Turrisi — talvez o bar mais excêntrico da ilha. Espalhado por vários andares com terraços sobre o abismo, é decorado de cima a baixo com símbolos fálicos. Peça o tradicional vino alla mandorla (vinho de amêndoas), doce e perfumado, servido em pequenas doses. Por trás da brincadeira está uma raiz séria: a ligação pagã, grega, entre Castelmola e os antigos cultos de fertilidade.",
-              historia: "A família Turrisi transformou o bar num santuário irônico ao falo como símbolo ancestral de fertilidade e boa sorte — um motivo que remonta aos cultos dionisíacos e priápicos da Magna Grécia, dos quais a Sicília oriental foi coração. O vino alla mandorla, licoroso e aromático, é especialidade local de Castelmola, herdada das amendoeiras que cobrem estas encostas. Provocação e antropologia no mesmo copo.",
+              id: "blecaute-termico", tipo: "base", nome: "The View · O Escudo Contra o Sol a Pino",
+              place: "The View Luxury Apartments", cidade: "Taormina",
+              ato: "Ato III · O Blecaute Térmico", hora: "14h15", coord: [37.85280, 15.27850],
+              linha: "Entre 14h15 e 16h00 o sol siciliano atinge o ápice. Banho para eliminar o sal, descanso, varanda contemplativa — e visual Executive Athletic Modernist para a tarde.",
+              img: "https://commons.wikimedia.org/wiki/Special:FilePath/Panorama%20di%20Taormina%20da%20Castelmola.jpg?width=900",
+              custo: "—", duracao: "1h45",
+              horarioIdeal: "14h15 — o sol do meio-dia siciliano esgota quem caminha; vocês estão protegidos",
+              descricao: "Entre as 14h15 e as 16h00, o sol do meio-dia siciliano estourar a luz urbana e exaurir quem caminha. Vocês estão protegidos. Use essa janela para um banho demorado e eliminar o sal e o cascalho do mar do corpo. Vista o visual Executive Athletic Modernist em linho leve e tons de alto contraste. Descanse com o ar-condicionado ativado ou desfrute da calmaria na varanda privativa, vendo o tráfego operar no caos lá embaixo. Confirme o ponto de encontro do food tour: Duomo di Taormina, 17h30.",
+              historia: "A siesta siciliana não é preguiça — é adaptação climática milenar. Entre as 13h e as 16h, o calor mediterrâneo no verão pode ultrapassar 38°C com umidade intensa. As cidades históricas da Sicília foram projetadas com ruas estreitas e orientação estratégica para criar sombra: mesmo assim, o calor do meio-dia é devastador. Respeitar o blecaute térmico maximiza a energia para as horas de ouro da tarde.",
               insights: [
-                "Suba aos terraços superiores: a vista sobre o vazio rivaliza com a da praça — e quase ninguém sobe.",
-                "O vino alla mandorla é doce e forte: uma dose basta antes de reassumir o volante para a descida.",
-                "A decoração é deliberadamente provocadora, mas ancorada em mitologia grega real — leia as placas para o contexto."
+                "A varanda do The View é o único lugar onde o calor do meio-dia siciliano se torna contemplativo.",
+                "Use este tempo para planejamento: reveja o ponto de encontro do food tour (Piazza Duomo às 17h30).",
+                "O corpo descansado às 16h00 rende infinitamente mais do que o corpo exausto às 14h00."
               ]
             }
           ]
@@ -625,28 +635,137 @@
         /* ===================== ATO IV ===================== */
         {
           id: "ato-4",
-          faixa: "19h00 — noite",
-          titulo: "Ato IV · A Noite Iluminada",
+          faixa: "16h00 — 17h30",
+          titulo: "Ato IV · A Infiltração Vertical",
           pontos: [
             {
-              id: "regresso-the-view", tipo: "peripheral", nome: "Regresso ao The View · Carro na Garagem",
-              ato: "Ato IV", hora: "19h00", coord: [37.85280, 15.27850],
-              linha: "Desça de Castelmola, recolha o carro à garagem do apartamento e troque os pneus pelos pés: a noite é livre e a pé."
+              id: "becos-monte-tauro", tipo: "foco", nome: "Becos do Monte Tauro · A Luz das 16h30",
+              place: "Salita Naumachia", cidade: "Taormina",
+              ato: "Ato IV · A Infiltração Vertical", hora: "16h00", coord: [37.85200, 15.28400],
+              linha: "Ignore o Corso Umberto: explore os becos vicinais que sobem o Monte Tauro — escadarias góticas, portais de ferro forjado e a luz difusa que preenche as ruelas de pedra.",
+              img: "https://commons.wikimedia.org/wiki/Special:FilePath/Taormina%20-%20Scalinata.jpg?width=900",
+              custo: "—", duracao: "1h30",
+              horarioIdeal: "16h00 — a luz começa a inclinar, criando iluminação dramática e difusa nas ruelas",
+              descricao: "Desçam do apartamento e ignorem completamente o Corso Umberto. O compromisso gastronômico está agendado para as 17h30. Usem esta janela para explorar os becos vicinais que sobem a encosta do Monte Tauro: escadarias góticas residenciais, portais de ferro forjado e heras coloridas em fachadas de pedra. A luz das 16h30 começa a inclinar, preenchendo as ruelas com uma iluminação difusa e dramática — perfeita para fotografar a textura da arquitetura medieval sem interferência das multidões.",
+              historia: "A malha urbana de Taormina é medieval, construída sobre o traçado grego e romano de Tauromenion. Os becos que sobem o Monte Tauro são o tecido conectivo original da cidade — anteriores ao Corso Umberto em séculos. As escadarias góticas e os portais de ferro forjado revelam as diferentes camadas de ocupação: normanda, aragonesa e espanhola. A Salita Naumachia acompanha o longo muro romano das Naumachi — uma cisterna de 122 metros de comprimento datada do século II d.C.",
+              insights: [
+                "As ruelas paralelas ao Corso são muito menos frequentadas: a cidade real vive aqui, sem a camada comercial.",
+                "Preste atenção nas pedras do chão: em Taormina, o próprio pavimento é um estratigrama arqueológico.",
+                "A luz das 16h00 é a melhor luz fotográfica do dia — os canyons de pedra viram estúdios naturais."
+              ]
+            }
+          ]
+        },
+
+        /* ===================== ATO V ===================== */
+        {
+          id: "ato-5",
+          faixa: "17h30 — 20h30",
+          titulo: "Ato V · A Maratona Sensorial do Território",
+          pontos: [
+            {
+              id: "food-tour-vinhos", tipo: "food", nome: "Estação 1 · O Sangue do Vulcão · Vinhos & Queijos",
+              place: "Piazza del Duomo", cidade: "Taormina",
+              ato: "Ato V · Food Tour Do Eat Better", hora: "17h30", coord: [37.85160, 15.28550],
+              linha: "Piazza Duomo: imersão técnica nos vinhos de solo magmático — Nerello Mascalese do Etna, Cerasuolo di Vittoria — harmonizados com Pecorino Siciliano e Caciocavallo.",
+              img: "https://commons.wikimedia.org/wiki/Special:FilePath/Taormina%20-%20Duomo%20%28Cattedrale%20di%20San%20Nicol%C3%B2%20di%20Bari%29%2C%20interno.jpg?width=900",
+              custo: "Incluído no tour · ~€60/pessoa", duracao: "45 min",
+              horarioIdeal: "17h30 — ponto de encontro no Duomo; apresentar-se pontualmente",
+              descricao: "O circuito gastronômico e histórico guiado de 3 horas (Do Eat Better) começa com uma análise técnica dos vinhos de solo magmático na Piazza Duomo. Degustem a elegância mineral dos tintos do Etna (base na uva Nerello Mascalese) e a robustez picante do Cerasuolo di Vittoria. A harmonização é feita com uma tábua de cortes artesanais e queijos curados com ervas mediterrâneas: o caráter afiado do Pecorino Siciliano e a textura untuosa do Caciocavallo.",
+              historia: "O Nerello Mascalese é a uva emblemática das encostas do Etna, cultivada a 600–1000m de altitude em solos vulcânicos negros. Produz vinhos de elegância mineral única: leves em cor, profundos em estrutura — frequentemente comparados ao Pinot Noir. O Cerasuolo di Vittoria é a única DOCG da Sicília. O Pecorino Siciliano, queijo de ovelha curado, é produzido na ilha há mais de dois mil anos.",
+              insights: [
+                "O tour é guiado por especialistas: não é apenas comida — é análise antropológica dos sabores da ilha.",
+                "Anote o produtor do Nerello que mais impressionar: valhe encontrar uma garrafa para levar.",
+                "Chegue 5 minutos antes: os grupos são pequenos e o tour não espera."
+              ]
             },
             {
-              id: "corso-noite", tipo: "foco", nome: "Corso Umberto à Noite",
+              id: "food-tour-arancino", tipo: "food", nome: "Estação 2 · A Geometria de Ouro · Arancino",
+              place: "Teatro Antico di Taormina", cidade: "Taormina",
+              ato: "Ato V · Food Tour Do Eat Better", hora: "18h15", coord: [37.85270, 15.29020],
+              linha: "Arredores do Teatro Antico: a esfera dourada e crocante que esconde ragù denso e queijo derretido — confronto com o rei da comida de rua siciliana.",
+              img: "https://commons.wikimedia.org/wiki/Special:FilePath/Arancine.jpg?width=900",
+              custo: "Incluído no tour", duracao: "30 min",
+              horarioIdeal: "~18h15 — segunda estação do food tour",
+              descricao: "O roteiro avança até as proximidades do Teatro Antico para o confronto com o Arancino — o rei da comida de rua siciliana. Uma esfera de arroz perfeitamente dourada e crocante por fora, que esconde em seu núcleo um ragù denso de cozimento longo e queijo derretido. O impacto está na quebra da textura crocante para o recheio fumegante. Com o Teatro Greco como pano de fundo, o popular transforma-se em monumental.",
+              historia: "O arancino (feminino arancina no leste da ilha — a disputa é religiosa) data do período árabe na Sicília (IX–XI século), quando o arroz e o açafrão eram ingredientes comuns. O nome vem de arancia (laranja) pela forma e cor dourada. Cada província tem a sua variação: em Taormina, o recheio de ragù de carne é o clássico canônico.",
+              insights: [
+                "Em Taormina diz-se arancino (masculino) — não corrija um siciliano dizendo arancina.",
+                "A textura é tudo: a casca deve estalar ao morder. Se for mole, não foi frito na hora.",
+                "Evite as versões de queijo simples nas friggitorie turísticas — o ragù de carne lento é o standard."
+              ]
+            },
+            {
+              id: "food-tour-focaccia", tipo: "food", nome: "Estação 3 · O Pão da Colônia · Focaccia Messinese",
+              place: "Villa Comunale", cidade: "Taormina",
+              ato: "Ato V · Food Tour Do Eat Better", hora: "19h00", coord: [37.85040, 15.28710],
+              linha: "Jardins de Florence Trevelyan: a Focaccia Messinese — massa altamente hidratada com tomates, endívias, azeitonas e azeite — explosão rústica de sabor vegetal.",
+              img: "https://commons.wikimedia.org/wiki/Special:FilePath/Focaccia%20messinese.jpg?width=900",
+              custo: "Incluído no tour", duracao: "30 min",
+              horarioIdeal: "~19h00 — terceira estação; jardins históricos como sombra",
+              descricao: "Sob a sombra dos jardins botânicos históricos de Florence Trevelyan, saboreiem a legítima Focaccia Messinese: uma massa de pão altamente hidratada, macia e alveolada, coroada com tomates suculentos, endívias frescas, escarola, azeitonas salgadas e cebolas doces, tudo emulsionado em azeite de oliva e ervas perfumadas. Uma explosão rústica de sabor vegetal.",
+              historia: "A Villa Comunale foi projetada pela aristocrata escocesa Florence Trevelyan no final do século XIX — os jardins exóticos com espécies de vários continentes tornaram-se o jardim botânico mais peculiar da Sicília. A Focaccia Messinese é típica do Nordeste siciliano: distinta da focaccia genovesa pela maior hidratação e pela combinação de endívias amargas com tomates doces.",
+              insights: [
+                "A Focaccia Messinese é deliberadamente rústica: não espere apresentação de restaurante.",
+                "As endívias amargas cortam a gordura do azeite — é uma combinação estudada, não improvisada.",
+                "Os jardins da Villa têm horas de abertura: o guia do tour vai levar ao local certo."
+              ]
+            },
+            {
+              id: "food-tour-cannolo", tipo: "food", nome: "Estação 4 · O Encerramento Canônico · Cannolo",
+              place: "Palazzo Corvaja", cidade: "Taormina",
+              ato: "Ato V · Food Tour Do Eat Better", hora: "19h45", coord: [37.85260, 15.28470],
+              linha: "Palazzo Corvaja: o Cannolo Siciliano recheado na hora com ricota de ovelha e pistache de Bronte — ou granita artesanal de café ou amêndoas.",
+              img: "https://commons.wikimedia.org/wiki/Special:FilePath/Cannolo%20siciliano.jpg?width=900",
+              custo: "Incluído no tour", duracao: "45 min",
+              horarioIdeal: "~19h45 — estação final junto ao Palazzo Corvaja gótico-catalão",
+              descricao: "O tour encerra suas 3 horas junto às paredes gótico-catalãs do Palazzo Corvaja com o Cannolo Siciliano — uma casca de massa frita, crocante e borbulhante, recheada no exato segundo antes do consumo com ricota de ovelha fresca e adocicada, finalizada com pistache de Bronte triturado. Para quem busca frescor, há a opção da granita artesanal de café ou amêndoas.",
+              historia: "O Palazzo Corvaja é o edifício medieval mais importante de Taormina — fundado pelos Árabes no século X, ampliado pelos Normanos e depois pelos Aragoneses. O cannolo tem origem árabe: os mouros introduziram o açúcar e a ricota na Sicília. O pistache de Bronte (DO), produzido nas encostas do Etna, é o melhor do mundo — o topping do cannolo é a sua mais simples e perfeita expressão.",
+              insights: [
+                "Peça que o cannolo seja recheado na hora: é a regra de ouro — massa pré-recheada amolece.",
+                "O pistache de Bronte é DO (Denominação de Origem): anote para procurar no mercado.",
+                "A granita de amêndoas fecha melhor que a de café — mais complexa e menos amarga."
+              ]
+            }
+          ]
+        },
+
+        /* ===================== ATO VI ===================== */
+        {
+          id: "ato-6",
+          faixa: "20h30 — noite",
+          titulo: "Ato VI · A Inércia do Corso Iluminado",
+          pontos: [
+            {
+              id: "corso-noite-ii", tipo: "foco", nome: "Corso Umberto · A Passeggiata",
               place: "Corso Umberto", cidade: "Taormina",
-              ato: "Ato IV · A Noite Iluminada", hora: "21h00", coord: [37.85160, 15.28550],
-              linha: "O encerramento: o mesmo Corso do Dia I, agora iluminado — vitrines acesas, gelaterias, a passeggiata siciliana sem relógio.",
+              ato: "Ato VI · A Inércia Noturna", hora: "20h30", coord: [37.85160, 15.28550],
+              linha: "O paladar calibrado pelos vinhos, o corpo descansado, as lanternas acesas nas fachadas barrocas — a passeggiata italiana sem pressa e sem relógio.",
               img: "https://commons.wikimedia.org/wiki/Special:FilePath/Taormina%20street%20market%20at%20night%2031-8-21.jpg?width=900",
-              custo: "—", duracao: "À vontade",
-              horarioIdeal: "Após o jantar — a passeggiata começa ao cair da noite",
-              descricao: "Com o carro guardado, desça a pé ao centro. O Corso Umberto à noite é outra cidade: as luzes acendem as fachadas de pedra, as gelaterias e bares enchem-se, e a passeggiata — o passeio noturno siciliano, sem pressa nem destino — toma a rua. Reveja a Piazza IX Aprile sob a lua, agora vazia de excursões, e deixe o segundo dia fechar como começou: devagar, com vista, sem relógio.",
-              historia: "A passeggiata é instituição mediterrânica: ao entardecer, a cidade inteira sai para caminhar, ver e ser vista, do início ao fim do corso e de volta. Em Taormina, eixo turístico de mil metros entre Porta Messina e Porta Catania, o ritual ganha cenário de pedra iluminada — o mesmo desfiladeiro urbano do Dia I, agora em chave noturna e contemplativa.",
+              custo: "—", duracao: "1h30",
+              horarioIdeal: "20h30 — tour encerrado; a noite de Taormina atinge seu ápice cênico",
+              descricao: "Às 20h30 o food tour é finalizado. Completamente saciados, com o paladar calibrado pelos vinhos de alta gama e o corpo descansado. Caminhem sem rumo e sem pressa pelo Corso Umberto. As luzes amareladas das lanternas antigas acendem as fachadas barrocas e góticas, criando um jogo de sombras de altíssimo contraste nas pedras da rua. É a hora da tradicional passeggiata italiana: caminhar devagar, respirar o ar salgado que sobe do penhasco e absorver a atmosfera com total desapego logístico.",
+              historia: "A passeggiata é instituição mediterrânica: ao entardecer, a cidade inteira sai para caminhar, ver e ser vista. Em Taormina, eixo de mil metros entre Porta Messina e Porta Catania, o ritual ganha cenário de pedra iluminada. As fachadas são um palimpsesto de estilos: greco-romano nas fundações, normando nas torres, barroco nas igrejas e liberty nas vitrines.",
               insights: [
                 "Volte à Piazza IX Aprile à noite: sem as excursões do dia, a sacada sobre o mar fica só sua.",
-                "Uma gelateria do Corso fecha bem o dia — peça pistache de Bronte ou amêndoa, eco do vinho de Castelmola.",
-                "Sem carro, sem pressa: a noite é a recompensa de um dia inteiro de estradas de montanha."
+                "Às 22h00, vire à Scesa Morgana e desça a escadaria iluminada até o Morgana Lounge Bar.",
+                "A noite de Taormina tem dois registros: passeggiata contemplativa até as 22h, Morgana elétrico depois."
+              ]
+            },
+            {
+              id: "morgana-bar", tipo: "food", nome: "Morgana Lounge Bar · O Epicentro da Noite",
+              place: "Morgana Lounge Bar", cidade: "Taormina",
+              ato: "Ato VI · A Inércia Noturna", hora: "22h00", coord: [37.85240, 15.28850],
+              linha: "Scesa Morgana: desça a escadaria iluminada até o pátio secreto de Taormina — opulência barroca, jardins verticais e mixologia com botânicos do Etna.",
+              img: "https://commons.wikimedia.org/wiki/Special:FilePath/Taormina%20street%20market%20at%20night%2031-8-21.jpg?width=900",
+              custo: "€€ · cocktails assinatura", duracao: "Indefinida",
+              horarioIdeal: "22h00 — não chegar muito tarde; espaço físico limitado pelas paredes de pedra antigas",
+              descricao: "Por volta das 22h00, desvie do Corso em direção à Scesa Morgana. Desçam uma escadaria de pedra iluminada de forma cênica que leva a um pátio secreto que é o coração da vida noturna premium de Taormina. O Morgana mistura opulência barroca com minimalismo contemporâneo: jardins verticais, iluminação de altíssimo contraste em tons de azul profundo e esmeralda. Os bartenders utilizam infusões artesanais com botânicos do Monte Etna, cítricos sicilianos e reduções de vinhos locais. A seleção na entrada é sutil, mas rigorosa com a estética.",
+              historia: "O Morgana ocupa um espaço histórico nas entranhas da colina de Taormina — as paredes de pedra são centenárias. Tornou-se nos últimos anos o epicentro da vida noturna de alta gama da cidade, atraindo elite local e viajantes internacionais. Conforme a noite avança, DJs curam sets de house melódico e batidas eletrônicas elegantes que ditam o ritmo sem impedir que as pessoas conversem.",
+              insights: [
+                "Peça um signature cocktail ou desafie o mixologista a uma releitura de clássico com ingredientes do Etna.",
+                "Chegue antes das 23h para evitar fila na escadaria: o espaço físico é naturalmente limitado.",
+                "Vistam-se com o melhor do visual Executive Athletic Modernist — a seleção na entrada é sutil mas real."
               ]
             }
           ]
@@ -663,7 +782,7 @@
         map: null,
         markers: {},
         activeId: null,
-        activeLabel: "10h30",
+        activeLabel: "08h30",
         modal: { open: false, p: {} },
         _suppressSpy: false,
         sheetScrolled: false,
