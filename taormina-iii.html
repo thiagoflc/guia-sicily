@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover" />
-  <title>Taormina III · O Mar e o Legado Natural</title>
-  <meta name="description" content="Guia interativo de alto padrão para o Dia III em Taormina — A Perspectiva de Baixo: tour de barco a partir de Giardini Naxos (a primeira colônia grega), Grotta Azzurra, almoço de pescador e snorkeling na Isola Bella. O mar e o legado natural da Sicília." />
+  <title>Taormina III · O Abismo, O Mar e A Altitude</title>
+  <meta name="description" content="Guia interativo de alto padrão para o Dia III em Taormina — tour de barco à Grotta Azzurra e Isola Bella, almoço de pescador em Giardini Naxos, snorkeling no tômbolo, golden hour em Castelmola com vinho de amêndoas e grand finale no Vicolo Stretto. A trilogia encerrada." />
 
   <!-- ===== Web-app no iPhone (homescreen, barra de status integrada) ===== -->
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -177,14 +177,14 @@
   <header class="fixed top-0 inset-x-0 z-30 pointer-events-none">
     <div class="px-5 pt-[calc(env(safe-area-inset-top)+1rem)] pb-14
                 bg-gradient-to-b from-charcoal via-charcoal/75 to-transparent">
-      <p class="text-[0.625rem] tracking-[0.45em] text-ice/60 uppercase">Taormina · Dia III</p>
-      <h1 class="font-serif text-2xl text-ice mt-1 leading-none drop-shadow-[0_1px_8px_rgba(0,0,0,.6)]">O Mar e o Legado Natural</h1>
-      <p class="text-[0.6875rem] text-ice/75 mt-1.5 tracking-wide">A Perspectiva de Baixo · 09h15 → noite · 8 paragens · barco + funicular</p>
+      <p class="text-[0.625rem] tracking-[0.45em] text-ice/60 uppercase">Taormina · Dia III · Quarta-feira</p>
+      <h1 class="font-serif text-2xl text-ice mt-1 leading-none drop-shadow-[0_1px_8px_rgba(0,0,0,.6)]">O Abismo, O Mar e A Altitude</h1>
+      <p class="text-[0.6875rem] text-ice/75 mt-1.5 tracking-wide">Barco · Isola Bella · Castelmola · 08h30 → madrugada · 13 paragens</p>
     </div>
   </header>
 
   <!-- O mapa fica SEMPRE visível no topo; só o sheet rola por baixo -->
-  <div id="map" role="region" aria-label="Mapa do Dia III em Taormina — Giardini Naxos e Isola Bella" class="fixed top-0 inset-x-0 z-0"></div>
+  <div id="map" role="region" aria-label="Mapa do Dia III em Taormina — Giardini Naxos, Isola Bella e Castelmola" class="fixed top-0 inset-x-0 z-0"></div>
 
   <!-- véu inferior para fundir mapa ↔ folha -->
   <div class="veil fixed inset-x-0 z-10 pointer-events-none
@@ -206,18 +206,18 @@
       <div class="px-6 pt-4 pb-2">
         <div class="flex items-end justify-between">
           <div>
-            <p class="text-[0.625rem] tracking-[0.4em] text-emeraldlt uppercase">A Perspectiva de Baixo</p>
-            <h2 class="font-serif text-[1.625rem] leading-tight text-ice mt-1">O Mar e o Legado Natural</h2>
+            <p class="text-[0.625rem] tracking-[0.4em] text-emeraldlt uppercase">Alta Performance · Barco + Mar + Altitude</p>
+            <h2 class="font-serif text-[1.625rem] leading-tight text-ice mt-1">O Abismo, O Mar e A Altitude</h2>
           </div>
           <span class="font-serif italic text-faint text-sm pb-1" x-text="activeLabel"></span>
         </div>
         <p class="text-[0.8125rem] text-mute mt-3 leading-relaxed font-light max-w-prose">
-          A grande virada: depois do penhasco e da montanha, hoje descemos ao
-          <span class="text-emeraldlt">mar</span>. Tour de barco a partir de <span class="text-ice">Giardini Naxos</span>
-          — a primeira colônia grega — pela <span class="text-emeraldlt">Grotta Azzurra</span> e a Isola Bella;
-          almoço de pescador na orla; e o <span class="text-gold">pulo do gato logístico</span> — guardar o carro
-          e descer de funicular para o <span class="text-emeraldlt">snorkeling</span> na Isola Bella. Fecha a trilogia
-          ao nível da água.
+          A grande virada: do penhasco ao mar. <span class="text-gold">Tour de barco</span> a partir de
+          <span class="text-ice">Giardini Naxos</span> pela Grotta Azzurra e Isola Bella; almoço de pescador
+          na orla; snorkeling no <span class="text-emeraldlt">tômbolo da Isola Bella</span>; e a
+          <span class="text-gold">coroação em Castelmola</span> — golden hour e vinho de amêndoas no ponto
+          mais alto. A noite fecha com jantar no Al Duomo e energia pura no
+          <span class="text-ice">Vicolo Stretto</span>.
         </p>
       </div>
 
@@ -343,17 +343,16 @@
 
         <!-- nota de fecho -->
         <div class="reveal pl-[52px] mt-12 pr-2" data-reveal>
-          <p class="font-serif italic text-mute text-[0.9375rem] leading-relaxed">
-            “Descemos à primeira colônia grega, contornámos de barco as falésias que despencam no azul e
-            tocámos a ilha que de manhã era só horizonte. Ao fim da tarde, sal no corpo e um Carricante na
-            varanda: três dias inteiros — penhasco, montanha e mar — cabendo num só horizonte.”
+          <p class=”font-serif italic text-mute text-[0.9375rem] leading-relaxed”>
+            “Saímos de barco para ver o penhasco de baixo, subimos até o teto do mundo ao entardecer, e a noite fechou no beco mais estreito da cidade. O abismo, o mar e a altitude — tudo no mesmo dia.”
           </p>
-          <p class="text-[0.6875rem] text-faint mt-6 leading-relaxed font-light border-t border-line/50 pt-5">
-            Dia III — <span class="text-mute">8 paragens</span> em cinco atos, do porto de
-            <span class="text-emeraldlt">Giardini Naxos</span> ao snorkeling na <span class="text-emeraldlt">Isola Bella</span>
-            e ao jantar livre no Corso. Toque nos pontos de <span class="text-emeraldlt">foco</span> e nas
-            <span class="text-bordeauxlt">pausas gastronómicas</span> para abrir os detalhes; role para que o
-            mapa siga a descida ao mar. <span class="text-mute">Fim da trilogia.</span>
+          <p class=”text-[0.6875rem] text-faint mt-6 leading-relaxed font-light border-t border-line/50 pt-5”>
+            Dia III — <span class=”text-mute”>13 paragens</span> em cinco atos, do porto de
+            <span class=”text-emeraldlt”>Giardini Naxos</span> ao snorkeling na <span class=”text-emeraldlt”>Isola Bella</span>,
+            à panorâmica de <span class=”text-emeraldlt”>Castelmola</span> e ao grand finale no <span class=”text-bordeauxlt”>Al Duomo</span>.
+            Toque nos pontos de <span class=”text-emeraldlt”>foco</span> e nas
+            <span class=”text-bordeauxlt”>pausas gastronómicas</span> para abrir os detalhes; role para que o
+            mapa siga a jornada. <span class=”text-mute”>Fim da trilogia.</span>
           </p>
 
           <!-- Créditos das imagens (atribuição exigida pelas licenças) -->
@@ -368,13 +367,15 @@
               consulte a página do ficheiro indicado para a atribuição completa do autor.
             </p>
             <ul class="mt-4 space-y-1.5 text-[0.65625rem] text-faint font-light leading-snug">
-              <li>· <span class="text-mute">Baía de Giardini Naxos</span> (a descida) — <span class="italic">Giardini Naxos bay 6-9-2024.jpg</span></li>
-              <li>· <span class="text-mute">Lungomare de Giardini Naxos</span> (o embarque) — <span class="italic">Lungomare Giardini Naxos 12-8-21.jpg</span></li>
-              <li>· <span class="text-mute">Grotta Azzurra · barco de passeio</span> (o tour) — <span class="italic">Grotta Azzurra Sicily tourist boat.JPG</span></li>
-              <li>· <span class="text-mute">Pesce spada</span> (almoço de pescador) — <span class="italic">Sagra del pesce spada Aci Trezza 2025 12.jpg</span></li>
-              <li>· <span class="text-mute">Isola Bella</span> (snorkeling por terra) — <span class="italic">Isola Bella Island Taormina Sicily 03.jpg</span></li>
-              <li>· <span class="text-mute">Crepúsculo sobre a Isola Bella</span> (a varanda) — <span class="italic">DSCF7768-Dawn Sunset-Isola Bella-Taormina-Sicilia-Italy-gnuckx CC0 HQ (4276685121).jpg</span></li>
-              <li>· <span class="text-mute">Taormina di notte</span> (o jantar livre) — <span class="italic">Taormina di notte.JPG</span></li>
+              <li>· <span class="text-mute">The View Luxury Apartments</span> (partida) — <span class="italic">Taormina - panorama dal belvedere.jpg</span></li>
+              <li>· <span class="text-mute">Porto de Giardini Naxos</span> (embarque) — <span class="italic">Lungomare Giardini Naxos 12-8-21.jpg</span></li>
+              <li>· <span class="text-mute">Tour de barco · Isola Bella</span> (vista do mar) — <span class="italic">Grotta Azzurra Sicily tourist boat.JPG</span></li>
+              <li>· <span class="text-mute">Almoço na orla</span> (pesce spada) — <span class="italic">Sagra del pesce spada Aci Trezza 2025 12.jpg</span></li>
+              <li>· <span class="text-mute">Funicular de Taormina</span> (descida) — <span class="italic">Taormina funicular.jpg</span></li>
+              <li>· <span class="text-mute">Isola Bella · snorkeling</span> (istmo) — <span class="italic">Isola Bella Island Taormina Sicily 03.jpg</span></li>
+              <li>· <span class="text-mute">Castelmola · panorâmica 360°</span> (golden hour) — <span class="italic">Castelmola - Panorama di Taormina da Piazza Sant'Antonio.jpg</span></li>
+              <li>· <span class="text-mute">Bar Turrisi · Castelmola</span> (aperitivo) — <span class="italic">Bar Turrisi Castelmola.jpg</span></li>
+              <li>· <span class="text-mute">Ristorante Al Duomo</span> (jantar) — <span class="italic">Taormina di notte.JPG</span></li>
             </ul>
           </details>
         </div>
@@ -501,9 +502,10 @@
   <!-- ============================================================= -->
   <script>
     /* =========================================================================
-       BANCO DE DADOS — Operação Taormina III (8 paragens, 5 atos · 09h15 → noite)
-       O mar e o legado natural: tour de barco de Giardini Naxos (Grotta Azzurra +
-       Isola Bella), almoço de pescador na orla e snorkeling na Isola Bella por terra.
+       BANCO DE DADOS — Operação Taormina III (13 paragens, 5 atos · 08h30 → madrugada)
+       O abismo, o mar e a altitude: barco Grotta Azzurra + Isola Bella, almoço de
+       pescador, snorkeling no tômbolo, golden hour em Castelmola (Bar Turrisi) e
+       grand finale no Ristorante Al Duomo + Vicolo Stretto Lounge Bar.
        Pontos em comunas distintas usam 'place'/'cidade' no link do Google Maps.
        tipo: 'base' | 'foco' | 'peripheral' | 'food'
        Imagens reais (Wikimedia Commons); links de rota abrem no Google Maps.
@@ -514,39 +516,55 @@
         /* ===================== ATO I ===================== */
         {
           id: "ato-1",
-          faixa: "09h15 — 10h00",
-          titulo: "Ato I · A Descida para a Primeira Colônia",
+          faixa: "08h30 — 12h00",
+          titulo: "Ato I · A Perspectiva do Abismo Marinho",
           pontos: [
             {
-              id: "the-view-partida", tipo: "base", nome: "The View · A Descida",
+              id: "the-view-partida", tipo: "base", nome: "The View · A Largada Tática",
               place: "The View Luxury Apartments", cidade: "Taormina",
-              ato: "Ponto de Partida", hora: "09h15", coord: [37.85280, 15.27850],
-              linha: "Saia do penhasco de carro e desça em direção ao mar: hoje a perspectiva é de baixo, ao nível da água.",
+              ato: "Ponto de Partida", hora: "08h30", coord: [37.85280, 15.27850],
+              linha: "O carro desce a serpentina rumo ao sul. Hoje a perspectiva inverte: do penhasco ao mar.",
               img: "https://commons.wikimedia.org/wiki/Special:FilePath/Giardini%20Naxos%20bay%206-9-2024.jpg?width=900",
-              custo: "—", duracao: "45 min até o porto",
-              horarioIdeal: "09h15 — descer cedo é a única lei para garantir estacionamento no porto",
-              descricao: "A grande virada da trilogia: depois de dominar o penhasco (Dia I) e as montanhas (Dia II), hoje você inverte o eixo e desce ao mar. Saia do The View de carro e tome a estrada que desce a serpentina até Giardini Naxos, a baía aberta aos pés de Taormina. O objetivo da manhã é embarcar; o do dia, ver de baixo — do nível da água — tudo o que se admirou do alto.",
+              custo: "—", duracao: "30 min até o porto",
+              horarioIdeal: "08h30 — descer cedo é a única lei para garantir estacionamento no porto",
+              descricao: "A grande virada da trilogia: depois de dominar o penhasco (Dia I) e as montanhas (Dia II), hoje você inverte o eixo e desce ao mar. Saída pontual do The View às 08h30. O carro aponta para Giardini Naxos. Conforme desce a serpentina, a baía vai se abrindo — é o mesmo panorama que você viu do alto nos dois dias anteriores, agora em aproximação.",
               historia: "Giardini Naxos guarda o sítio de Naxos, a primeira colônia grega da Sicília, fundada em 734 a.C. por colonos de Calcis. Foi daqui que a helenização da ilha começou — séculos antes de Siracusa ou do teatro de Taormina. A baía rasa e abrigada que hoje recebe banhistas e barcos de passeio foi, há 2.700 anos, o ponto de desembarque que mudou a história do Mediterrâneo ocidental.",
               insights: [
-                "Desça cedo: a vaga de estacionamento no porto é o único gargalo do dia — quanto mais cedo, melhor.",
-                "A serpentina Taormina → Giardini Naxos tem vistas espetaculares da baía; vá com calma nas curvas.",
-                "Hoje o carro só trabalha de manhã: à tarde ele dorme de vez na garagem do The View."
+                "Desça cedo: a vaga de estacionamento no porto é o único gargalo do dia.",
+                "A serpentina Taormina → Giardini Naxos tem vistas espetaculares da baía — vá com calma nas curvas.",
+                "Hoje o carro trabalha de manhã e à tarde para Castelmola: é o dia de maior uso do veículo."
               ]
             },
             {
               id: "porto-naxos", tipo: "base", nome: "Porto de Giardini Naxos · O Embarque",
               place: "Porto di Giardini Naxos", cidade: "Giardini Naxos",
-              ato: "Ato I · A Primeira Colônia", hora: "09h45", coord: [37.81640, 15.26610],
-              linha: "O embarcadouro na Via Schisò. Garanta as linhas azuis de estacionamento na rua do porto; se lotado, plano B: Green Parking a 15 min a pé.",
+              ato: "Ato I · A Perspectiva Marinha", hora: "09h00", coord: [37.81640, 15.26610],
+              linha: "Neutralize o carro nas linhas azuis da Via Schisò, espresso de frente para os barcos e embarque às 10h00.",
               img: "https://commons.wikimedia.org/wiki/Special:FilePath/Lungomare%20Giardini%20Naxos%2012-8-21.jpg?width=900",
               custo: "Estac. € · linhas azuis (pago)", duracao: "—",
-              horarioIdeal: "Antes das 10h — antecipe-se ao movimento dos barcos de passeio",
-              descricao: "Chegue à Via Schisò, junto ao porto de Giardini Naxos, e resolva o carro antes de tudo. Procure as linhas azuis de estacionamento ao longo da rua do porto — chegar cedo é o que garante a vaga. Se estiver tudo lotado, acione o plano B sem hesitar: o Green Parking, a cerca de 15 minutos de caminhada. Resolvido o carro, vá ao embarcadouro: é daqui que parte o tour de barco pelas falésias de Taormina.",
+              horarioIdeal: "09h00 — antecipe-se ao movimento dos barcos de passeio",
+              descricao: "Chegue à Via Schisò junto ao porto e resolva o carro antes de tudo: procure as linhas azuis ao longo da rua do porto. Plano B se estiver lotado: Green Parking a ~15 minutos de caminhada. Resolvido o carro, use a janela de uma hora para um espresso duplo de frente para os barcos de madeira. Sem pressa — o tour embarca às 10h00.",
               historia: "Schisò é o promontório de lava onde Naxos foi fundada — ainda se veem restos das muralhas gregas no parque arqueológico ao lado. O pequeno porto cresceu sobre esse legado: hoje é base dos pescadores e dos barcos de excursão que contornam a costa até a Isola Bella e a Grotta Azzurra.",
               insights: [
-                "Linha azul = estacionamento pago: compre o ticket na máquina ou app e deixe-o visível.",
-                "Plano B sempre na manga: o Green Parking (a ~15 min a pé) salva o dia se a orla estiver cheia.",
-                "Confirme o horário e o ponto de embarque do seu barco na véspera — a maioria sai perto da Via Schisò."
+                "Linha azul = estacionamento pago: compre o ticket na máquina ou app e deixe-o visível no painel.",
+                "Plano B sempre na manga: o Green Parking (~15 min a pé) salva o dia se a orla estiver cheia.",
+                "Confirme o horário e ponto de embarque do tour na véspera — a maioria sai perto da Via Schisò."
+              ]
+            },
+            {
+              id: "tour-barco", tipo: "foco", nome: "Tour de Barco · Isola Bella & Grotta Azzurra",
+              place: "Isola Bella Taormina", cidade: "Taormina",
+              ato: "Ato I · A Perspectiva Marinha", hora: "10h00", coord: [37.84300, 15.30200],
+              linha: "2h de drama geológico visto de baixo: paredões que despencam no azul, a Grotta Azzurra e o contorno da Isola Bella pelo lado do mar.",
+              img: "https://commons.wikimedia.org/wiki/Special:FilePath/Grotta%20Azzurra%20Sicily%20tourist%20boat.JPG?width=900",
+              custo: "€€ · tour ~25–35€/pessoa", duracao: "2h",
+              horarioIdeal: "10h00 — manhã limpa; mar mais calmo; luz entrando na Grotta Azzurra",
+              descricao: "O impacto visual vem da escala reversa: olhar para cima e ver os paredões maciços de calcário onde Taormina está pendurada. O barco corta a água azul-turquesa, entra na Grotta Azzurra — onde a luz filtrada acende a água de azul —, cruza a baía de Mazzarò e dá a volta na Isola Bella pelo lado do mar. É a mesma costa do penhasco do Dia I, agora lida da linha d'água.",
+              historia: "Enquanto o barco passa pela Isola Bella, repare na casa camuflada entre as plantas exóticas. A ilha foi doada em 1806 pelo Rei Ferdinando I de Bourbon, transformada em santuário exótico por Florence Trevelyan em 1890. Nos anos 1950, os irmãos Bosurgi ergueram ali uma vila subterrânea com 12 residências autônomas para banqueiros e empresários. A falência deles em 1982 levou a ilha a leilões desertos, até ser resgatada pela Região Siciliana em 1990 e entrar na lista indicativa da UNESCO em 2006.",
+              insights: [
+                "Leve a câmera à prova d'água: a entrada na Grotta Azzurra é o clímax visual do passeio.",
+                "Olhe a Isola Bella do mar e guarde a memória: à tarde você vai tocá-la por dentro, já sabendo a história.",
+                "Sente-se do lado voltado para a falésia — é de lá que a parede de rocha impressiona ao despencar no azul."
               ]
             }
           ]
@@ -555,23 +573,23 @@
         /* ===================== ATO II ===================== */
         {
           id: "ato-2",
-          faixa: "10h00 — 12h00",
-          titulo: "Ato II · O Tour de Barco",
+          faixa: "12h00 — 13h30",
+          titulo: "Ato II · O Almoço de Pescador na Primeira Colônia",
           pontos: [
             {
-              id: "tour-barco", tipo: "foco", nome: "Tour de Barco · Isola Bella & Grotta Azzurra",
-              place: "Isola Bella Taormina", cidade: "Taormina",
-              ato: "Ato II · A Perspectiva de Baixo", hora: "10h00", coord: [37.84300, 15.30200],
-              linha: "Duas horas de puro drama geológico do nível da água: as falésias que despencam no mar, a Grotta Azzurra e a volta à Isola Bella.",
-              img: "https://commons.wikimedia.org/wiki/Special:FilePath/Grotta%20Azzurra%20Sicily%20tourist%20boat.JPG?width=900",
-              custo: "€€ · tour ~25–35€/pessoa", duracao: "2h",
-              horarioIdeal: "Manhã — mar mais calmo e luz entrando na Grotta Azzurra",
-              descricao: "Embarque para duas horas de drama geológico visto de baixo. O barco contorna as falésias massivas de Taormina que despencam direto no mar, entra na Grotta Azzurra — onde a luz filtrada acende a água de azul —, cruza a baía de Mazzarò e dá a volta na Isola Bella pelo lado do mar. É a mesma costa do penhasco do Dia I, agora lida da linha d'água: a escala da rocha só se entende daqui.",
-              historia: "Enquanto o barco passa pela Isola Bella, repare na casa camuflada entre as plantas exóticas — é monumento histórico. A ilha foi doada em 1806 pelo Rei Ferdinando I de Bourbon, comprada em 1890 por Florence Trevelyan (que plantou as essências raras que a cobrem) e, nos anos 1950, os irmãos Bosurgi ergueram ali uma vila subterrânea com 12 residências autônomas para receber banqueiros e empresários. A falência da empresa cítrica deles, em 1982, levou a ilha a leilões judiciais desertos, até ser resgatada pela Região Siciliana em 1990 e entrar na lista indicativa da UNESCO em 2006.",
+              id: "almoco-orla", tipo: "food", nome: "A Putia do Pisci · O Almoço na Orla",
+              place: "Via Tysandros", cidade: "Giardini Naxos",
+              ato: "Ato II · O Almoço de Pescador", hora: "12h15", coord: [37.81950, 15.26800],
+              linha: "Não suba para Taormina: panino col pesce spada grelhado na hora e uma Birra Messina Cristalli di Sale trincando. De pé, olhando para o mar.",
+              img: "https://commons.wikimedia.org/wiki/Special:FilePath/Sagra%20del%20pesce%20spada%20Aci%20Trezza%202025%2012.jpg?width=900",
+              custo: "€ · panino + cerveja", duracao: "1h",
+              horarioIdeal: "Logo após desembarcar — peixe fresco, pé na areia",
+              descricao: "Ao desembarcar você está em Giardini Naxos — a primeira colônia grega da Sicília (734 a.C.). A tentação é subir a Taormina para almoçar: não faça isso. Busquem uma putia de peixe na orla da Via Tysandros. O pedido: Panino col Pesce Spada — bife de peixe-espada local grelhado na chapa com alho, óleo, limão e rúcula — e uma Birra Messina 'Cristalli di Sale' bem gelada. Comam de pé, olhando para o mar. Rápido, denso e espetacular.",
+              historia: "O peixe-espada é totem do estreito de Messina: durante séculos foi caçado com o arpão das feluche, barcos de mastro altíssimo que avistavam o animal à superfície. O salmoriglio — emulsão de azeite, limão, orégano e alho — é o molho clássico. A Birra Messina 'Cristalli di Sale', feita com sal marinho das salinas de Nubia, é a cerveja dos pescadores locais: o casamento perfeito.",
               insights: [
-                "Leve a câmera à prova d'água: a entrada na Grotta Azzurra é o clímax visual do passeio.",
-                "Olhe a Isola Bella do mar e guarde a memória: à tarde você vai tocá-la, já sabendo a história.",
-                "Sente-se do lado voltado para a falésia — é de lá que a parede de rocha impressiona ao despencar no azul."
+                "Panino col pesce spada > restaurante turístico: mais fresco, mais barato e com vista de mar incluída.",
+                "A Birra Messina Cristalli di Sale tem leve salinidade que combina perfeitamente com o peixe.",
+                "Coma com calma, mas guarde energia: a tarde é de istmo, cascalho e snorkeling na Isola Bella."
               ]
             }
           ]
@@ -580,23 +598,33 @@
         /* ===================== ATO III ===================== */
         {
           id: "ato-3",
-          faixa: "12h15 — 13h30",
-          titulo: "Ato III · O Almoço de Pescador",
+          faixa: "13h30 — 17h00",
+          titulo: "Ato III · A Neutralização e o Toque da Rocha",
           pontos: [
             {
-              id: "almoco-orla", tipo: "food", nome: "A Putia do Pisci · O Almoço na Orla",
-              place: "Via Tysandros", cidade: "Giardini Naxos",
-              ato: "Ato III · O Almoço de Pescador", hora: "12h15", coord: [37.81950, 15.26800],
-              linha: "Não suba para Taormina: almoce aqui na orla. Panino col pesce spada grelhado na hora e uma Birra Messina cristais de sal bem gelada.",
-              img: "https://commons.wikimedia.org/wiki/Special:FilePath/Sagra%20del%20pesce%20spada%20Aci%20Trezza%202025%2012.jpg?width=900",
-              custo: "€ · panino + cerveja", duracao: "1h",
-              horarioIdeal: "Logo após desembarcar — peixe fresco, pé na areia",
-              descricao: "Ao desembarcar você está em Giardini Naxos, zona historicamente ligada à pesca fresca. A tentação é subir a Taormina para almoçar — não faça isso. Faça um lanche rápido aqui mesmo, de frente para o mar. Procure A Putia do Pisci (ou similar) na Via Tysandros: peça um panino col pesce spada — sanduíche rústico com bife de peixe-espada grelhado na hora, salmoriglio e rúcula — e uma Birra Messina 'Cristalli di Sale' bem gelada. Custo baixo, qualidade máxima, pé na areia.",
-              historia: "O peixe-espada é totem do estreito de Messina: durante séculos foi caçado com o arpão das 'feluche', barcos de mastro altíssimo que avistavam o animal à superfície. O salmoriglio — emulsão de azeite, limão, orégano e alho — é o molho clássico que o acompanha. A Birra Messina 'Cristalli di Sale', feita com sal marinho das salinas de Nubia, nasceu como cerveja dos pescadores da cidade: o casamento perfeito com o peixe-espada local.",
+              id: "carro-garagem", tipo: "peripheral", nome: "Retorno ao The View · Carro na Garagem",
+              ato: "Ato III", hora: "13h30", coord: [37.85280, 15.27850],
+              linha: "Não dirija o carro direto para a Isola Bella (armadilha de trânsito). Volte ao The View, estacione de vez e libere o veículo."
+            },
+            {
+              id: "funicular-descida", tipo: "peripheral", nome: "Funivia · Descida a Mazzarò",
+              ato: "Ato III", hora: "14h30", coord: [37.85480, 15.29080],
+              linha: "Caminhem até a estação da Funivia e desçam de bondinho até a baía de Mazzarò: a solução logística elegante para a Isola Bella."
+            },
+            {
+              id: "isola-bella-snorkel", tipo: "foco", nome: "Isola Bella · O Snorkeling no Tômbolo",
+              place: "Isola Bella", cidade: "Taormina",
+              ato: "Ato III · O Toque da Rocha", hora: "14h30", coord: [37.85080, 15.30060],
+              linha: "Agora você toca a ilha que viu do barco. Atravesse o istmo de cascalho, vá ao lado esquerdo e caia na água com a máscara.",
+              img: "https://commons.wikimedia.org/wiki/Special:FilePath/Isola%20Bella%20Island%20Taormina%20Sicily%2003.jpg?width=900",
+              custo: "€ · acesso à reserva natural", duracao: "2h30",
+              horarioIdeal: "14h30 — luz da tarde atravessa a água cristalina e acende o fundo",
+              descricao: "Desça de funicular até Mazzarò e caminhe até a faixa de areia da Isola Bella. Agora que conhece a história da ilha — vista do barco pela manhã — você vai tocá-la. Atravesse o istmo estreito de cascalho e vá direto para o lado esquerdo, onde há menos turistas. Vistam as máscaras: a luz da tarde atravessa a água cristalina e revela imensos blocos de calcário desabados onde a vida marinha se esconde. Nadar entre essas estruturas é a descompressão física perfeita.",
+              historia: "A Isola Bella é hoje reserva natural orientada gerida pela Região Siciliana. O istmo de seixos que a liga à praia de Mazzarò é um 'tômbolo' — cordão de cascalho submerso na maré alta: por horas a ilha vira ilha de verdade, e a água ao redor, protegida, abriga uma das melhores áreas de snorkeling da costa jônica.",
               insights: [
-                "Panino col pesce spada > restaurante turístico: mais fresco, mais barato e com vista de mar de graça.",
-                "A Birra Messina Cristalli di Sale é a escolha local certa — leve salinidade que combina com o peixe.",
-                "Coma com calma, mas guarde energia: a tarde é de istmo, cascalho e snorkeling na Isola Bella."
+                "Vá para o lado esquerdo do istmo: menos gente, entrada na água mais limpa e mais sombra ao fim da tarde.",
+                "Sapatilhas de neoprene ajudam: o acesso é de cascalho/seixos, não de areia fina.",
+                "Não pise nem colha nada: é reserva natural protegida — a vila e o jardim só se visitam pelos trilhos."
               ]
             }
           ]
@@ -605,29 +633,50 @@
         /* ===================== ATO IV ===================== */
         {
           id: "ato-4",
-          faixa: "13h45 — 17h30",
-          titulo: "Ato IV · O Pulo do Gato e o Snorkeling",
+          faixa: "17h00 — 20h00",
+          titulo: "Ato IV · A Coroação na Altitude Máxima",
           pontos: [
             {
-              id: "funicular", tipo: "peripheral", nome: "O Pulo do Gato · Neutralizar o Carro + Funicular",
-              ato: "Ato IV", hora: "13h45", coord: [37.85480, 15.29080],
-              linha: "Não dirija a Isola Bella (armadilha de trânsito). Volte ao The View, estacione de vez e suba a pé à Funivia: desça de bondinho a Mazzarò."
+              id: "transicao-altitude", tipo: "peripheral", nome: "Funicular + The View · A Transição Ágil",
+              ato: "Ato IV", hora: "17h00", coord: [37.85480, 15.29080],
+              linha: "Subam de Funicular. Passem no apartamento estritamente para tirar o sal e calçar sapato social leve. Entrem no carro: destino Castelmola."
             },
             {
-              id: "isola-bella-snorkel", tipo: "foco", nome: "Isola Bella por Terra · O Snorkeling",
-              place: "Isola Bella", cidade: "Taormina",
-              ato: "Ato IV · A Descompressão", hora: "14h30", coord: [37.85080, 15.30060],
-              linha: "Agora você toca a ilha que viu do barco. Atravesse o istmo de cascalho, vá ao lado esquerdo (menos gente) e caia na água com a máscara.",
-              img: "https://commons.wikimedia.org/wiki/Special:FilePath/Isola%20Bella%20Island%20Taormina%20Sicily%2003.jpg?width=900",
-              custo: "€ · praia / acesso à reserva", duracao: "3h",
-              horarioIdeal: "Tarde — a luz baixa atravessa a água cristalina e acende o fundo",
-              descricao: "Desça de funicular até Mazzarò e caminhe até a faixa de areia da Isola Bella. Agora que conhece a história da ilha — vista do barco pela manhã — você vai tocá-la. Atravesse o istmo estreito de cascalho que muda com a maré e vá direto para o lado esquerdo, onde há menos turistas. Caia na água com a máscara de snorkeling: a luz da tarde atravessa a água cristalina e revela os imensos blocos de calcário desabados onde a vida marinha se esconde. É a descompressão física perfeita para fechar a trilogia.",
-              historia: "A Isola Bella é hoje reserva natural orientada, gerida pela Região Siciliana, e museu — a vila dos Bosurgi e o jardim de Florence Trevelyan fazem dela um raro híbrido de natureza e história. O istmo de seixos que a liga à praia de Mazzarò é um 'tômbolo', cordão de cascalho submerso na maré alta: por horas a ilha vira ilha de verdade, e a água ao redor, protegida, abriga uma das melhores áreas de snorkeling da costa jónica.",
+              id: "castelmola-360", tipo: "foco", nome: "Castelmola · O Impacto Visual 360°",
+              place: "Piazza Sant'Antonio", cidade: "Castelmola",
+              ato: "Ato IV · A Coroação", hora: "18h00", coord: [37.85840, 15.27740],
+              linha: "O mirante definitivo: Taormina abaixo, a linha da costa navegada de manhã e a cratera fumegante do Etna dominando o horizonte oeste.",
+              img: "https://commons.wikimedia.org/wiki/Special:FilePath/Castelmola%20-%20Panorama%20di%20Taormina%20da%20Piazza%20Sant%27Antonio.jpg?width=900",
+              custo: "Gratuito · estac. €", duracao: "45 min",
+              horarioIdeal: "18h00 — início da golden hour; ao entardecer a encosta do Etna fica incandescente",
+              descricao: "Subam a sinuosa Via Leonardo Da Vinci em direção a Castelmola, a 530 metros de altitude. O estacionamento na Piazza Sant'Antonio estará livre de tráfego a esta hora. Caminhem até o mirante: de lá abre-se a vista definitiva — a maquete de Taormina abaixo, a linha da costa que você navegou de manhã e a cratera fumegante do Etna dominando o horizonte oeste. É a mesma paisagem dos três dias condensada num único quadro.",
+              historia: "Castelmola cresceu em torno das ruínas de um castelo com vestígios sículos, gregos e depois normando, que coroa o penhasco. Por séculos foi a acrópole defensiva de Taormina. Das suas praças, a costa jônica desenrola-se da baía de Naxos — que você navegou esta manhã — até a ponta da Calábria no horizonte.",
               insights: [
-                "Vá para o lado esquerdo do istmo: menos gente, entrada na água mais limpa e mais sombra ao fim da tarde.",
-                "Sapatilhas de neoprene ajudam: o acesso é de cascalho/seixos, não de areia fina.",
-                "Não pise nem colha nada na ilha: é reserva natural protegida — a vila e o jardim só se visitam pelos trilhos."
+                "Da Piazza Sant'Antonio, alinhe num só quadro Taormina, o Teatro Antico e o Etna: a foto que resume os três dias.",
+                "As ruas de Castelmola são pedestres e estreitíssimas: deixe o carro no estacionamento do topo.",
+                "Em dias limpos avista-se a Calábria do outro lado do estreito de Messina — leve a câmera com zoom."
               ]
+            },
+            {
+              id: "bar-turrisi", tipo: "food", nome: "Bar Turrisi · O Brinde na Golden Hour",
+              place: "Bar Turrisi", cidade: "Castelmola",
+              ato: "Ato IV · A Coroação", hora: "18h30", coord: [37.85870, 15.27720],
+              linha: "O bar excêntrico de quatro andares: vinho de amêndoas no terraço superior enquanto a golden hour incendeia a encosta do Etna.",
+              img: "https://commons.wikimedia.org/wiki/Special:FilePath/Bar%20Turrisi%20Castelmola%2014-9-21.jpg?width=900",
+              custo: "€ · taça de vino alla mandorla", duracao: "1h",
+              horarioIdeal: "18h30 — golden hour no terraço superior; o Etna ao fundo incandescente",
+              descricao: "A poucos passos da praça, entrem no Bar Turrisi — talvez o bar mais excêntrico da Sicília. Espalhado por vários andares com terraços sobre o abismo, é decorado de cima a baixo com símbolos fálicos — uma herança pagã grega de culto a Príapo pela fertilidade. Subam ao terraço superior e acomodem-se. Peçam o tradicional Vinho de Amêndoas da casa, servido com gelo e casca de limão. Assistam à golden hour incendiar a encosta do vulcão. O carro desce de volta à garagem do apartamento às 20h00.",
+              historia: "A família Turrisi transformou o bar num santuário irônico ao falo como símbolo ancestral de fertilidade e boa sorte — motivo que remonta aos cultos dionisíacos e priápicos da Magna Grécia. O vino alla mandorla, licoroso e aromático, é especialidade local de Castelmola, herdada das amendoeiras que cobrem estas encostas.",
+              insights: [
+                "Suba ao terraço superior: a vista sobre o vazio rivaliza com a da praça — e quase ninguém sobe.",
+                "Uma dose de vino alla mandorla basta antes de reassumir o volante para a descida.",
+                "A decoração é deliberadamente provocadora, mas ancorada em mitologia grega real."
+              ]
+            },
+            {
+              id: "regresso-noite", tipo: "peripheral", nome: "Regresso ao The View · Carro em Definitivo",
+              ato: "Ato IV", hora: "20h00", coord: [37.85280, 15.27850],
+              linha: "Desçam de Castelmola às 20h00. O carro entra na garagem e não sai mais: a noite é toda a pé."
             }
           ]
         },
@@ -635,39 +684,39 @@
         /* ===================== ATO V ===================== */
         {
           id: "ato-5",
-          faixa: "18h00 — noite",
-          titulo: "Ato V · O Gran Finale",
+          faixa: "20h30 — madrugada",
+          titulo: "Ato V · O Grand Finale — A Noite Eletrizante",
           pontos: [
             {
-              id: "the-view-crepusculo", tipo: "base", nome: "The View · O Crepúsculo",
-              place: "The View Luxury Apartments", cidade: "Taormina",
-              ato: "Ato V · O Gran Finale", hora: "18h00", coord: [37.85290, 15.27860],
-              linha: "Suba de funicular e caminhe ao apartamento. Abra um bom vinho branco do Etna na varanda e assista ao crepúsculo fechar a trilogia.",
-              img: "https://commons.wikimedia.org/wiki/Special:FilePath/DSCF7768-Dawn%20Sunset-Isola%20Bella-Taormina-Sicilia-Italy-gnuckx%20CC0%20HQ%20(4276685121).jpg?width=900",
-              custo: "—", duracao: "1h30",
-              horarioIdeal: "Crepúsculo — a hora dourada antes do jantar",
-              descricao: "Suba de funicular, caminhe até o apartamento e troque o sal do mar por uma taça. A última tarde da trilogia se fecha na varanda do The View: abra um bom vinho branco do Etna — um Carricante mineral, da lava — e assista ao crepúsculo descer sobre a baía que você navegou de manhã e a ilha que tocou à tarde. Os três dias inteiros — penhasco, montanha e mar — cabem agora num só horizonte.",
-              historia: "O Etna Bianco, feito sobretudo da uva Carricante nas encostas vulcânicas, é o branco-assinatura da região: ácido, salino, mineral, nascido do mesmo solo de lava que abre o Dia I. Beber um Carricante em Taormina é fechar o círculo geográfico da viagem — do vulcão ao mar, no mesmo gole.",
+              id: "ristorante-al-duomo", tipo: "food", nome: "Ristorante Al Duomo · O Jantar Linear",
+              place: "Ristorante Al Duomo", cidade: "Taormina",
+              ato: "Ato V · O Grand Finale", hora: "20h30", coord: [37.85140, 15.28520],
+              linha: "Piazza Duomo: mesa externa no Al Duomo. Spaghetti alla Norma ou medalhões ao Nero d'Avola — jantar sem pressa sob a iluminação barroca.",
+              img: "https://commons.wikimedia.org/wiki/Special:FilePath/Taormina%20di%20notte.JPG?width=900",
+              custo: "€€ · jantar completo", duracao: "1h30",
+              horarioIdeal: "20h30 — reserva recomendada; a praça iluminada está no auge",
+              descricao: "Para contrastar com a comida de rua do dia anterior, sentem-se em uma mesa externa no Ristorante Al Duomo, na Piazza Duomo. O pedido: Spaghetti alla Norma (berinjelas fritas, molho de tomate denso e ricota salgada defumada) ou medalhões de filé mignon siciliano ao Nero d'Avola. Jantem sem pressa, observando o movimento chic da praça sob a iluminação noturna das pedras barrocas.",
+              historia: "A pasta alla Norma é o prato-símbolo da Sicília oriental, batizado em homenagem à ópera 'Norma' de Vincenzo Bellini, catanês. O Nero d'Avola é a uva tinta mais nobre da ilha: encorpado, com notas de frutas negras e balsâmico. A Piazza del Duomo com a Cattedrale di San Nicolò di Bari e a fonte barroca de centauros é o coração histórico de Taormina.",
               insights: [
-                "Carricante (Etna Bianco) é a escolha certa: mineralidade vulcânica que conversa com o dia inteiro no mar.",
-                "Deixe a garrafa gelando desde a chegada: a golden hour é curta e você não vai querer interrompê-la.",
-                "Sem pressa para o jantar — o Corso só ganha vida depois que o sol se põe."
+                "Reserva por telefone na véspera: as mesas externas na Piazza Duomo esgotam rápido.",
+                "Alla Norma é o encerramento correto da trilogia — o prato-símbolo da Sicília oriental no último jantar.",
+                "Escolha o Nero d'Avola para harmonizar: redondo e siciliano, fecha o círculo da viagem."
               ]
             },
             {
-              id: "corso-jantar", tipo: "foco", nome: "Corso Umberto · O Jantar Livre",
-              place: "Corso Umberto", cidade: "Taormina",
-              ato: "Ato V · O Gran Finale", hora: "20h00", coord: [37.85160, 15.28550],
-              linha: "A última noite é sua: desça ao Corso Umberto iluminado e jante onde o seu faro gastronômico mandar.",
-              img: "https://commons.wikimedia.org/wiki/Special:FilePath/Taormina%20di%20notte.JPG?width=900",
-              custo: "—", duracao: "À vontade",
-              horarioIdeal: "Noite — o Corso iluminado e a passeggiata no auge",
-              descricao: "Caia a noite e desça a pé ao centro. A última noite em Taormina é livre, sem roteiro: percorra o Corso Umberto iluminado, deixe-se levar pela passeggiata e jante onde o seu faro mandar — uma trattoria de pasta alla Norma, um terraço de peixe ou uma mesa escondida numa viela. Sem carro, sem hora, sem mapa: a recompensa de três dias de logística impecável é, justamente, uma noite sem nenhuma.",
-              historia: "Encerra-se aqui a trilogia: o Dia I leu Taormina do alto do seu penhasco, o Dia II conquistou as fortalezas de pedra da montanha, e o Dia III desceu ao mar e ao legado natural da ilha. O Corso Umberto, eixo de mil metros entre as duas portas, foi o fio condutor dos três — e é justo que a viagem termine onde ela, de certa forma, começou: caminhando sobre a pedra iluminada.",
+              id: "vicolo-stretto", tipo: "foco", nome: "Vicolo Stretto Lounge Bar · A Energia Pura",
+              place: "Via Vicolo Stretto", cidade: "Taormina",
+              ato: "Ato V · O Grand Finale", hora: "22h30", coord: [37.85210, 15.28680],
+              linha: "O beco mais estreito de Taormina transformado em lounge: escadarias medievais, plataformas nos tetos das casas e house melódico nas paredes de pedra.",
+              img: "https://commons.wikimedia.org/wiki/Special:FilePath/Taormina%20street%20market%20at%20night%2031-8-21.jpg?width=900",
+              custo: "€€ · drinks", duracao: "Até a madrugada",
+              horarioIdeal: "22h30 — a energia atinge o pico depois da meia-noite",
+              descricao: "Ao terminar o jantar, caminhem pelo Corso e procurem a Via Vicolo Stretto. Vocês vão entrar no beco mais estreito e vertical de Taormina, transformado em um dos lounges bares mais cênicos da Sicília. Subam as escadarias estreitas até as plataformas e balcões construídos nos tetos e sacadas das casas medievais. O lugar ferve: é o ponto de encontro de viajantes premium e locais sofisticados. A música — nu-jazz eletrônico ou deep house melódico — bate nas paredes de rocha antiga. Peça um Etna Mule (vodka, ginger beer e cítricos do solo vulcânico) ou converse com o mixologista. Fiquem até a madrugada.",
+              historia: "O Vicolo Stretto é literalmente o beco mais estreito de Taormina — uma fenda urbana medieval que servia de passagem secreta entre as casas da encosta. A reconversão em espaço de lounge é um exemplo do que os sicilianos chamam di bello antico. As paredes de pedra com séculos de história formam a melhor acústica acidental da cidade.",
               insights: [
-                "Sem reserva fixa: ande o Corso e escolha pelo cheiro e pelo movimento — é a noite da intuição.",
-                "Prove uma pasta alla Norma (berinjela, ricota salata, tomate) para fechar com o prato-símbolo da Sicília oriental.",
-                "Volte uma última vez à Piazza IX Aprile à noite: a sacada sobre o mar é a despedida certa da cidade."
+                "O fluxo de pessoas descendo e subindo os degraus gera uma fricção social extremamente eletrizante.",
+                "Fiquem até a madrugada: é a recompensa de três dias de logística impecável — uma noite sem relógio.",
+                "Peça o Etna Mule para fechar o ciclo: cítricos e solo vulcânico no último drink da trilogia."
               ]
             }
           ]
@@ -684,7 +733,7 @@
         map: null,
         markers: {},
         activeId: null,
-        activeLabel: "10h30",
+        activeLabel: "08h30",
         modal: { open: false, p: {} },
         _suppressSpy: false,
         sheetScrolled: false,
